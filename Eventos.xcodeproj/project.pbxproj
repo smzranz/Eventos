@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		515415011F4EA7B0006528B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515415001F4EA7B0006528B2 /* AppDelegate.swift */; };
+		515415031F4EA7B0006528B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515415021F4EA7B0006528B2 /* ViewController.swift */; };
+		515415061F4EA7B0006528B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515415041F4EA7B0006528B2 /* Main.storyboard */; };
+		515415081F4EA7B0006528B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515415071F4EA7B0006528B2 /* Assets.xcassets */; };
+		5154150B1F4EA7B1006528B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515415091F4EA7B1006528B2 /* LaunchScreen.storyboard */; };
+		515415161F4EA7B2006528B2 /* EventosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515415151F4EA7B2006528B2 /* EventosTests.swift */; };
+		515415211F4EAD6F006528B2 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515415201F4EAD6F006528B2 /* ViewController1.swift */; };
+		515415251F4EC8BC006528B2 /* c5c5f226210629.563531c68ee72.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 515415241F4EC8BC006528B2 /* c5c5f226210629.563531c68ee72.jpg */; };
+		5184E4121F57FC95001FA466 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = 5184E4091F57FC95001FA466 /* GeoFire.m */; };
+		5184E4131F57FC95001FA466 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5184E40B1F57FC95001FA466 /* GFBase32Utils.m */; };
+		5184E4141F57FC95001FA466 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5184E40D1F57FC95001FA466 /* GFGeoHash.m */; };
+		5184E4151F57FC95001FA466 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5184E40F1F57FC95001FA466 /* GFGeoHashQuery.m */; };
+		5184E4161F57FC95001FA466 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5184E4111F57FC95001FA466 /* GFQuery.m */; };
+		5184E4181F57FD6D001FA466 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5184E4171F57FD6D001FA466 /* GoogleService-Info.plist */; };
+		D82FF4F4CFF1795E59A3D3CB /* Pods_EventosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62427791E501E5805BF34705 /* Pods_EventosTests.framework */; };
+		E885E0E64B1CFFF8A4E9EB18 /* Pods_Eventos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8F04D0881192899B27BEE1 /* Pods_Eventos.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		515415121F4EA7B1006528B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 515414F51F4EA7B0006528B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 515414FC1F4EA7B0006528B2;
+			remoteInfo = Eventos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49A6810E74F548CF12AC8976 /* Pods-EventosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventosTests/Pods-EventosTests.release.xcconfig"; sourceTree = "<group>"; };
+		515414FD1F4EA7B0006528B2 /* Eventos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eventos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		515415001F4EA7B0006528B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		515415021F4EA7B0006528B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		515415051F4EA7B0006528B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		515415071F4EA7B0006528B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5154150A1F4EA7B1006528B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5154150C1F4EA7B1006528B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		515415111F4EA7B1006528B2 /* EventosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		515415151F4EA7B2006528B2 /* EventosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosTests.swift; sourceTree = "<group>"; };
+		515415171F4EA7B2006528B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		515415201F4EAD6F006528B2 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		515415241F4EC8BC006528B2 /* c5c5f226210629.563531c68ee72.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c5c5f226210629.563531c68ee72.jpg; sourceTree = "<group>"; };
+		5184E36D1F57FA9E001FA466 /* Eventos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eventos-Bridging-Header.h"; sourceTree = "<group>"; };
+		5184E4021F57FC95001FA466 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		5184E4031F57FC95001FA466 /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		5184E4041F57FC95001FA466 /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		5184E4051F57FC95001FA466 /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		5184E4061F57FC95001FA466 /* GeoFire-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire-Prefix.pch"; sourceTree = "<group>"; };
+		5184E4081F57FC95001FA466 /* GeoFire+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire+Private.h"; sourceTree = "<group>"; };
+		5184E4091F57FC95001FA466 /* GeoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFire.m; sourceTree = "<group>"; };
+		5184E40A1F57FC95001FA466 /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
+		5184E40B1F57FC95001FA466 /* GFBase32Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBase32Utils.m; sourceTree = "<group>"; };
+		5184E40C1F57FC95001FA466 /* GFGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHash.h; sourceTree = "<group>"; };
+		5184E40D1F57FC95001FA466 /* GFGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHash.m; sourceTree = "<group>"; };
+		5184E40E1F57FC95001FA466 /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
+		5184E40F1F57FC95001FA466 /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
+		5184E4101F57FC95001FA466 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
+		5184E4111F57FC95001FA466 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
+		5184E4171F57FD6D001FA466 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A8F04D0881192899B27BEE1 /* Pods_Eventos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eventos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62427791E501E5805BF34705 /* Pods_EventosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		706C6416343FD6252004BB77 /* Pods-Eventos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eventos/Pods-Eventos.release.xcconfig"; sourceTree = "<group>"; };
+		E4B12DBD0C2BB3ACF75E896A /* Pods-EventosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventosTests/Pods-EventosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F963BBE70D0656E3F3C1D8FD /* Pods-Eventos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eventos/Pods-Eventos.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		515414FA1F4EA7B0006528B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E885E0E64B1CFFF8A4E9EB18 /* Pods_Eventos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5154150E1F4EA7B1006528B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82FF4F4CFF1795E59A3D3CB /* Pods_EventosTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C32CAA3027A9A42D9A440A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A8F04D0881192899B27BEE1 /* Pods_Eventos.framework */,
+				62427791E501E5805BF34705 /* Pods_EventosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		515414F41F4EA7B0006528B2 = {
+			isa = PBXGroup;
+			children = (
+				515414FF1F4EA7B0006528B2 /* Eventos */,
+				515415141F4EA7B1006528B2 /* EventosTests */,
+				515414FE1F4EA7B0006528B2 /* Products */,
+				6731E645E85543EDE4A9A805 /* Pods */,
+				4C32CAA3027A9A42D9A440A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		515414FE1F4EA7B0006528B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				515414FD1F4EA7B0006528B2 /* Eventos.app */,
+				515415111F4EA7B1006528B2 /* EventosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		515414FF1F4EA7B0006528B2 /* Eventos */ = {
+			isa = PBXGroup;
+			children = (
+				515415001F4EA7B0006528B2 /* AppDelegate.swift */,
+				515415021F4EA7B0006528B2 /* ViewController.swift */,
+				5184E4171F57FD6D001FA466 /* GoogleService-Info.plist */,
+				5184E4001F57FC95001FA466 /* GeoFire */,
+				515415201F4EAD6F006528B2 /* ViewController1.swift */,
+				515415041F4EA7B0006528B2 /* Main.storyboard */,
+				515415071F4EA7B0006528B2 /* Assets.xcassets */,
+				515415241F4EC8BC006528B2 /* c5c5f226210629.563531c68ee72.jpg */,
+				515415091F4EA7B1006528B2 /* LaunchScreen.storyboard */,
+				5154150C1F4EA7B1006528B2 /* Info.plist */,
+				5184E36D1F57FA9E001FA466 /* Eventos-Bridging-Header.h */,
+			);
+			path = Eventos;
+			sourceTree = "<group>";
+		};
+		515415141F4EA7B1006528B2 /* EventosTests */ = {
+			isa = PBXGroup;
+			children = (
+				515415151F4EA7B2006528B2 /* EventosTests.swift */,
+				515415171F4EA7B2006528B2 /* Info.plist */,
+			);
+			path = EventosTests;
+			sourceTree = "<group>";
+		};
+		5184E4001F57FC95001FA466 /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				5184E4011F57FC95001FA466 /* API */,
+				5184E4061F57FC95001FA466 /* GeoFire-Prefix.pch */,
+				5184E4071F57FC95001FA466 /* Implementation */,
+			);
+			path = GeoFire;
+			sourceTree = "<group>";
+		};
+		5184E4011F57FC95001FA466 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5184E4021F57FC95001FA466 /* GeoFire.h */,
+				5184E4031F57FC95001FA466 /* GFCircleQuery.h */,
+				5184E4041F57FC95001FA466 /* GFQuery.h */,
+				5184E4051F57FC95001FA466 /* GFRegionQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5184E4071F57FC95001FA466 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				5184E4081F57FC95001FA466 /* GeoFire+Private.h */,
+				5184E4091F57FC95001FA466 /* GeoFire.m */,
+				5184E40A1F57FC95001FA466 /* GFBase32Utils.h */,
+				5184E40B1F57FC95001FA466 /* GFBase32Utils.m */,
+				5184E40C1F57FC95001FA466 /* GFGeoHash.h */,
+				5184E40D1F57FC95001FA466 /* GFGeoHash.m */,
+				5184E40E1F57FC95001FA466 /* GFGeoHashQuery.h */,
+				5184E40F1F57FC95001FA466 /* GFGeoHashQuery.m */,
+				5184E4101F57FC95001FA466 /* GFQuery+Private.h */,
+				5184E4111F57FC95001FA466 /* GFQuery.m */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		6731E645E85543EDE4A9A805 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F963BBE70D0656E3F3C1D8FD /* Pods-Eventos.debug.xcconfig */,
+				706C6416343FD6252004BB77 /* Pods-Eventos.release.xcconfig */,
+				E4B12DBD0C2BB3ACF75E896A /* Pods-EventosTests.debug.xcconfig */,
+				49A6810E74F548CF12AC8976 /* Pods-EventosTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		515414FC1F4EA7B0006528B2 /* Eventos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5154151A1F4EA7B2006528B2 /* Build configuration list for PBXNativeTarget "Eventos" */;
+			buildPhases = (
+				B42C2B953E6707F901DC0FE6 /* [CP] Check Pods Manifest.lock */,
+				515414F91F4EA7B0006528B2 /* Sources */,
+				515414FA1F4EA7B0006528B2 /* Frameworks */,
+				515414FB1F4EA7B0006528B2 /* Resources */,
+				0C34CEB4B9E19EF9156353A4 /* [CP] Embed Pods Frameworks */,
+				5CA02A0D83EE9991B21BD76E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Eventos;
+			productName = Eventos;
+			productReference = 515414FD1F4EA7B0006528B2 /* Eventos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		515415101F4EA7B1006528B2 /* EventosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5154151D1F4EA7B2006528B2 /* Build configuration list for PBXNativeTarget "EventosTests" */;
+			buildPhases = (
+				B806385015B9925D925F06BC /* [CP] Check Pods Manifest.lock */,
+				5154150D1F4EA7B1006528B2 /* Sources */,
+				5154150E1F4EA7B1006528B2 /* Frameworks */,
+				5154150F1F4EA7B1006528B2 /* Resources */,
+				5A572AEC5CD0C932B7C26D30 /* [CP] Embed Pods Frameworks */,
+				DB3EF420DEC2176FC8144FA1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				515415131F4EA7B1006528B2 /* PBXTargetDependency */,
+			);
+			name = EventosTests;
+			productName = EventosTests;
+			productReference = 515415111F4EA7B1006528B2 /* EventosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		515414F51F4EA7B0006528B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = citrusinformatics;
+				TargetAttributes = {
+					515414FC1F4EA7B0006528B2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = R53759X3UQ;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					515415101F4EA7B1006528B2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 515414FC1F4EA7B0006528B2;
+					};
+				};
+			};
+			buildConfigurationList = 515414F81F4EA7B0006528B2 /* Build configuration list for PBXProject "Eventos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 515414F41F4EA7B0006528B2;
+			productRefGroup = 515414FE1F4EA7B0006528B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				515414FC1F4EA7B0006528B2 /* Eventos */,
+				515415101F4EA7B1006528B2 /* EventosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		515414FB1F4EA7B0006528B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				515415251F4EC8BC006528B2 /* c5c5f226210629.563531c68ee72.jpg in Resources */,
+				5154150B1F4EA7B1006528B2 /* LaunchScreen.storyboard in Resources */,
+				515415081F4EA7B0006528B2 /* Assets.xcassets in Resources */,
+				515415061F4EA7B0006528B2 /* Main.storyboard in Resources */,
+				5184E4181F57FD6D001FA466 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5154150F1F4EA7B1006528B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C34CEB4B9E19EF9156353A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eventos/Pods-Eventos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A572AEC5CD0C932B7C26D30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventosTests/Pods-EventosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CA02A0D83EE9991B21BD76E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eventos/Pods-Eventos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B42C2B953E6707F901DC0FE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B806385015B9925D925F06BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB3EF420DEC2176FC8144FA1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventosTests/Pods-EventosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		515414F91F4EA7B0006528B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				515415211F4EAD6F006528B2 /* ViewController1.swift in Sources */,
+				5184E4131F57FC95001FA466 /* GFBase32Utils.m in Sources */,
+				5184E4151F57FC95001FA466 /* GFGeoHashQuery.m in Sources */,
+				5184E4121F57FC95001FA466 /* GeoFire.m in Sources */,
+				515415031F4EA7B0006528B2 /* ViewController.swift in Sources */,
+				5184E4141F57FC95001FA466 /* GFGeoHash.m in Sources */,
+				515415011F4EA7B0006528B2 /* AppDelegate.swift in Sources */,
+				5184E4161F57FC95001FA466 /* GFQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5154150D1F4EA7B1006528B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				515415161F4EA7B2006528B2 /* EventosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		515415131F4EA7B1006528B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 515414FC1F4EA7B0006528B2 /* Eventos */;
+			targetProxy = 515415121F4EA7B1006528B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		515415041F4EA7B0006528B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				515415051F4EA7B0006528B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		515415091F4EA7B1006528B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5154150A1F4EA7B1006528B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		515415181F4EA7B2006528B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		515415191F4EA7B2006528B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5154151B1F4EA7B2006528B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F963BBE70D0656E3F3C1D8FD /* Pods-Eventos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = R53759X3UQ;
+				INFOPLIST_FILE = Eventos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.Eventos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Eventos/Eventos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5154151C1F4EA7B2006528B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 706C6416343FD6252004BB77 /* Pods-Eventos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = R53759X3UQ;
+				INFOPLIST_FILE = Eventos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.Eventos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Eventos/Eventos-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5154151E1F4EA7B2006528B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4B12DBD0C2BB3ACF75E896A /* Pods-EventosTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EventosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.EventosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eventos.app/Eventos";
+			};
+			name = Debug;
+		};
+		5154151F1F4EA7B2006528B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49A6810E74F548CF12AC8976 /* Pods-EventosTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EventosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.EventosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eventos.app/Eventos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		515414F81F4EA7B0006528B2 /* Build configuration list for PBXProject "Eventos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				515415181F4EA7B2006528B2 /* Debug */,
+				515415191F4EA7B2006528B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5154151A1F4EA7B2006528B2 /* Build configuration list for PBXNativeTarget "Eventos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5154151B1F4EA7B2006528B2 /* Debug */,
+				5154151C1F4EA7B2006528B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5154151D1F4EA7B2006528B2 /* Build configuration list for PBXNativeTarget "EventosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5154151E1F4EA7B2006528B2 /* Debug */,
+				5154151F1F4EA7B2006528B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 515414F51F4EA7B0006528B2 /* Project object */;
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Eventos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c5c5f226210629.563531c68ee72.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4q9-gV-10c">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2L-nO-ZPG">
+                                <rect key="frame" x="31" y="318" width="233" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Jar-yS-ShO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Enter a place name...">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="autocompleteClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GGG-Yy-eIa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSV-My-He2">
+                                <rect key="frame" x="279" y="318" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.72156862749999995" green="0.094117647060000004" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="6se-a8-G6F"/>
+                                    <constraint firstAttribute="height" constant="30" id="xUw-of-Esw"/>
+                                </constraints>
+                                <state key="normal" title="SEARCH">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iSV-My-He2" firstAttribute="leading" secondItem="b2L-nO-ZPG" secondAttribute="trailing" constant="15" id="8Lx-qc-Yyc"/>
+                            <constraint firstItem="b2L-nO-ZPG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EPg-Yu-dZB"/>
+                            <constraint firstItem="4q9-gV-10c" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Isf-yB-0dK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iSV-My-He2" secondAttribute="trailing" id="KHz-Ek-A1U"/>
+                            <constraint firstItem="b2L-nO-ZPG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="Ohb-zs-n1v"/>
+                            <constraint firstItem="4q9-gV-10c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SMt-oq-ThH"/>
+                            <constraint firstItem="iSV-My-He2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vvo-1Y-KND"/>
+                            <constraint firstItem="4q9-gV-10c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XNp-JW-6FB"/>
+                            <constraint firstItem="4q9-gV-10c" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="fvU-Fp-B0D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="placeNameBtnOutlet" destination="b2L-nO-ZPG" id="hM1-VW-tNe"/>
+                        <outlet property="searchBtnOutlet" destination="iSV-My-He2" id="fBl-tT-ssH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72.799999999999997" y="-26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="c5c5f226210629.563531c68ee72.jpg" width="1088" height="1600"/>
+    </resources>
+</document>
