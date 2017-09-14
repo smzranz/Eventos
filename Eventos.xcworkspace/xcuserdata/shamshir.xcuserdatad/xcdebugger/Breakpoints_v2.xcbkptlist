@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eventos/ViewController.swift"
-            timestampString = "525865061.953289"
+            timestampString = "526800097.528475"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "geoFire()"
             landmarkType = "7">
          </BreakpointContent>

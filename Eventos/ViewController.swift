@@ -9,10 +9,13 @@ import UIKit
 import GooglePlaces
 import FirebaseCore
 import FirebaseDatabase
+import Skeleton
+
 
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var testview: GradientContainerView!
     
     
     @IBOutlet weak var searchBtnOutlet: UIButton!
@@ -30,7 +33,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-    
+        gradientLayers.forEach { gradientLayer in
+          //  let baseColor = testview.backgroundColor!
+            gradientLayer.colors = [UIColor.red.cgColor,
+                                    UIColor.red.brightened(by: 0.93).cgColor,
+                                    UIColor.red.cgColor]
+        }
+        
+        
     geoFire()
     }
    
@@ -108,4 +118,17 @@ extension ViewController: GMSAutocompleteViewControllerDelegate {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
     
+}
+extension ViewController: GradientsOwner {
+    var gradientLayers: [CAGradientLayer] {
+        return [testview.gradientLayer]
+    }
+}
+
+extension UIColor {
+    func brightened(by factor: CGFloat) -> UIColor {
+        var h: CGFloat = 0, s: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
+        getHue(&h, saturation: &s, brightness: &b, alpha: &a)
+        return UIColor(hue: h, saturation: s, brightness: b * factor, alpha: a)
+    }
 }

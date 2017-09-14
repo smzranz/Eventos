@@ -8,22 +8,21 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>Pods-Eventos.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods-EventosTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
+		</dict>
+		<key>Skeleton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -33,12 +32,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>2E95FBD15AEAA553C41C9AC26BC8A6C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3671C5554E887E7DA8D93DFE0F2B22CB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>875EDD993B1BE7FABD7E42A1B36363EF</key>
+		<key>B3E636FDC208136AE7C1D19ED5C74119</key>
 		<dict>
 			<key>primary</key>
 			<true/>

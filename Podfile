@@ -9,6 +9,7 @@ target 'Eventos' do
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'GoogleMaps'
+  pod 'Skeleton'
 
   pod 'FirebaseCore'
   pod 'Firebase'
