@@ -17,6 +17,54 @@
             endingLineNumber = "84"
             landmarkName = "geoFire()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eventos.ViewController.geoFire () -&gt; ()"
+                  moduleName = "Eventos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shamshir/Documents/Projects/Eventos/Eventos/ViewController.swift"
+                  timestampString = "527172285.671159"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "424">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eventos.ViewController.(geoFire () -&gt; ()).(closure #1)"
+                  moduleName = "Eventos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shamshir/Documents/Projects/Eventos/Eventos/ViewController.swift"
+                  timestampString = "527172285.673427"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eventos/ListViewViewController.swift"
+            timestampString = "527172275.988382"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514224F71F6B963F00B9F39C /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 514224F61F6B963F00B9F39C /* images.jpeg */; };
+		514224FB1F6BFAF400B9F39C /* ListViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514224FA1F6BFAF400B9F39C /* ListViewViewController.swift */; };
+		514224FF1F6BFBCC00B9F39C /* ListViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514224FE1F6BFBCC00B9F39C /* ListViewTableViewCell.swift */; };
 		515415011F4EA7B0006528B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515415001F4EA7B0006528B2 /* AppDelegate.swift */; };
 		515415031F4EA7B0006528B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515415021F4EA7B0006528B2 /* ViewController.swift */; };
 		515415061F4EA7B0006528B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515415041F4EA7B0006528B2 /* Main.storyboard */; };
 		515415081F4EA7B0006528B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515415071F4EA7B0006528B2 /* Assets.xcassets */; };
 		5154150B1F4EA7B1006528B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515415091F4EA7B1006528B2 /* LaunchScreen.storyboard */; };
 		515415161F4EA7B2006528B2 /* EventosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515415151F4EA7B2006528B2 /* EventosTests.swift */; };
-		515415211F4EAD6F006528B2 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515415201F4EAD6F006528B2 /* ViewController1.swift */; };
 		515415251F4EC8BC006528B2 /* c5c5f226210629.563531c68ee72.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 515415241F4EC8BC006528B2 /* c5c5f226210629.563531c68ee72.jpg */; };
 		5184E4121F57FC95001FA466 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = 5184E4091F57FC95001FA466 /* GeoFire.m */; };
 		5184E4131F57FC95001FA466 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5184E40B1F57FC95001FA466 /* GFBase32Utils.m */; };
@@ -37,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		49A6810E74F548CF12AC8976 /* Pods-EventosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventosTests/Pods-EventosTests.release.xcconfig"; sourceTree = "<group>"; };
+		514224F61F6B963F00B9F39C /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		514224FA1F6BFAF400B9F39C /* ListViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewViewController.swift; sourceTree = "<group>"; };
+		514224FE1F6BFBCC00B9F39C /* ListViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewTableViewCell.swift; sourceTree = "<group>"; };
 		515414FD1F4EA7B0006528B2 /* Eventos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eventos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		515415001F4EA7B0006528B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		515415021F4EA7B0006528B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +52,6 @@
 		515415111F4EA7B1006528B2 /* EventosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		515415151F4EA7B2006528B2 /* EventosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosTests.swift; sourceTree = "<group>"; };
 		515415171F4EA7B2006528B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		515415201F4EAD6F006528B2 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		515415241F4EC8BC006528B2 /* c5c5f226210629.563531c68ee72.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c5c5f226210629.563531c68ee72.jpg; sourceTree = "<group>"; };
 		5184E36D1F57FA9E001FA466 /* Eventos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eventos-Bridging-Header.h"; sourceTree = "<group>"; };
 		5184E4021F57FC95001FA466 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
@@ -102,10 +106,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		514224FC1F6BFB9500B9F39C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				514224F61F6B963F00B9F39C /* images.jpeg */,
+				515415241F4EC8BC006528B2 /* c5c5f226210629.563531c68ee72.jpg */,
+			);
+			name = images;
+			path = Eventos;
+			sourceTree = "<group>";
+		};
+		514224FD1F6BFBB100B9F39C /* TableviewCells */ = {
+			isa = PBXGroup;
+			children = (
+				514224FE1F6BFBCC00B9F39C /* ListViewTableViewCell.swift */,
+			);
+			name = TableviewCells;
+			sourceTree = "<group>";
+		};
 		515414F41F4EA7B0006528B2 = {
 			isa = PBXGroup;
 			children = (
 				515414FF1F4EA7B0006528B2 /* Eventos */,
+				514224FC1F6BFB9500B9F39C /* images */,
+				5184E4001F57FC95001FA466 /* GeoFire */,
 				515415141F4EA7B1006528B2 /* EventosTests */,
 				515414FE1F4EA7B0006528B2 /* Products */,
 				6731E645E85543EDE4A9A805 /* Pods */,
@@ -127,14 +151,13 @@
 			children = (
 				515415001F4EA7B0006528B2 /* AppDelegate.swift */,
 				515415021F4EA7B0006528B2 /* ViewController.swift */,
-				5184E4171F57FD6D001FA466 /* GoogleService-Info.plist */,
-				5184E4001F57FC95001FA466 /* GeoFire */,
-				515415201F4EAD6F006528B2 /* ViewController1.swift */,
+				514224FA1F6BFAF400B9F39C /* ListViewViewController.swift */,
+				514224FD1F6BFBB100B9F39C /* TableviewCells */,
 				515415041F4EA7B0006528B2 /* Main.storyboard */,
-				515415071F4EA7B0006528B2 /* Assets.xcassets */,
-				515415241F4EC8BC006528B2 /* c5c5f226210629.563531c68ee72.jpg */,
 				515415091F4EA7B1006528B2 /* LaunchScreen.storyboard */,
 				5154150C1F4EA7B1006528B2 /* Info.plist */,
+				5184E4171F57FD6D001FA466 /* GoogleService-Info.plist */,
+				515415071F4EA7B0006528B2 /* Assets.xcassets */,
 				5184E36D1F57FA9E001FA466 /* Eventos-Bridging-Header.h */,
 			);
 			path = Eventos;
@@ -156,7 +179,8 @@
 				5184E4061F57FC95001FA466 /* GeoFire-Prefix.pch */,
 				5184E4071F57FC95001FA466 /* Implementation */,
 			);
-			path = GeoFire;
+			name = GeoFire;
+			path = Eventos/GeoFire;
 			sourceTree = "<group>";
 		};
 		5184E4011F57FC95001FA466 /* API */ = {
@@ -294,6 +318,7 @@
 				515415081F4EA7B0006528B2 /* Assets.xcassets in Resources */,
 				515415061F4EA7B0006528B2 /* Main.storyboard in Resources */,
 				5184E4181F57FD6D001FA466 /* GoogleService-Info.plist in Resources */,
+				514224F71F6B963F00B9F39C /* images.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,12 +429,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				515415211F4EAD6F006528B2 /* ViewController1.swift in Sources */,
 				5184E4131F57FC95001FA466 /* GFBase32Utils.m in Sources */,
 				5184E4151F57FC95001FA466 /* GFGeoHashQuery.m in Sources */,
 				5184E4121F57FC95001FA466 /* GeoFire.m in Sources */,
+				514224FF1F6BFBCC00B9F39C /* ListViewTableViewCell.swift in Sources */,
 				515415031F4EA7B0006528B2 /* ViewController.swift in Sources */,
 				5184E4141F57FC95001FA466 /* GFGeoHash.m in Sources */,
+				514224FB1F6BFAF400B9F39C /* ListViewViewController.swift in Sources */,
 				515415011F4EA7B0006528B2 /* AppDelegate.swift in Sources */,
 				5184E4161F57FC95001FA466 /* GFQuery.m in Sources */,
 			);
