@@ -27,7 +27,7 @@ class ListViewViewController: UIViewController,UITableViewDataSource,UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 25
+        return 14
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -35,7 +35,7 @@ class ListViewViewController: UIViewController,UITableViewDataSource,UITableView
         print("Loaded")
         cell.bgView.layer.cornerRadius = 5
         cell.bgView.layer.masksToBounds = true
-        
+        cell.coverImage.image = UIImage(named: "\(indexPath.row+1)")
         return cell
     }
 }

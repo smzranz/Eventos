@@ -115,13 +115,13 @@
                                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         </view>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="BRF-Tx-FL5">
-                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="190"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="200"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="190" id="jV6-Wt-V85"/>
+                                                                <constraint firstAttribute="height" constant="200" id="jV6-Wt-V85"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eventos live" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTu-cX-5YG">
-                                                            <rect key="frame" x="15" y="198" width="214" height="20.5"/>
+                                                            <rect key="frame" x="15" y="208" width="214" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -135,7 +135,7 @@
                                                             <state key="normal" image="hearts_filled"/>
                                                         </button>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3oy-Ye-W10">
-                                                            <rect key="frame" x="269" y="198" width="75" height="15"/>
+                                                            <rect key="frame" x="269" y="208" width="75" height="15"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star_big_fill" translatesAutoresizingMaskIntoConstraints="NO" id="Lir-8s-TtH">
                                                                     <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
@@ -176,13 +176,13 @@
                                                             <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXE-7R-I71">
-                                                            <rect key="frame" x="15" y="221" width="214" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="15" y="231" width="214" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="140 reviews" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eM-iC-gZE">
-                                                            <rect key="frame" x="276.5" y="218" width="67.5" height="14.5"/>
+                                                            <rect key="frame" x="276.5" y="228" width="67.5" height="14.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
