@@ -30,7 +30,12 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.1)
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
+  - Pageboy (1.3.2)
+  - PureLayout (3.0.2)
   - Skeleton (0.1.0)
+  - Tabman (0.7.0):
+    - Pageboy (~> 1.3.0)
+    - PureLayout (~> 3.0.0)
 
 DEPENDENCIES:
   - Firebase
@@ -40,6 +45,7 @@ DEPENDENCIES:
   - GooglePlacePicker
   - GooglePlaces
   - Skeleton
+  - Tabman
 
 SPEC CHECKSUMS:
   Firebase: c7ad0731eab26d18a3fc547dd048b0f7cd9c63ae
@@ -51,8 +57,11 @@ SPEC CHECKSUMS:
   GooglePlacePicker: fc3564ac7a2ce314e78e42bfc1e16822ad1e5488
   GooglePlaces: 4a7b22debfa1af65017b82943431822607e45201
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  Pageboy: 7696688cbc118c5666176475fd1937926c2d0745
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   Skeleton: b76249b7d6a73a9913e164c8030647a3e005c700
+  Tabman: c176297899fd28e087a6506f9b56b8ca05195aa5
 
-PODFILE CHECKSUM: 08e3899e5067f069006a10689a721578a09f689b
+PODFILE CHECKSUM: 2e06ca677a9aea209522fd872590c538109da2d9
 
 COCOAPODS: 1.3.0.beta.1

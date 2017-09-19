@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pageboy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Eventos.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,7 +24,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PureLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Skeleton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Tabman.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,7 +47,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2E95FBD15AEAA553C41C9AC26BC8A6C5</key>
+		<key>20193CC5EFDCD8272321DCD291EE3122</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,7 +57,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B3E636FDC208136AE7C1D19ED5C74119</key>
+		<key>383A7A8BBBEB736C5DF0D3DEAF18BF52</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6DBBD7370475B860D04D40D5B1279657</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1A536D32A3AB205243F6F605B3B5BCF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA2B9B4C261B2270CC5205E1E4026822</key>
 		<dict>
 			<key>primary</key>
 			<true/>

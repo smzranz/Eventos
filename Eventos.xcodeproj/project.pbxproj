@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		511FE4AE1F714190001F0AB1 /* StudioDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511FE4AD1F714190001F0AB1 /* StudioDetailViewController.swift */; };
+		513944641F71478E0092340A /* PackagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513944631F71478E0092340A /* PackagesViewController.swift */; };
+		513944661F7147990092340A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513944651F7147990092340A /* LoginViewController.swift */; };
+		513944791F7152F00092340A /* SlidingContainerSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513944771F7152F00092340A /* SlidingContainerSliderView.swift */; };
+		5139447A1F7152F00092340A /* SlidingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513944781F7152F00092340A /* SlidingContainerViewController.swift */; };
+		5139447C1F7154920092340A /* StudioDetailHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139447B1F7154920092340A /* StudioDetailHomeViewController.swift */; };
+		5139447E1F7154C20092340A /* DemosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139447D1F7154C20092340A /* DemosViewController.swift */; };
 		514224F71F6B963F00B9F39C /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 514224F61F6B963F00B9F39C /* images.jpeg */; };
 		514224FB1F6BFAF400B9F39C /* ListViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514224FA1F6BFAF400B9F39C /* ListViewViewController.swift */; };
 		514224FF1F6BFBCC00B9F39C /* ListViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514224FE1F6BFBCC00B9F39C /* ListViewTableViewCell.swift */; };
@@ -39,6 +46,13 @@
 
 /* Begin PBXFileReference section */
 		49A6810E74F548CF12AC8976 /* Pods-EventosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventosTests/Pods-EventosTests.release.xcconfig"; sourceTree = "<group>"; };
+		511FE4AD1F714190001F0AB1 /* StudioDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudioDetailViewController.swift; sourceTree = "<group>"; };
+		513944631F71478E0092340A /* PackagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackagesViewController.swift; sourceTree = "<group>"; };
+		513944651F7147990092340A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		513944771F7152F00092340A /* SlidingContainerSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingContainerSliderView.swift; sourceTree = "<group>"; };
+		513944781F7152F00092340A /* SlidingContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingContainerViewController.swift; sourceTree = "<group>"; };
+		5139447B1F7154920092340A /* StudioDetailHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudioDetailHomeViewController.swift; sourceTree = "<group>"; };
+		5139447D1F7154C20092340A /* DemosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemosViewController.swift; sourceTree = "<group>"; };
 		514224F61F6B963F00B9F39C /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 		514224FA1F6BFAF400B9F39C /* ListViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewViewController.swift; sourceTree = "<group>"; };
 		514224FE1F6BFBCC00B9F39C /* ListViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewTableViewCell.swift; sourceTree = "<group>"; };
@@ -106,6 +120,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		513944761F7152F00092340A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				513944771F7152F00092340A /* SlidingContainerSliderView.swift */,
+				513944781F7152F00092340A /* SlidingContainerViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		514224FC1F6BFB9500B9F39C /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,9 +174,15 @@
 			children = (
 				515415001F4EA7B0006528B2 /* AppDelegate.swift */,
 				515415021F4EA7B0006528B2 /* ViewController.swift */,
+				511FE4AD1F714190001F0AB1 /* StudioDetailViewController.swift */,
+				513944631F71478E0092340A /* PackagesViewController.swift */,
+				513944651F7147990092340A /* LoginViewController.swift */,
 				514224FA1F6BFAF400B9F39C /* ListViewViewController.swift */,
+				5139447D1F7154C20092340A /* DemosViewController.swift */,
+				513944761F7152F00092340A /* Source */,
 				514224FD1F6BFBB100B9F39C /* TableviewCells */,
 				515415041F4EA7B0006528B2 /* Main.storyboard */,
+				5139447B1F7154920092340A /* StudioDetailHomeViewController.swift */,
 				515415091F4EA7B1006528B2 /* LaunchScreen.storyboard */,
 				5154150C1F4EA7B1006528B2 /* Info.plist */,
 				5184E4171F57FD6D001FA466 /* GoogleService-Info.plist */,
@@ -429,15 +458,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513944661F7147990092340A /* LoginViewController.swift in Sources */,
 				5184E4131F57FC95001FA466 /* GFBase32Utils.m in Sources */,
 				5184E4151F57FC95001FA466 /* GFGeoHashQuery.m in Sources */,
 				5184E4121F57FC95001FA466 /* GeoFire.m in Sources */,
 				514224FF1F6BFBCC00B9F39C /* ListViewTableViewCell.swift in Sources */,
+				513944641F71478E0092340A /* PackagesViewController.swift in Sources */,
 				515415031F4EA7B0006528B2 /* ViewController.swift in Sources */,
 				5184E4141F57FC95001FA466 /* GFGeoHash.m in Sources */,
 				514224FB1F6BFAF400B9F39C /* ListViewViewController.swift in Sources */,
+				5139447C1F7154920092340A /* StudioDetailHomeViewController.swift in Sources */,
 				515415011F4EA7B0006528B2 /* AppDelegate.swift in Sources */,
+				5139447E1F7154C20092340A /* DemosViewController.swift in Sources */,
+				5139447A1F7152F00092340A /* SlidingContainerViewController.swift in Sources */,
 				5184E4161F57FC95001FA466 /* GFQuery.m in Sources */,
+				513944791F7152F00092340A /* SlidingContainerSliderView.swift in Sources */,
+				511FE4AE1F714190001F0AB1 /* StudioDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

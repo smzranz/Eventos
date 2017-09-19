@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         }
         
         
-    geoFire()
+  //  geoFire()
     }
    
     
@@ -85,6 +85,19 @@ class ViewController: UIViewController {
             print("Key '\(key)' entered the search area and is at location '\(location)'")
         })
     }
+    
+    
+    
+    @IBAction func searchAction(_ sender: Any) {
+        
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier :"listViewViewController") as! ListViewViewController
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    
 }
 
 extension ViewController: GMSAutocompleteViewControllerDelegate {

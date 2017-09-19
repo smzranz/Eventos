@@ -14,6 +14,7 @@ target 'Eventos' do
   pod 'FirebaseCore'
   pod 'Firebase'
   pod 'Firebase/Database'
+ pod 'Tabman'
   target 'EventosTests' do
     inherit! :search_paths
     # Pods for testing

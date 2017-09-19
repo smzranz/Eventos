@@ -73,4 +73,11 @@ var address = [String]()
         cell.titleName.text = studioName[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier :"studioDetailViewController") as! StudioDetailViewController
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }
