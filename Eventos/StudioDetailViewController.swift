@@ -31,6 +31,13 @@ class StudioDetailViewController: UIViewController  {
             titles: ["Detail", "Demos","Packages","Login"])
         
         view.addSubview(slidingContainerViewController.view)
+        slidingContainerViewController.sliderView.appearance.outerPadding = 0
+        slidingContainerViewController.sliderView.appearance.innerPadding = 50
+        slidingContainerViewController.sliderView.appearance.fixedWidth = true
+        slidingContainerViewController.sliderView.appearance.backgroundColor = UIColor.white
+      //  slidingContainerViewController.sliderView.appearance.selectorColor = UIColor.blue
+        slidingContainerViewController.sliderView.appearance.selectedTextColor = UIColor.black
+        slidingContainerViewController.setCurrentViewControllerAtIndex(0)
         // Do any additional setup after loading the view.
     }
 
@@ -39,7 +46,19 @@ class StudioDetailViewController: UIViewController  {
         // Dispose of any resources that can be recreated.
     }
     
-
+    // MARK: SlidingContainerViewControllerDelegate
+    
+    func slidingContainerViewControllerDidMoveToViewController(_ slidingContainerViewController: SlidingContainerViewController, viewController: UIViewController, atIndex: Int) {
+        
+    }
+    
+    func slidingContainerViewControllerDidShowSliderView(_ slidingContainerViewController: SlidingContainerViewController) {
+        
+    }
+    
+    func slidingContainerViewControllerDidHideSliderView(_ slidingContainerViewController: SlidingContainerViewController) {
+        
+    }
     
 
 }

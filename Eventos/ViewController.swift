@@ -33,12 +33,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        gradientLayers.forEach { gradientLayer in
-          //  let baseColor = testview.backgroundColor!
-            gradientLayer.colors = [UIColor.red.cgColor,
-                                    UIColor.red.brightened(by: 0.93).cgColor,
-                                    UIColor.red.cgColor]
-        }
+        
         
         
   //  geoFire()
@@ -131,11 +126,6 @@ extension ViewController: GMSAutocompleteViewControllerDelegate {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
     
-}
-extension ViewController: GradientsOwner {
-    var gradientLayers: [CAGradientLayer] {
-        return [testview.gradientLayer]
-    }
 }
 
 extension UIColor {

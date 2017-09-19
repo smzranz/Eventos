@@ -14,7 +14,8 @@ target 'Eventos' do
   pod 'FirebaseCore'
   pod 'Firebase'
   pod 'Firebase/Database'
- pod 'Tabman'
+pod 'TransitionButton'
+pod 'FontAwesome.swift'
   target 'EventosTests' do
     inherit! :search_paths
     # Pods for testing

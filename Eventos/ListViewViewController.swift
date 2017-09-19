@@ -9,6 +9,11 @@
 import UIKit
 
 class ListViewViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    
+    @IBOutlet var listTableView: UITableView!
+    
+    
+    
 var address = [String]()
     var studioName = [String]()
     override func viewDidLoad() {
@@ -71,13 +76,17 @@ var address = [String]()
         cell.coverImage.image = UIImage(named: "\(indexPath.row+1)")
         cell.placeLabel.text = address[indexPath.row]
         cell.titleName.text = studioName[indexPath.row]
+        cell.placeLabel.sizeToFit()
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        listTableView.reloadData()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier :"studioDetailViewController") as! StudioDetailViewController
         
         self.navigationController?.pushViewController(viewController, animated: true)
     }
+    
+    
 }
