@@ -10,6 +10,11 @@ import UIKit
 
 class DemosViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    
+    
+    @IBOutlet weak var imageCollectionView: UICollectionView!
+    
+    
     var selectedImageIndex : IndexPath!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +24,14 @@ class DemosViewController: UIViewController,UICollectionViewDelegate,UICollectio
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        imageCollectionView.reloadData()
+        imageCollectionView.showLoader()
+        imageCollectionView.layoutIfNeeded()
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -46,7 +58,7 @@ class DemosViewController: UIViewController,UICollectionViewDelegate,UICollectio
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         
-        return 0
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

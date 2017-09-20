@@ -4,12 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GoogleToolboxForMac.xcscheme</key>
+		<key>FontAwesome.swift-FontAwesome.swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pageboy.xcscheme</key>
+		<key>FontAwesome.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,30 +29,10 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PureLayout.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Skeleton.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Tabman.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>00103D6C821BE85971C563025527BA5D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>20193CC5EFDCD8272321DCD291EE3122</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,22 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>383A7A8BBBEB736C5DF0D3DEAF18BF52</key>
+		<key>6991F49AED797519343B1F4591001691</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6DBBD7370475B860D04D40D5B1279657</key>
+		<key>83BBBC51E737F01D5E35267BB5B79903</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D1A536D32A3AB205243F6F605B3B5BCF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FA2B9B4C261B2270CC5205E1E4026822</key>
+		<key>CD11672B6619C297B6AEE3DFB8213C59</key>
 		<dict>
 			<key>primary</key>
 			<true/>

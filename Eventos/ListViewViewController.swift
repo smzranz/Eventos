@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ListViewViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     @IBOutlet var listTableView: UITableView!
@@ -19,6 +20,7 @@ var address = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
 //print("Loaded")
+        
         address = ["The Nursery, King's Stanley, Stonehouse GL10, UK","19 Oxford St Market Rasen LN8 3AJ,UK","25-34 Plymouth Rd, Barnt Green, Birmingham B45 8JF, UK",
                    "31 Cottage Ln, Ormskirk L39 3NE, UK",
                    "5 Gannet Cl, Brockworth, Gloucester GL3 4UT, UK",
@@ -50,9 +52,15 @@ var address = [String]()
                       "Faxquote",
                       "Sunnamplex",
                       "Lexiqvolax"]
+        listTableView.reloadData()
+        listTableView.showLoader()
+        _ = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(stopLoading), userInfo: nil, repeats: false)
         // Do any additional setup after loading the view.
     }
-
+    func stopLoading(){
+    listTableView.hideLoader()
+    
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
        

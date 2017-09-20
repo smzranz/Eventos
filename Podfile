@@ -9,13 +9,13 @@ target 'Eventos' do
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'GoogleMaps'
-  pod 'Skeleton'
+  # pod 'Skeleton'
 
   pod 'FirebaseCore'
   pod 'Firebase'
   pod 'Firebase/Database'
-pod 'TransitionButton'
-pod 'FontAwesome.swift'
+  pod 'FontAwesome.swift'
+ 
   target 'EventosTests' do
     inherit! :search_paths
     # Pods for testing

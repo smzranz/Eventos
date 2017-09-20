@@ -36,10 +36,11 @@ class StudioDetailViewController: UIViewController  {
         slidingContainerViewController.sliderView.appearance.fixedWidth = true
         slidingContainerViewController.sliderView.appearance.backgroundColor = UIColor.white
       //  slidingContainerViewController.sliderView.appearance.selectorColor = UIColor.blue
-        slidingContainerViewController.sliderView.appearance.selectedTextColor = UIColor.black
+        slidingContainerViewController.sliderView.appearance.selectedTextColor = ColorFile().getPrimaryColor()
         slidingContainerViewController.setCurrentViewControllerAtIndex(0)
         // Do any additional setup after loading the view.
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -49,6 +50,9 @@ class StudioDetailViewController: UIViewController  {
     // MARK: SlidingContainerViewControllerDelegate
     
     func slidingContainerViewControllerDidMoveToViewController(_ slidingContainerViewController: SlidingContainerViewController, viewController: UIViewController, atIndex: Int) {
+        
+        
+    
         
     }
     

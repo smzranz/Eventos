@@ -9,13 +9,13 @@ import UIKit
 import GooglePlaces
 import FirebaseCore
 import FirebaseDatabase
-import Skeleton
+
 
 
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var testview: GradientContainerView!
+   
     
     
     @IBOutlet weak var searchBtnOutlet: UIButton!

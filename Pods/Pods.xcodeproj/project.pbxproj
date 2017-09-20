@@ -7,310 +7,133 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02AC366191655F2DAD0B00ABCF311C29 /* TabmanSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD053105EE31DF13FAB7E41DA53F737 /* TabmanSeparator.swift */; };
-		0970CF579DE15C64F7557ED9F9347DFC /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDECCD75F207186535BE1049954EE2A /* NSArray+PureLayout.m */; };
-		0BBCF215072076740AC84DA9CE17A4FC /* TransitionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D337637D04E1727FC907FF68EA57AF /* TransitionOperation.swift */; };
-		0EE5C7DCBFCB546970FAC42BBE64E7FD /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C9088CB231A2A8E00B4080CD96168C /* ViewUtils.swift */; };
-		0FF91713A939580DB15BB423A2880424 /* TabmanButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76409B736AF65F5C715DE358139742 /* TabmanButtonBar.swift */; };
-		118D199223074233D1DF945EA0789091 /* Skeleton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56080C8D0BC7F3129CEF5673230DB843 /* Skeleton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		121CA775D97C1AC898C0EFF03A2BBC21 /* TabmanBar+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA5FF238A05F093787795BEC66D968 /* TabmanBar+Config.swift */; };
-		15BD8E244C57E82E92F111633A563976 /* TabmanItemMaskTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E168DA375BF844D7989D88093ED9007 /* TabmanItemMaskTransition.swift */; };
-		22642F1ACB01677977EE89468D702F12 /* TabmanBlockTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8CDF0E4B536CBF9B9E8AA23B07D22C /* TabmanBlockTabBar.swift */; };
-		228B3CC38B85A64CFF8DBF1D1F37ED72 /* GradientTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593055392C04DF07B984BAA5CACC2C1F /* GradientTransition.swift */; };
-		26766BDDAC1BFB2E0FFFA6A9CBED2296 /* PositionalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6041AD1E660ECAC31010F2D646E9F64 /* PositionalUtils.swift */; };
-		27A9DFDD4ADB961394733C288A3334A5 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC280215FEBAA1A313FFDFCC2B86285A /* PureLayout.framework */; };
-		2D3747C5861B0FC0ECAA806A45A42AD4 /* UIViewController+PageboyExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1247F2967E5A32926A98960F56EA26 /* UIViewController+PageboyExtras.swift */; };
-		306920C2CB1C9B2D2B3535808ECF1E68 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8364E9F2051E678BEA079D604431080A /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		321784C731B929922F6E6CB8F405E8A2 /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E631471697E5990371885A8CF0270 /* PureLayout-dummy.m */; };
-		3A4EB5E358698AE04D31E733E6BBAB35 /* TabmanBarTransitionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F63EDE73852AE19E4D1C6B7491505 /* TabmanBarTransitionStore.swift */; };
-		3AAE47E38E8882E36C20EE044EC4C76F /* PageboyAutoScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7A079BAAB7A612A61711193C1A3F0B /* PageboyAutoScroller.swift */; };
-		41266FDCE49460A69D0F6E8977BA7DB7 /* Pageboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE4E9F361449D0A3021467837FDFC30 /* Pageboy.framework */; };
-		43AB3AEF1E6B57FFAA6D39CA8BE2B9FA /* TabmanBar+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E007BFB0E63021837A559E8F54662843 /* TabmanBar+Item.swift */; };
-		4D516FF2A8747D60D63675FCEE46A3E8 /* GradientsOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21DE2E109C0D018043E3ED9C11D94E /* GradientsOwner.swift */; };
-		4E74DFAA444392E32D603CCB25D259A1 /* TabmanIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBAE821A0EE08AB521DAC2A14987EC8 /* TabmanIndicator.swift */; };
-		5364C56E4E133BD78455754E58488A34 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E90457790E69F7F21C5C96AE5EE323F /* UIView+AutoLayout.swift */; };
-		5401ADC628289156C342A9801964CF81 /* TabmanIndicatorTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CD544199195DCBC9E9D3F110AF3E5 /* TabmanIndicatorTransition.swift */; };
-		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 30A20AEAFCE4DCA33024E66A098C28C8 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55A71E52485FD01DCE59E5E38FA6879F /* TabmanFixedButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C411F4ABE89451A1428A9A4B29E509 /* TabmanFixedButtonBar.swift */; };
-		563563B4B21788C8EF80CD0D60F9009E /* Skeleton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB11F18DDEC5255659E2A516879CFCC /* Skeleton-dummy.m */; };
-		57FF626B5104B45F61ACC4955C25997E /* UIView+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F2ED569FFE922102E4941BC339F1 /* UIView+Localization.swift */; };
-		58E7FA6E028ADBE79413D15AFC1361A3 /* TabmanScrollingButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14DD7BD3E73EDAE706B44B266214A99 /* TabmanScrollingButtonBar.swift */; };
-		593283227111423757C1A85B2C8F601D /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A1A616730122B2D394615E9D929B30 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D1C7C2D25FEC5ECED2F7A6DB85E4DB3 /* GradientContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BD6DBEB686594D589E4B2C53BCA3CC /* GradientContainerView.swift */; };
-		628BA695793D3D2C9DCF4A091F7EA294 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 116740C965E27F35C9A5AA802DAABC69 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6392F6296428F71D54DE5A34FFAF3F8B /* TransitionOperation+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8C95CA189315645753E9E42E1BF59 /* TransitionOperation+Action.swift */; };
-		66190409FD3947A67C2696C0C644F5F9 /* PageboyViewController+ScrollDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267450F756FA08059122CC5CA79DF2FC /* PageboyViewController+ScrollDetection.swift */; };
-		7024E61A79B0F6E60C5128A64E2728D0 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E680F3C2DDE2381B3F9DBCCFDADC165 /* UIView+Utils.swift */; };
-		742F9789EB4CCF4C757BEF4AB091647F /* TabmanViewController+Embedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2FB3AA78A9BC2C9BBA9892CF08DB33 /* TabmanViewController+Embedding.swift */; };
-		7AC21F2D9BF772A57390916774948CB6 /* TabmanBar+Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39646080DFB9AC757DC23220DE12DD5A /* TabmanBar+Indicator.swift */; };
-		7E9965C2633B18B16D991C92EA3AD74D /* ContentViewScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63626CFDFD5685F074761D2AC34E36D2 /* ContentViewScrollView.swift */; };
-		7EB3D6B05453B4A3F00D37DC3F5FD7D9 /* TabmanBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6697C960BE5283A4020FDA7E2B04AAD7 /* TabmanBar.swift */; };
-		7F84CD65B6EF39F1A3E0D7FBA5DE449E /* PageboyViewController+Transitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74E4DE82C63D5C7F22D67F2BAB7E957 /* PageboyViewController+Transitioning.swift */; };
-		7FCC8BF1B9CF67210EE14FB4E95E8369 /* Pageboy.h in Headers */ = {isa = PBXBuildFile; fileRef = 496525988332C1043700F2AA67ABAFB6 /* Pageboy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BE728574B12B164C80D0EF0243DB57C /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8226890A15874B3D9BB4D3C094D24193 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B2FA9F3C3B32EF55483D2155DE9233 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		83D123347F5C799AD77539A0DBC6D6E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C182BF427B2E4E650E9AABA3954CF2B8 /* Foundation.framework */; };
-		856B453960244C76FFE4DB442C2827F4 /* Pods-Eventos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32373336917D321C9889C69E5CCF6665 /* Pods-Eventos-dummy.m */; };
-		87219CB6D4426A98B46386D8D9AF1F59 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B689BE84C9950A4F90591D615F907806 /* NSLayoutConstraint+PureLayout.m */; };
-		8B79FA7549D1FAF11522E8245F0BC276 /* TabmanTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF9C1480FAA09E784F39A2CFF93F0D7 /* TabmanTransition.swift */; };
-		8FEEE89474B5AA08315D331E3931A7E9 /* TabmanBar+Insets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F9F7D7D5ADFDFA154E1C30FF837C0 /* TabmanBar+Insets.swift */; };
-		91189665014AD409CBE109C011107F59 /* TabmanBarBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11211768404BCDFD02B1A0EF140DE149 /* TabmanBarBackgroundView.swift */; };
-		93D51748565CFEB9490FBA7DA993C5C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C182BF427B2E4E650E9AABA3954CF2B8 /* Foundation.framework */; };
-		95DB2163CD937E663ADF26D4ADE53F5D /* TabmanBar+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E642E14A30D9572624D3B0E89E81F2A /* TabmanBar+Appearance.swift */; };
-		9A60A7E9C380A6E61152813CE1D19CA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C182BF427B2E4E650E9AABA3954CF2B8 /* Foundation.framework */; };
-		9B4E5688B3C31CB65FEDA8101D2CAE1C /* TabmanItemColorCrossfadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E231BAB587A74E9CE71ED8737DDB991B /* TabmanItemColorCrossfadeTransition.swift */; };
-		9EBD00F457CB4BC279DA0AAD14BD66B7 /* Tabman-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E8F2A39D773859CC0D6BDE0E35F88C /* Tabman-dummy.m */; };
+		24065029085002EAC70A3422A7D39EC1 /* FontAwesome.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDFCF8C180413EF7A878BAD2D41044D6 /* FontAwesome.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AE0F58A0988D92438C1448C861A154C /* FontAwesomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6781F0E72B7877F2FBC2A07EA8090C5 /* FontAwesomeImageView.swift */; };
+		41FAD1CDCD9272883A6CF33FE8FF44E0 /* FontAwesomeSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE94630CBEB7CCFB55D4BC3DD8DD50 /* FontAwesomeSegmentedControl.swift */; };
+		4EFA908CA9A3E9A800B618AC902F5990 /* FontAwesome.swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0541F9A6DEA6D8FB3866E5E2F3C9DC48 /* FontAwesome.swift.bundle */; };
+		522BEF444AEAA78D1747B62ED49C688E /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031F5DA7B8A793647F788463D93ED72 /* FontAwesomeView.swift */; };
+		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D436487BF9B98AF16A7A710C80AC6F5 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		589D19F8FC8F1E9D6360D950D26A7138 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5034652C32C9C9BA4A1962372625F4B /* FontAwesome.swift */; };
+		5AD3E160E28F5EFC4D17A8668CA322BD /* FontAwesomeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6A8E016A97CF4B567C819C027362A /* FontAwesomeBarButtonItem.swift */; };
+		65D01C54FCF24BF6E6FBCD49F6E7CCB1 /* FontAwesomeTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F0F60740F55A40BD766C90B16C6AE /* FontAwesomeTabBarItem.swift */; };
+		684E126B8E890761BBB1A4EB590EA1F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */; };
+		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0674644AFB49C4CF3C36D907B12B1CD /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ECD9D60228CE77E1A5AAD2B0D576A93 /* Pods-Eventos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32373336917D321C9889C69E5CCF6665 /* Pods-Eventos-dummy.m */; };
+		93D51748565CFEB9490FBA7DA993C5C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
 		9F25AFBDD3EBEFDF5F63F66C7C2D9927 /* Pods-EventosTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAE159BE16E6579296E62343D6AC3F1 /* Pods-EventosTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1EE0270B86EC45185415E1469C0BA40 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7852670A08ECC5631E3083110E338A /* UIView+AutoLayout.swift */; };
-		AA86F7F4C12077032FEB18A382C65BBA /* TabmanScrollingBarIndicatorTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CC4BA56F1EF8BE0937BA548344CEF3 /* TabmanScrollingBarIndicatorTransition.swift */; };
-		ABA28245985650B7293797F7FE97422B /* Tabman.h in Headers */ = {isa = PBXBuildFile; fileRef = FD22D0047540B498FC78059ED496CB30 /* Tabman.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEB82D51FEFA45505BF413ACF5819F39 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10617C17EAADB0BB20B64BA6F4740A10 /* Direction.swift */; };
-		B068EE9BB9B63FD32A3450FF96177700 /* PageboyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662789505406094F7ACE94E4F3C91181 /* PageboyViewController.swift */; };
-		B092894DCCFD6E47B4578CC5AF8C0A61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C182BF427B2E4E650E9AABA3954CF2B8 /* Foundation.framework */; };
-		B3113ED743E849E32C3AF78D7C2D9E59 /* TabmanChevronView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E265A0257750C0354F90C85771F5B /* TabmanChevronView.swift */; };
-		B410901B4FBA246588F8CC15D8E1E16D /* TabmanLineIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A966CA380462F4D3EB1FAA0779C60F /* TabmanLineIndicator.swift */; };
-		B5B9A853FAF3C5E34AB3EC07CCC18FF9 /* TabmanStaticButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46576CD27B27AF735E10D3159E2C7836 /* TabmanStaticButtonBar.swift */; };
-		B5E41824EA0F0A6439B0982811D0E120 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 618109CBF6C121531A86A9B932EF9836 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6D2773E545EF2ED0FE4F04A3977DD28 /* Pageboy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F3D443A837DF384FF0732CD2FB07D80 /* Pageboy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8533DEF30FABD922FD220730CE705AA /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9D7CFE02B6E23924D4F400E7DD46E51 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBB95C4E3E77D3E6E248285D61943230 /* TabmanItemTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC8CD95AC9EEED9374530E97C6E5516 /* TabmanItemTransition.swift */; };
-		BBE48CE663C644637F86CE45E6E740B3 /* TabmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E465E3EBC695BB890724EFCF4BFAE /* TabmanViewController.swift */; };
-		BDEAE408C79E711D368770EEF9E76388 /* TabmanBar+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C530562E217CD295227DC40BD8529E2 /* TabmanBar+Protocols.swift */; };
-		C1AE10ED6DCE0557F8D168AA3206F9B2 /* TabmanCircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9942BBFD788183341A03A55606AC95E5 /* TabmanCircularView.swift */; };
+		B092894DCCFD6E47B4578CC5AF8C0A61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		BA158509B4673EB6F8D0D12961169AB1 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E78C4FB8301D77FD2179DB3DA84BD5 /* Enum.swift */; };
 		C1DCA9D8B2624CF7DEAA351425CC5D2A /* Pods-EventosTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D310F21DD39FE9D42C8DA9D413A82DA /* Pods-EventosTests-dummy.m */; };
-		C4B2A3DF61897F33C9D24132843E040F /* Tabman-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB04811C2297735566816093E3F06B3B /* Tabman-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8059010F9BC1A33F168353121A1A80F /* TabmanClearIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F3F3F0D4F8C740D0D3E0EFEE26D94 /* TabmanClearIndicator.swift */; };
-		C94189F7A9D77F402617AB58AFFE12E8 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECFA5C053BDFC55583BB554244F328F /* ALView+PureLayout.m */; };
-		CA6B1AF47EA6CF6965D861B6F3CF1A29 /* TabmanBar+Construction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59214D706BA74CA1590CC398276A93F /* TabmanBar+Construction.swift */; };
-		CA7794AC05211ED2E7B9BC23A92F415A /* TabmanDotIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFADE6393E4A719D95D9EF746424D35C /* TabmanDotIndicator.swift */; };
-		CB59D8A580A26546C47F00EF93562061 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C182BF427B2E4E650E9AABA3954CF2B8 /* Foundation.framework */; };
-		CB86507EF3485E471E5EE1B3782468D8 /* GradientPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B628E921EE81D14152DB919F473CB2 /* GradientPoint.swift */; };
-		D8A9DC17BF2BD6995CA0C7AC3B894960 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20D8E241B028C4FBE12141B95C3D62 /* GradientView.swift */; };
-		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F65D827F52AFAE703140F02768E7CC /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC1C4EC41BFA3C65B35E09E78313958C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C182BF427B2E4E650E9AABA3954CF2B8 /* Foundation.framework */; };
-		DCE16B098DD15DD6E076C7C51F308402 /* PageboyViewController+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EF26A23B8BE8A33ADDA819CD008808 /* PageboyViewController+Extras.swift */; };
-		DE98DD55467BC71410A3019537520A22 /* Pageboy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3947538DA7B757F09C8C730CF72655DF /* Pageboy-dummy.m */; };
-		E0928AC444F27ECD6C65CE5E0E8B507A /* CAGradientLayer+Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080342F1EE9BAC09E880FD54982E11EA /* CAGradientLayer+Slide.swift */; };
-		E15A1D7DF702DB6CF1F440850F35D26A /* UIPageViewController+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F484BB31A194D1F7AFE4921CFEE3079A /* UIPageViewController+ScrollView.swift */; };
-		E1E0F70522BEBD8BED243ECA642D8D69 /* TabmanStaticBarIndicatorTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3807042781A880BE023FB18D5B8624F3 /* TabmanStaticBarIndicatorTransition.swift */; };
-		E21E564411D01743A29432A1A1833735 /* Pods-Eventos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE3A4F343868B11EE9C9C11E23C45B7 /* Pods-Eventos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E868655C53EF705A757ECFE9EC1F6A90 /* TabmanViewController+Insetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C352E2608E30CAA4388D962DA309C /* TabmanViewController+Insetting.swift */; };
-		EFB9B9517E2970DC2FD26B57E2DD33C1 /* TabmanBlockIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27859251039EFD20EF35C27E8AAB561 /* TabmanBlockIndicator.swift */; };
-		F296B7C7B8AC4EADE3FA44B4216A7B73 /* TabmanChevronIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E6CEE2F381E19480F9817E591CBFD /* TabmanChevronIndicator.swift */; };
-		F2ADEDD8646AD23D2F6A95ABB4F64456 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C182BF427B2E4E650E9AABA3954CF2B8 /* Foundation.framework */; };
-		F3F1117A599A2BBCA366FCD6D336C76D /* PageboyViewController+Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6528DEC6A3C9AF6F0B8522853497F7EF /* PageboyViewController+Management.swift */; };
-		F79F5C67FA5F4B2B89C8FDCC39FDD44D /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B3834E5C9FB5179138D0F49A50630B /* ImageUtils.swift */; };
-		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCAA8DE4FDEC942F3C230390EA61EBF /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F05C19D5ACFA4BA4E894504BF0834 /* GoogleToolboxForMac-dummy.m */; };
-		FB023C1AE5067D4DDD81716B2863B0F6 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BD08A66EEC10F4DC3E6466EEDF742A9 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC6751E6BE8F12E142BB7863E9C0D25F /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62286CE076BB9BD582F8E139FF1F6FF /* ColorUtils.swift */; };
-		FDDB640AA6E0373F88EFA1D7661ED19E /* TabmanLineBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56063FDC18C279FE61EE8D4BC5078993 /* TabmanLineBar.swift */; };
+		C3079113A27F987B6889C2E9C05A10DD /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF0B26FB2278578CA17CB953160695EA /* FontAwesome.otf */; };
+		C4EDDFD00880AD17F1BB7D66948F1D21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		C879A43B7C8CC16E986D40441C2F2878 /* FontAwesomeImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A45C9E3BCA1B73CC8BEA5A37F2F22B /* FontAwesomeImageRepresentable.swift */; };
+		CBD91B03AC387775166237F805EABC3A /* FontAwesomeStateRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40704BF4F72000F48DAEC79FFF0A0FCE /* FontAwesomeStateRequirement.swift */; };
+		D5783C1C5C643DE33FE936621BAE8277 /* Pods-Eventos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE3A4F343868B11EE9C9C11E23C45B7 /* Pods-Eventos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAC2CACA22AE100EB261D377EC6FBE3C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55C580E1FC5B6E9F442FE42A9553FEA /* CoreText.framework */; };
+		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = DB7E0B78E9B768B889225112CB8E6E09 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F751411AFFD1AF2C24C85FB5DC90CF15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F8905A6B66B155DBA8D2415FEEC12 /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB11489C5EF3333CBC55CA88A9D83D9 /* GoogleToolboxForMac-dummy.m */; };
+		FB64A64BD408EE7BBD70A4B048315C7D /* FontAwesomeTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE07E8E488BD6C3F1A25C2F091D8A55 /* FontAwesomeTextRepresentable.swift */; };
+		FD8C615CEC6F1EBDB63BF3240583D2F3 /* FontAwesome.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A836A927854564C225C77FC24174898 /* FontAwesome.swift-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		26488ABDD28D90815E3063548DB9BE58 /* PBXContainerItemProxy */ = {
+		86522B873A9C59F781A132540262E3E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 00103D6C821BE85971C563025527BA5D;
 			remoteInfo = GoogleToolboxForMac;
 		};
-		418AC34FD17974B701FD7D51C1AB534E /* PBXContainerItemProxy */ = {
+		92ED4A5494AB91E17B5141E0F3DE73BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D1A536D32A3AB205243F6F605B3B5BCF;
-			remoteInfo = Pageboy;
+			remoteGlobalIDString = CD11672B6619C297B6AEE3DFB8213C59;
+			remoteInfo = FontAwesome.swift;
 		};
-		8982DDEA1D2B49D386672D89E483CA9B /* PBXContainerItemProxy */ = {
+		A1E7ADA9414728070F39599079B02152 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D1A536D32A3AB205243F6F605B3B5BCF;
-			remoteInfo = Pageboy;
-		};
-		972B77D808351F695FF557128D33F09A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 20193CC5EFDCD8272321DCD291EE3122;
-			remoteInfo = PureLayout;
-		};
-		B38AD8CC1ADFA2C11EC250B7760B1391 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 20193CC5EFDCD8272321DCD291EE3122;
-			remoteInfo = PureLayout;
-		};
-		B6AECDB8A9CF50D35A0221E9D4B8219D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 383A7A8BBBEB736C5DF0D3DEAF18BF52;
-			remoteInfo = Tabman;
-		};
-		C5B89358B4260DDD42A023E5CCCC4D6E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6DBBD7370475B860D04D40D5B1279657;
-			remoteInfo = Skeleton;
+			remoteGlobalIDString = 6991F49AED797519343B1F4591001691;
+			remoteInfo = "FontAwesome.swift-FontAwesome.swift";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		064DEB2FD9D216177DDF6BE3343100DA /* Skeleton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Skeleton.framework; path = Skeleton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B114C9664A2D03DA39C118BADAFCE0 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		0541F9A6DEA6D8FB3866E5E2F3C9DC48 /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FontAwesome.swift.bundle; path = FontAwesome.swift.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		068A06AF7940754A0EEEF8101E516A60 /* Pods-EventosTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EventosTests-resources.sh"; sourceTree = "<group>"; };
-		06DCC702EEDE74E8FC7BB7817838B34A /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		080342F1EE9BAC09E880FD54982E11EA /* CAGradientLayer+Slide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAGradientLayer+Slide.swift"; path = "Skeleton/CAGradientLayer+Slide.swift"; sourceTree = "<group>"; };
-		09D7820E3689B86DE719699EC822846B /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		0AC6D4200DF38C3D6418BA663F18BC15 /* Pods-EventosTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EventosTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0B28891F6F86B00FBF716B4972EFAFDE /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE3A4F343868B11EE9C9C11E23C45B7 /* Pods-Eventos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Eventos-umbrella.h"; sourceTree = "<group>"; };
-		10617C17EAADB0BB20B64BA6F4740A10 /* Direction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Direction.swift; path = Skeleton/Direction.swift; sourceTree = "<group>"; };
-		11211768404BCDFD02B1A0EF140DE149 /* TabmanBarBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanBarBackgroundView.swift; path = Sources/Tabman/TabmanBar/Components/Background/TabmanBarBackgroundView.swift; sourceTree = "<group>"; };
-		116740C965E27F35C9A5AA802DAABC69 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
-		11EA5FF238A05F093787795BEC66D968 /* TabmanBar+Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TabmanBar+Config.swift"; path = "Sources/Tabman/TabmanBar/TabmanBar+Config.swift"; sourceTree = "<group>"; };
-		12B2FA9F3C3B32EF55483D2155DE9233 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
-		133C4AEA00268F9DC8AA0975B0106C74 /* Tabman.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Tabman.modulemap; sourceTree = "<group>"; };
-		1AD053105EE31DF13FAB7E41DA53F737 /* TabmanSeparator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanSeparator.swift; path = Sources/Tabman/TabmanBar/Components/Separator/TabmanSeparator.swift; sourceTree = "<group>"; };
-		1BE4E9F361449D0A3021467837FDFC30 /* Pageboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C44AC4EDC5FEA599CAA4B05F9CE76F3 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		1C530562E217CD295227DC40BD8529E2 /* TabmanBar+Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TabmanBar+Protocols.swift"; path = "Sources/Tabman/TabmanBar/TabmanBar+Protocols.swift"; sourceTree = "<group>"; };
-		1DCAA8DE4FDEC942F3C230390EA61EBF /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
-		1E680F3C2DDE2381B3F9DBCCFDADC165 /* UIView+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Utils.swift"; path = "Sources/Tabman/Utilities/UIView+Utils.swift"; sourceTree = "<group>"; };
-		1F7852670A08ECC5631E3083110E338A /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout.swift"; path = "Sources/Pageboy/Utilities/UIView+AutoLayout.swift"; sourceTree = "<group>"; };
 		210DC8D292D7D466A83BF57F3045343F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23F5A27CDA889C5928B643FEC616FF3A /* Pageboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pageboy.framework; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		24A810F19948B52C1CAD7A980CEC8C0B /* GooglePlacePicker.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlacePicker.bundle; path = Frameworks/GooglePlacePicker.framework/Versions/A/Resources/GooglePlacePicker.bundle; sourceTree = "<group>"; };
-		267450F756FA08059122CC5CA79DF2FC /* PageboyViewController+ScrollDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+ScrollDetection.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+ScrollDetection.swift"; sourceTree = "<group>"; };
-		2BC8CD95AC9EEED9374530E97C6E5516 /* TabmanItemTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanItemTransition.swift; path = Sources/Tabman/TabmanBar/Transitioning/ItemTransition/TabmanItemTransition.swift; sourceTree = "<group>"; };
-		2C43DBEEA1343FF1F70D94C4E6F3093F /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
-		2CDECCD75F207186535BE1049954EE2A /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
-		30A20AEAFCE4DCA33024E66A098C28C8 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		268E7E236744E0CD4337C239CF40FF85 /* Pods_Eventos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Eventos.framework; path = "Pods-Eventos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27223F5274E24DE023A3B3B42F79A1B7 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		2CE07E8E488BD6C3F1A25C2F091D8A55 /* FontAwesomeTextRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTextRepresentable.swift; path = FontAwesome/FontAwesomeTextRepresentable.swift; sourceTree = "<group>"; };
+		2D436487BF9B98AF16A7A710C80AC6F5 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		32373336917D321C9889C69E5CCF6665 /* Pods-Eventos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Eventos-dummy.m"; sourceTree = "<group>"; };
+		32F846CEE04AA6DE0BE49BA0897CC77E /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		34B15A3888809542EA2DE554495730AE /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		34B6467C025A0D797E3CF362A3DA8D5B /* Pods-Eventos-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Eventos-resources.sh"; sourceTree = "<group>"; };
-		3807042781A880BE023FB18D5B8624F3 /* TabmanStaticBarIndicatorTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanStaticBarIndicatorTransition.swift; path = Sources/Tabman/TabmanBar/Transitioning/IndicatorTransition/TabmanStaticBarIndicatorTransition.swift; sourceTree = "<group>"; };
-		3947538DA7B757F09C8C730CF72655DF /* Pageboy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pageboy-dummy.m"; sourceTree = "<group>"; };
-		39646080DFB9AC757DC23220DE12DD5A /* TabmanBar+Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TabmanBar+Indicator.swift"; path = "Sources/Tabman/TabmanBar/TabmanBar+Indicator.swift"; sourceTree = "<group>"; };
-		3BD08A66EEC10F4DC3E6466EEDF742A9 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
-		4325129251F5AAE68F20C9E57045B117 /* Pageboy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pageboy.xcconfig; sourceTree = "<group>"; };
+		3724ED08C3BA6E41D09E310B10BDD79C /* Pods_EventosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EventosTests.framework; path = "Pods-EventosTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A836A927854564C225C77FC24174898 /* FontAwesome.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesome.swift-dummy.m"; sourceTree = "<group>"; };
+		3F8F8905A6B66B155DBA8D2415FEEC12 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		40704BF4F72000F48DAEC79FFF0A0FCE /* FontAwesomeStateRequirement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeStateRequirement.swift; path = FontAwesome/FontAwesomeStateRequirement.swift; sourceTree = "<group>"; };
 		43E8BD2CC5DFF55D20D3CC46AD358943 /* Pods-Eventos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Eventos-frameworks.sh"; sourceTree = "<group>"; };
-		4634FD156B5CEF39B8F86F1F947536F1 /* Skeleton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Skeleton.modulemap; sourceTree = "<group>"; };
-		46576CD27B27AF735E10D3159E2C7836 /* TabmanStaticButtonBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanStaticButtonBar.swift; path = Sources/Tabman/TabmanBar/Styles/Abstract/TabmanStaticButtonBar.swift; sourceTree = "<group>"; };
-		487F3F3F0D4F8C740D0D3E0EFEE26D94 /* TabmanClearIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanClearIndicator.swift; path = Sources/Tabman/TabmanBar/Components/Indicator/Styles/TabmanClearIndicator.swift; sourceTree = "<group>"; };
-		48A966CA380462F4D3EB1FAA0779C60F /* TabmanLineIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanLineIndicator.swift; path = Sources/Tabman/TabmanBar/Components/Indicator/Styles/TabmanLineIndicator.swift; sourceTree = "<group>"; };
+		47A45C9E3BCA1B73CC8BEA5A37F2F22B /* FontAwesomeImageRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageRepresentable.swift; path = FontAwesome/FontAwesomeImageRepresentable.swift; sourceTree = "<group>"; };
 		48F1C821E89494A23A5A2F9BA2420CFA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		496525988332C1043700F2AA67ABAFB6 /* Pageboy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Pageboy.h; path = Sources/Pageboy/Pageboy.h; sourceTree = "<group>"; };
 		4D310F21DD39FE9D42C8DA9D413A82DA /* Pods-EventosTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EventosTests-dummy.m"; sourceTree = "<group>"; };
-		4ECFA5C053BDFC55583BB554244F328F /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
-		56063FDC18C279FE61EE8D4BC5078993 /* TabmanLineBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanLineBar.swift; path = Sources/Tabman/TabmanBar/Styles/TabmanLineBar.swift; sourceTree = "<group>"; };
-		56080C8D0BC7F3129CEF5673230DB843 /* Skeleton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Skeleton-umbrella.h"; sourceTree = "<group>"; };
-		575F9F7D7D5ADFDFA154E1C30FF837C0 /* TabmanBar+Insets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TabmanBar+Insets.swift"; path = "Sources/Tabman/TabmanBar/TabmanBar+Insets.swift"; sourceTree = "<group>"; };
-		593055392C04DF07B984BAA5CACC2C1F /* GradientTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientTransition.swift; path = Skeleton/GradientTransition.swift; sourceTree = "<group>"; };
-		5A1F05C19D5ACFA4BA4E894504BF0834 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
-		5BE728574B12B164C80D0EF0243DB57C /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
-		5E0C0FB6C03381BD069C7E6B57E06810 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
-		5E642E14A30D9572624D3B0E89E81F2A /* TabmanBar+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TabmanBar+Appearance.swift"; path = "Sources/Tabman/TabmanBar/TabmanBar+Appearance.swift"; sourceTree = "<group>"; };
-		618109CBF6C121531A86A9B932EF9836 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
-		627C352E2608E30CAA4388D962DA309C /* TabmanViewController+Insetting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TabmanViewController+Insetting.swift"; path = "Sources/Tabman/TabmanViewController+Insetting.swift"; sourceTree = "<group>"; };
-		63626CFDFD5685F074761D2AC34E36D2 /* ContentViewScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentViewScrollView.swift; path = Sources/Tabman/Utilities/ContentViewScrollView.swift; sourceTree = "<group>"; };
-		64F2154AC1562D183B1C79ECA7997C23 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		6528DEC6A3C9AF6F0B8522853497F7EF /* PageboyViewController+Management.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Management.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+Management.swift"; sourceTree = "<group>"; };
-		6563A5C7736F43518401A5F02DBD99D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		662789505406094F7ACE94E4F3C91181 /* PageboyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewController.swift; path = Sources/Pageboy/PageboyViewController.swift; sourceTree = "<group>"; };
-		6697C960BE5283A4020FDA7E2B04AAD7 /* TabmanBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanBar.swift; path = Sources/Tabman/TabmanBar/TabmanBar.swift; sourceTree = "<group>"; };
+		52F6A8E016A97CF4B567C819C027362A /* FontAwesomeBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeBarButtonItem.swift; path = FontAwesome/FontAwesomeBarButtonItem.swift; sourceTree = "<group>"; };
+		54AE94630CBEB7CCFB55D4BC3DD8DD50 /* FontAwesomeSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeSegmentedControl.swift; path = FontAwesome/FontAwesomeSegmentedControl.swift; sourceTree = "<group>"; };
+		5B53C1F8DC7B0DC071DB4CF61BA5DEDE /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FontAwesome_swift.framework; path = FontAwesome.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		670E9159373BAB81496868B21BE067DF /* Pods-Eventos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Eventos-acknowledgements.plist"; sourceTree = "<group>"; };
-		6793939A8DD53BFE4F0F9DD65AD606C5 /* Tabman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Tabman.framework; path = Tabman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6932AE607B0DA6B33BDDE4BE90ADC9F2 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		6BADC4A19F4208E44CB2F75BA2CF0FE8 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		68E2FFD64E5A8A6123CEE30A7A1AC235 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		6C86513AA2B64A71BE2A9D7462986DF7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CDBD79B83C134C60AFB49199B8040B3 /* Pods-Eventos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Eventos.modulemap"; sourceTree = "<group>"; };
-		6E168DA375BF844D7989D88093ED9007 /* TabmanItemMaskTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanItemMaskTransition.swift; path = Sources/Tabman/TabmanBar/Transitioning/ItemTransition/TabmanItemMaskTransition.swift; sourceTree = "<group>"; };
-		6E76409B736AF65F5C715DE358139742 /* TabmanButtonBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanButtonBar.swift; path = Sources/Tabman/TabmanBar/Styles/Abstract/TabmanButtonBar.swift; sourceTree = "<group>"; };
-		6E7A079BAAB7A612A61711193C1A3F0B /* PageboyAutoScroller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyAutoScroller.swift; path = Sources/Pageboy/Components/PageboyAutoScroller.swift; sourceTree = "<group>"; };
-		6FFA41D22B59751C603B0034637BAD2F /* Skeleton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Skeleton.xcconfig; sourceTree = "<group>"; };
-		79C9088CB231A2A8E00B4080CD96168C /* ViewUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewUtils.swift; path = Sources/Tabman/TabmanBar/Utilities/ViewUtils.swift; sourceTree = "<group>"; };
-		7B3F8CC209127BE1BBDEA38E3433161E /* Pods_EventosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EventosTests.framework; path = "Pods-EventosTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		80932FEFF2DB445EAF9551FCD126BF38 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
-		8364E9F2051E678BEA079D604431080A /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		6DD65D9A3FE072DBB9DD974A9A550E76 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		6FB11489C5EF3333CBC55CA88A9D83D9 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		71B63E358F022EB2105DEF5DE7999699 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8031F5DA7B8A793647F788463D93ED72 /* FontAwesomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeView.swift; path = FontAwesome/FontAwesomeView.swift; sourceTree = "<group>"; };
 		853417E83093DB74AF0C5016E96F0F63 /* Pods-EventosTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EventosTests-frameworks.sh"; sourceTree = "<group>"; };
-		868BA2944AB46085BF4A3F0BDBED8A96 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		86A1A616730122B2D394615E9D929B30 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
-		86EF26A23B8BE8A33ADDA819CD008808 /* PageboyViewController+Extras.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Extras.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+Extras.swift"; sourceTree = "<group>"; };
-		883E86BDD21160DD4B3C5BA0F9D0CC85 /* Tabman-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tabman-prefix.pch"; sourceTree = "<group>"; };
-		89CC4BA56F1EF8BE0937BA548344CEF3 /* TabmanScrollingBarIndicatorTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanScrollingBarIndicatorTransition.swift; path = Sources/Tabman/TabmanBar/Transitioning/IndicatorTransition/TabmanScrollingBarIndicatorTransition.swift; sourceTree = "<group>"; };
-		8B20D8E241B028C4FBE12141B95C3D62 /* GradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = Skeleton/GradientView.swift; sourceTree = "<group>"; };
-		8B4CD544199195DCBC9E9D3F110AF3E5 /* TabmanIndicatorTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanIndicatorTransition.swift; path = Sources/Tabman/TabmanBar/Transitioning/IndicatorTransition/TabmanIndicatorTransition.swift; sourceTree = "<group>"; };
-		8C5F63EDE73852AE19E4D1C6B7491505 /* TabmanBarTransitionStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanBarTransitionStore.swift; path = Sources/Tabman/TabmanBar/Transitioning/TabmanBarTransitionStore.swift; sourceTree = "<group>"; };
-		8E90457790E69F7F21C5C96AE5EE323F /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout.swift"; path = "Sources/Tabman/Utilities/UIView+AutoLayout.swift"; sourceTree = "<group>"; };
-		8F3D443A837DF384FF0732CD2FB07D80 /* Pageboy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-umbrella.h"; sourceTree = "<group>"; };
-		91BD6DBEB686594D589E4B2C53BCA3CC /* GradientContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientContainerView.swift; path = Skeleton/GradientContainerView.swift; sourceTree = "<group>"; };
-		9235750E68797DF6486F8808873DF6DF /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
-		9276C72E323D6758FDED7AC7387A6BE9 /* Skeleton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Skeleton-prefix.pch"; sourceTree = "<group>"; };
+		8D1F0F60740F55A40BD766C90B16C6AE /* FontAwesomeTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTabBarItem.swift; path = FontAwesome/FontAwesomeTabBarItem.swift; sourceTree = "<group>"; };
+		93897FA9B820AD14441E5449413695B9 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95A7318A8DCD61B5962862EE64323493 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
 		96F537FA619D27CE6943F3A0592F8C24 /* Pods-EventosTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-EventosTests.modulemap"; sourceTree = "<group>"; };
-		98634D339DCB3BE38208489F8310C8B0 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
-		9942BBFD788183341A03A55606AC95E5 /* TabmanCircularView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanCircularView.swift; path = Sources/Tabman/TabmanBar/Components/Indicator/Views/TabmanCircularView.swift; sourceTree = "<group>"; };
-		9C5E265A0257750C0354F90C85771F5B /* TabmanChevronView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanChevronView.swift; path = Sources/Tabman/TabmanBar/Components/Indicator/Views/TabmanChevronView.swift; sourceTree = "<group>"; };
-		9CB11F18DDEC5255659E2A516879CFCC /* Skeleton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Skeleton-dummy.m"; sourceTree = "<group>"; };
-		9D4F976DD10F0316BD4B004BE80066F8 /* Tabman.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Tabman.xcconfig; sourceTree = "<group>"; };
-		9D8361A5A978192723AB4104D14CB32A /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
-		A2E92DBED06C7F640C81FF70D7832D97 /* Pods_Eventos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Eventos.framework; path = "Pods-Eventos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A40E465E3EBC695BB890724EFCF4BFAE /* TabmanViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanViewController.swift; path = Sources/Tabman/TabmanViewController.swift; sourceTree = "<group>"; };
-		A413756194E8B2F271B3447A45B03A8C /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlacePicker.framework; path = Frameworks/GooglePlacePicker.framework; sourceTree = "<group>"; };
-		A59214D706BA74CA1590CC398276A93F /* TabmanBar+Construction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TabmanBar+Construction.swift"; path = "Sources/Tabman/TabmanBar/TabmanBar+Construction.swift"; sourceTree = "<group>"; };
-		A64E6CEE2F381E19480F9817E591CBFD /* TabmanChevronIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanChevronIndicator.swift; path = Sources/Tabman/TabmanBar/Components/Indicator/Styles/TabmanChevronIndicator.swift; sourceTree = "<group>"; };
-		A91EC4336324931786FA87B35D4C9854 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9F65D827F52AFAE703140F02768E7CC /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
-		ABD31756B119AD9B4DF0CBC34D17ADC1 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
-		ABF9C1480FAA09E784F39A2CFF93F0D7 /* TabmanTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanTransition.swift; path = Sources/Tabman/TabmanBar/Transitioning/TabmanTransition.swift; sourceTree = "<group>"; };
-		AC70673C42FCFB758C0DCC0C85647468 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE9F122D35FAAF94DBF5B40B62B029F7 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
-		AF07F2ED569FFE922102E4941BC339F1 /* UIView+Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Localization.swift"; path = "Sources/Pageboy/Utilities/UIView+Localization.swift"; sourceTree = "<group>"; };
+		9A20BDD9E2268B78A9A0F901FAEB756D /* ResourceBundle-FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
+		A0E78C4FB8301D77FD2179DB3DA84BD5 /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = FontAwesome/Enum.swift; sourceTree = "<group>"; };
+		A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AE5EA650A4BD3301FC0EC90671F6E349 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		B300C833BECD721AB8430E2135458B87 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B341B8CA8A0BE80B2098BD2C5169BA39 /* Pods-EventosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EventosTests.release.xcconfig"; sourceTree = "<group>"; };
-		B47D85CBFD8127B9DB9BECF75FC34309 /* Pageboy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-prefix.pch"; sourceTree = "<group>"; };
-		B6041AD1E660ECAC31010F2D646E9F64 /* PositionalUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionalUtils.swift; path = Sources/Tabman/TabmanBar/Utilities/PositionalUtils.swift; sourceTree = "<group>"; };
-		B689BE84C9950A4F90591D615F907806 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
 		BAF103F24E9C5373E045F066B9223038 /* Pods-Eventos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eventos.debug.xcconfig"; sourceTree = "<group>"; };
-		BB04811C2297735566816093E3F06B3B /* Tabman-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tabman-umbrella.h"; sourceTree = "<group>"; };
-		BB57074F30969B765AE3631C3DDDF9B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB965D675115B3AB648DAB05E9D1DD0F /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
-		BC280215FEBAA1A313FFDFCC2B86285A /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDF8C95CA189315645753E9E42E1BF59 /* TransitionOperation+Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TransitionOperation+Action.swift"; path = "Sources/Pageboy/Utilities/TransitionOperation+Action.swift"; sourceTree = "<group>"; };
-		BE2FB3AA78A9BC2C9BBA9892CF08DB33 /* TabmanViewController+Embedding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TabmanViewController+Embedding.swift"; path = "Sources/Tabman/TabmanViewController+Embedding.swift"; sourceTree = "<group>"; };
-		BEB477911024B5E10F86F921441E0605 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PureLayout.modulemap; sourceTree = "<group>"; };
-		BFADE6393E4A719D95D9EF746424D35C /* TabmanDotIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanDotIndicator.swift; path = Sources/Tabman/TabmanBar/Components/Indicator/Styles/TabmanDotIndicator.swift; sourceTree = "<group>"; };
-		C121A380AC3874D4F539244E99592436 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
-		C14DD7BD3E73EDAE706B44B266214A99 /* TabmanScrollingButtonBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanScrollingButtonBar.swift; path = Sources/Tabman/TabmanBar/Styles/TabmanScrollingButtonBar.swift; sourceTree = "<group>"; };
-		C182BF427B2E4E650E9AABA3954CF2B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BCDB0637B13297CA880941DF8A288762 /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlacePicker.framework; path = Frameworks/GooglePlacePicker.framework; sourceTree = "<group>"; };
+		BDFCF8C180413EF7A878BAD2D41044D6 /* FontAwesome.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-umbrella.h"; sourceTree = "<group>"; };
+		C1452C3CD3DABD89394C4212041E9D1B /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
 		C4588DFEA964A56C24C68B68A588DD60 /* Pods-Eventos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eventos.release.xcconfig"; sourceTree = "<group>"; };
-		C6CDCEC822C07D9DBF6DFD248FDE3641 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
-		C6E8F2A39D773859CC0D6BDE0E35F88C /* Tabman-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Tabman-dummy.m"; sourceTree = "<group>"; };
-		C74E4DE82C63D5C7F22D67F2BAB7E957 /* PageboyViewController+Transitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Transitioning.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+Transitioning.swift"; sourceTree = "<group>"; };
-		C7A865ABF7A6E66C048FF2F16779E72B /* Pageboy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Pageboy.modulemap; sourceTree = "<group>"; };
+		C5034652C32C9C9BA4A1962372625F4B /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = FontAwesome/FontAwesome.swift; sourceTree = "<group>"; };
+		C55C580E1FC5B6E9F442FE42A9553FEA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		C9C9EC422ACC597428FFFFE6234488D2 /* Pods-EventosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EventosTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CB1247F2967E5A32926A98960F56EA26 /* UIViewController+PageboyExtras.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+PageboyExtras.swift"; path = "Sources/Pageboy/Extensions/UIViewController+PageboyExtras.swift"; sourceTree = "<group>"; };
-		CD8CDF0E4B536CBF9B9E8AA23B07D22C /* TabmanBlockTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanBlockTabBar.swift; path = Sources/Tabman/TabmanBar/Styles/TabmanBlockTabBar.swift; sourceTree = "<group>"; };
+		CBF25EB6A7BFE9B60096A13B6692CAA8 /* GooglePlacePicker.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlacePicker.bundle; path = Frameworks/GooglePlacePicker.framework/Versions/A/Resources/GooglePlacePicker.bundle; sourceTree = "<group>"; };
+		CEB069AA1757A84D8B8680CD09B7934C /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		CF0B26FB2278578CA17CB953160695EA /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.otf; path = FontAwesome/FontAwesome.otf; sourceTree = "<group>"; };
 		CF668DABD365F6DD045B6FDAAF18418F /* Pods-EventosTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EventosTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D27859251039EFD20EF35C27E8AAB561 /* TabmanBlockIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanBlockIndicator.swift; path = Sources/Tabman/TabmanBar/Components/Indicator/Styles/TabmanBlockIndicator.swift; sourceTree = "<group>"; };
-		D5DB404409B73BE817D043802240BBBF /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
-		D62286CE076BB9BD582F8E139FF1F6FF /* ColorUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorUtils.swift; path = Sources/Tabman/Utilities/ColorUtils.swift; sourceTree = "<group>"; };
-		DFBAE821A0EE08AB521DAC2A14987EC8 /* TabmanIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanIndicator.swift; path = Sources/Tabman/TabmanBar/Components/Indicator/TabmanIndicator.swift; sourceTree = "<group>"; };
-		E007BFB0E63021837A559E8F54662843 /* TabmanBar+Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TabmanBar+Item.swift"; path = "Sources/Tabman/TabmanBar/TabmanBar+Item.swift"; sourceTree = "<group>"; };
-		E231BAB587A74E9CE71ED8737DDB991B /* TabmanItemColorCrossfadeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanItemColorCrossfadeTransition.swift; path = Sources/Tabman/TabmanBar/Transitioning/ItemTransition/TabmanItemColorCrossfadeTransition.swift; sourceTree = "<group>"; };
-		E9D7CFE02B6E23924D4F400E7DD46E51 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
-		EE21DE2E109C0D018043E3ED9C11D94E /* GradientsOwner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientsOwner.swift; path = Skeleton/GradientsOwner.swift; sourceTree = "<group>"; };
+		D2266FF56DBC6E6E279769DAE75C8EAB /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		D6781F0E72B7877F2FBC2A07EA8090C5 /* FontAwesomeImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageView.swift; path = FontAwesome/FontAwesomeImageView.swift; sourceTree = "<group>"; };
+		DB7E0B78E9B768B889225112CB8E6E09 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		DE922BDB70F5EC5A6560B9B4D4E279BC /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		DF3DA34B9709D5E44236D6F7EA7F73FC /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		E6F935D566EADC0B95B23792A0FDD78B /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		ED7BB702669914706E1E0470245C21BA /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		EE8EDCACBFB8BBE655D06D8CB6323724 /* FontAwesome.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FontAwesome.swift.modulemap; sourceTree = "<group>"; };
 		EEA9050AFF6499DF24C955032330D53E /* Pods-Eventos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Eventos-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F2D337637D04E1727FC907FF68EA57AF /* TransitionOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionOperation.swift; path = Sources/Pageboy/Utilities/TransitionOperation.swift; sourceTree = "<group>"; };
-		F3B3834E5C9FB5179138D0F49A50630B /* ImageUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageUtils.swift; path = Sources/Tabman/TabmanBar/Utilities/ImageUtils.swift; sourceTree = "<group>"; };
-		F484BB31A194D1F7AFE4921CFEE3079A /* UIPageViewController+ScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPageViewController+ScrollView.swift"; path = "Sources/Pageboy/Utilities/UIPageViewController+ScrollView.swift"; sourceTree = "<group>"; };
-		F4C411F4ABE89451A1428A9A4B29E509 /* TabmanFixedButtonBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanFixedButtonBar.swift; path = Sources/Tabman/TabmanBar/Styles/TabmanFixedButtonBar.swift; sourceTree = "<group>"; };
-		F55E631471697E5990371885A8CF0270 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
-		F8B628E921EE81D14152DB919F473CB2 /* GradientPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientPoint.swift; path = Skeleton/GradientPoint.swift; sourceTree = "<group>"; };
-		FA355DE2373A9B17AF62BF0C92B3DC86 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0674644AFB49C4CF3C36D907B12B1CD /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		F2A508F89725ACA958DFA5D3CC8A1688 /* FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
+		FA32E2FEEAD289F0EDEFEF024DEF1A3C /* FontAwesome.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesome.swift.xcconfig; sourceTree = "<group>"; };
 		FAAE159BE16E6579296E62343D6AC3F1 /* Pods-EventosTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EventosTests-umbrella.h"; sourceTree = "<group>"; };
-		FD22D0047540B498FC78059ED496CB30 /* Tabman.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Tabman.h; path = Sources/Tabman/Tabman.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,45 +145,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1077FAAD100E74A1FF0AA1752B64D406 /* Frameworks */ = {
+		6384E4C1DBDFE6DB82E1EAD08B3F044A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB59D8A580A26546C47F00EF93562061 /* Foundation.framework in Frameworks */,
+				DAC2CACA22AE100EB261D377EC6FBE3C /* CoreText.framework in Frameworks */,
+				C4EDDFD00880AD17F1BB7D66948F1D21 /* Foundation.framework in Frameworks */,
+				684E126B8E890761BBB1A4EB590EA1F3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		511431FDD33BB3D4C5E34F8A13E7AEAB /* Frameworks */ = {
+		7B37C8C90F2959F3A5251F2F4D9E99FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC1C4EC41BFA3C65B35E09E78313958C /* Foundation.framework in Frameworks */,
+				F751411AFFD1AF2C24C85FB5DC90CF15 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5CF7A327E3AAAFF2212DCF61D15C3BD6 /* Frameworks */ = {
+		D4E54942A2F6AE6BC8FF8B5031C56AFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2ADEDD8646AD23D2F6A95ABB4F64456 /* Foundation.framework in Frameworks */,
-				41266FDCE49460A69D0F6E8977BA7DB7 /* Pageboy.framework in Frameworks */,
-				27A9DFDD4ADB961394733C288A3334A5 /* PureLayout.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6E0199D42601B389DBB12254431272A8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83D123347F5C799AD77539A0DBC6D6E1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		874A25FD955E4F8BF4E97A771EBBD51F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9A60A7E9C380A6E61152813CE1D19CA8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,106 +181,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		014550F419048382915DF46F7FABE053 /* GoogleToolboxForMac */ = {
+		01F395D0E3CBF176D8A0891A4449C7DC /* GoogleToolboxForMac */ = {
 			isa = PBXGroup;
 			children = (
-				1A74C54D2D06CEBB5248BCB1FD4F7FDC /* Defines */,
-				0CF93B6662A3F890C4782005D77EB1C1 /* NSData+zlib */,
-				C71FA3C4DD3804AB6179E4B506590369 /* Support Files */,
+				476D1090CD473F60F8FF85632D8DAC86 /* Defines */,
+				7392653436F8A75D29E589F360EAE6C1 /* NSData+zlib */,
+				FED63938A8F16CDD76C4EB2CAF6F3193 /* Support Files */,
 			);
 			name = GoogleToolboxForMac;
 			path = GoogleToolboxForMac;
 			sourceTree = "<group>";
 		};
-		0438F211E3E5968B083FD6A1DABF79F7 /* Frameworks */ = {
+		07F5CC00081FFBCF3D251B6214359EBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A413756194E8B2F271B3447A45B03A8C /* GooglePlacePicker.framework */,
+				CEB069AA1757A84D8B8680CD09B7934C /* FirebaseAnalytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0CF93B6662A3F890C4782005D77EB1C1 /* NSData+zlib */ = {
+		0A1BB8B06458240D3805AEAD2FAF4B6B /* GoogleMaps */ = {
 			isa = PBXGroup;
 			children = (
-				A9F65D827F52AFAE703140F02768E7CC /* GTMNSData+zlib.h */,
-				1DCAA8DE4FDEC942F3C230390EA61EBF /* GTMNSData+zlib.m */,
-			);
-			name = "NSData+zlib";
-			sourceTree = "<group>";
-		};
-		0D0B321B9DCBE912557DC6656261EB52 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AE9F122D35FAAF94DBF5B40B62B029F7 /* FirebaseCore.framework */,
-				C6CDCEC822C07D9DBF6DFD248FDE3641 /* FirebaseCoreDiagnostics.framework */,
-				80932FEFF2DB445EAF9551FCD126BF38 /* FirebaseNanoPB.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0EBF5856E3B696D0C91716D38A55816C /* Pageboy */ = {
-			isa = PBXGroup;
-			children = (
-				496525988332C1043700F2AA67ABAFB6 /* Pageboy.h */,
-				6E7A079BAAB7A612A61711193C1A3F0B /* PageboyAutoScroller.swift */,
-				662789505406094F7ACE94E4F3C91181 /* PageboyViewController.swift */,
-				86EF26A23B8BE8A33ADDA819CD008808 /* PageboyViewController+Extras.swift */,
-				6528DEC6A3C9AF6F0B8522853497F7EF /* PageboyViewController+Management.swift */,
-				267450F756FA08059122CC5CA79DF2FC /* PageboyViewController+ScrollDetection.swift */,
-				C74E4DE82C63D5C7F22D67F2BAB7E957 /* PageboyViewController+Transitioning.swift */,
-				F2D337637D04E1727FC907FF68EA57AF /* TransitionOperation.swift */,
-				BDF8C95CA189315645753E9E42E1BF59 /* TransitionOperation+Action.swift */,
-				F484BB31A194D1F7AFE4921CFEE3079A /* UIPageViewController+ScrollView.swift */,
-				1F7852670A08ECC5631E3083110E338A /* UIView+AutoLayout.swift */,
-				AF07F2ED569FFE922102E4941BC339F1 /* UIView+Localization.swift */,
-				CB1247F2967E5A32926A98960F56EA26 /* UIViewController+PageboyExtras.swift */,
-				AE663C6DDDD98C2BF4F31F5B70D1601B /* Support Files */,
-			);
-			name = Pageboy;
-			path = Pageboy;
-			sourceTree = "<group>";
-		};
-		11EA075E05EA347062A78130A00DAE36 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				868BA2944AB46085BF4A3F0BDBED8A96 /* FirebaseAnalytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1533648D7640F4A4AD1E0B9F38464A44 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				98634D339DCB3BE38208489F8310C8B0 /* GooglePlaces.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		17B8535D5B3D29F90B5D2A14FE951A63 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E0C0FB6C03381BD069C7E6B57E06810 /* FirebaseDatabase.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1A74C54D2D06CEBB5248BCB1FD4F7FDC /* Defines */ = {
-			isa = PBXGroup;
-			children = (
-				30A20AEAFCE4DCA33024E66A098C28C8 /* GTMDefines.h */,
-			);
-			name = Defines;
-			sourceTree = "<group>";
-		};
-		1CA6257641218FA3039B0BFA9A91F114 /* GoogleMaps */ = {
-			isa = PBXGroup;
-			children = (
-				79D5E710879225B7A7F3686CCF173956 /* Base */,
-				36EDE937FEED435E310CA236A1F78241 /* Maps */,
+				9B6CE4B9FD7DE203CF27FBB18ED70E51 /* Base */,
+				AC439975FDD9565680668C5C2CB589BC /* Maps */,
 			);
 			name = GoogleMaps;
 			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF1CA95E532A8F990E19506982FA04EE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12589221FE84781B01A44BD2647604FC /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				7084488B47A64A0442531EFD694C4BDD /* Frameworks */,
+			);
+			name = FirebaseDatabase;
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		196EA8C647D16E4BD41DF74FE9537930 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				07F5CC00081FFBCF3D251B6214359EBF /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
 		21F0255C85C82E8252C848981901F6FF /* Pods-Eventos */ = {
@@ -495,188 +254,175 @@
 			path = "Target Support Files/Pods-Eventos";
 			sourceTree = "<group>";
 		};
-		333F486E482D306910193EBBAA4D7029 /* Resources */ = {
+		2A8229578FD875B31120D769019E18AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				24A810F19948B52C1CAD7A980CEC8C0B /* GooglePlacePicker.bundle */,
+				32F846CEE04AA6DE0BE49BA0897CC77E /* GoogleMaps.framework */,
+				DF3DA34B9709D5E44236D6F7EA7F73FC /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FD6438FA493AFDF34A20AB3E13A7BCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2266FF56DBC6E6E279769DAE75C8EAB /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		351E603E396406A6C8DBB3E3999E683F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				93897FA9B820AD14441E5449413695B9 /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		3BD78C4F5F6F3097B2E12AC07ADD5D2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCDB0637B13297CA880941DF8A288762 /* GooglePlacePicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D4F6B63E01137D8B3206D1556116496 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED7BB702669914706E1E0470245C21BA /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45A7B9F92777774DA6793AEED44A882C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF620C25C0566A314B0C0A75F4ECD44C /* Firebase */,
+				196EA8C647D16E4BD41DF74FE9537930 /* FirebaseAnalytics */,
+				76370505745AA805D9C2731867FE6CEC /* FirebaseCore */,
+				12589221FE84781B01A44BD2647604FC /* FirebaseDatabase */,
+				91558B3D2BD72D04CB2BC48EBD0713FD /* FirebaseInstanceID */,
+				A916407EE901F059E8CA2C86D223A5E3 /* FontAwesome.swift */,
+				0A1BB8B06458240D3805AEAD2FAF4B6B /* GoogleMaps */,
+				FDF6860C9A8EAE127C6E41C763B6D6B8 /* GooglePlacePicker */,
+				6ABB78B49D02B68C09475B01D37B239F /* GooglePlaces */,
+				01F395D0E3CBF176D8A0891A4449C7DC /* GoogleToolboxForMac */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		45C1FD312392F8A6F2D2954C39A36F4C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBF25EB6A7BFE9B60096A13B6692CAA8 /* GooglePlacePicker.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		36EDE937FEED435E310CA236A1F78241 /* Maps */ = {
+		476D1090CD473F60F8FF85632D8DAC86 /* Defines */ = {
 			isa = PBXGroup;
 			children = (
-				D588AAF4ACDF737F550F31FD8269B048 /* Frameworks */,
-				9C3BF548AF40B55213E43CB929B72DC6 /* Resources */,
+				2D436487BF9B98AF16A7A710C80AC6F5 /* GTMDefines.h */,
 			);
-			name = Maps;
+			name = Defines;
 			sourceTree = "<group>";
 		};
-		3B7261C6D190F98A52769F2AE7B71B04 /* GooglePlaces */ = {
+		5226883766041AC66E5A2962EA6C9E34 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D68917674860BF1E1EDA5EC301642B2E /* Frameworks */,
-				1533648D7640F4A4AD1E0B9F38464A44 /* Resources */,
+				EE8EDCACBFB8BBE655D06D8CB6323724 /* FontAwesome.swift.modulemap */,
+				FA32E2FEEAD289F0EDEFEF024DEF1A3C /* FontAwesome.swift.xcconfig */,
+				3A836A927854564C225C77FC24174898 /* FontAwesome.swift-dummy.m */,
+				F2A508F89725ACA958DFA5D3CC8A1688 /* FontAwesome.swift-prefix.pch */,
+				BDFCF8C180413EF7A878BAD2D41044D6 /* FontAwesome.swift-umbrella.h */,
+				6C86513AA2B64A71BE2A9D7462986DF7 /* Info.plist */,
+				9A20BDD9E2268B78A9A0F901FAEB756D /* ResourceBundle-FontAwesome.swift-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FontAwesome.swift";
+			sourceTree = "<group>";
+		};
+		5D098CC4D9CB8A00E37A03FE39EF3689 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1452C3CD3DABD89394C4212041E9D1B /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		60DCBFFF8443D0D61E0BFC481A67106D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27223F5274E24DE023A3B3B42F79A1B7 /* FirebaseCore.framework */,
+				00B114C9664A2D03DA39C118BADAFCE0 /* FirebaseCoreDiagnostics.framework */,
+				E6F935D566EADC0B95B23792A0FDD78B /* FirebaseNanoPB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6ABB78B49D02B68C09475B01D37B239F /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				2FD6438FA493AFDF34A20AB3E13A7BCF /* Frameworks */,
+				5D098CC4D9CB8A00E37A03FE39EF3689 /* Resources */,
 			);
 			name = GooglePlaces;
 			path = GooglePlaces;
 			sourceTree = "<group>";
 		};
-		3D0199038D8A031C04C5570CD5676E52 /* Pods */ = {
+		7084488B47A64A0442531EFD694C4BDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E7932DC93369624CA23D404B45C8C296 /* Firebase */,
-				ED73707F24700AAAA25F4137E9E81536 /* FirebaseAnalytics */,
-				5A84C617D7CE449976C9B0D7FBBB9DA5 /* FirebaseCore */,
-				F7FD1A7E2A56B8347ED8BA17AC9B95A4 /* FirebaseDatabase */,
-				7489E3B6EB1019E9BFF0491D9BC2B42D /* FirebaseInstanceID */,
-				1CA6257641218FA3039B0BFA9A91F114 /* GoogleMaps */,
-				E31501125503E339D68C860ACC538777 /* GooglePlacePicker */,
-				3B7261C6D190F98A52769F2AE7B71B04 /* GooglePlaces */,
-				014550F419048382915DF46F7FABE053 /* GoogleToolboxForMac */,
-				0EBF5856E3B696D0C91716D38A55816C /* Pageboy */,
-				5740D842717F7A42C5C6622BA159EAF0 /* PureLayout */,
-				8A0B8A0D2569F17C01E1A5ABD63B22C0 /* Skeleton */,
-				5813272F764AD75E4B0921227B2B7B7B /* Tabman */,
+				AE5EA650A4BD3301FC0EC90671F6E349 /* FirebaseDatabase.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5740D842717F7A42C5C6622BA159EAF0 /* PureLayout */ = {
+		7392653436F8A75D29E589F360EAE6C1 /* NSData+zlib */ = {
 			isa = PBXGroup;
 			children = (
-				8364E9F2051E678BEA079D604431080A /* ALView+PureLayout.h */,
-				4ECFA5C053BDFC55583BB554244F328F /* ALView+PureLayout.m */,
-				618109CBF6C121531A86A9B932EF9836 /* NSArray+PureLayout.h */,
-				2CDECCD75F207186535BE1049954EE2A /* NSArray+PureLayout.m */,
-				86A1A616730122B2D394615E9D929B30 /* NSLayoutConstraint+PureLayout.h */,
-				B689BE84C9950A4F90591D615F907806 /* NSLayoutConstraint+PureLayout.m */,
-				3BD08A66EEC10F4DC3E6466EEDF742A9 /* PureLayout.h */,
-				12B2FA9F3C3B32EF55483D2155DE9233 /* PureLayout+Internal.h */,
-				116740C965E27F35C9A5AA802DAABC69 /* PureLayoutDefines.h */,
-				ECC26F2D486803C8ADA60683D2F1D5F6 /* Support Files */,
+				DB7E0B78E9B768B889225112CB8E6E09 /* GTMNSData+zlib.h */,
+				3F8F8905A6B66B155DBA8D2415FEEC12 /* GTMNSData+zlib.m */,
 			);
-			name = PureLayout;
-			path = PureLayout;
+			name = "NSData+zlib";
 			sourceTree = "<group>";
 		};
-		5813272F764AD75E4B0921227B2B7B7B /* Tabman */ = {
+		76370505745AA805D9C2731867FE6CEC /* FirebaseCore */ = {
 			isa = PBXGroup;
 			children = (
-				D62286CE076BB9BD582F8E139FF1F6FF /* ColorUtils.swift */,
-				63626CFDFD5685F074761D2AC34E36D2 /* ContentViewScrollView.swift */,
-				F3B3834E5C9FB5179138D0F49A50630B /* ImageUtils.swift */,
-				B6041AD1E660ECAC31010F2D646E9F64 /* PositionalUtils.swift */,
-				FD22D0047540B498FC78059ED496CB30 /* Tabman.h */,
-				6697C960BE5283A4020FDA7E2B04AAD7 /* TabmanBar.swift */,
-				5E642E14A30D9572624D3B0E89E81F2A /* TabmanBar+Appearance.swift */,
-				11EA5FF238A05F093787795BEC66D968 /* TabmanBar+Config.swift */,
-				A59214D706BA74CA1590CC398276A93F /* TabmanBar+Construction.swift */,
-				39646080DFB9AC757DC23220DE12DD5A /* TabmanBar+Indicator.swift */,
-				575F9F7D7D5ADFDFA154E1C30FF837C0 /* TabmanBar+Insets.swift */,
-				E007BFB0E63021837A559E8F54662843 /* TabmanBar+Item.swift */,
-				1C530562E217CD295227DC40BD8529E2 /* TabmanBar+Protocols.swift */,
-				11211768404BCDFD02B1A0EF140DE149 /* TabmanBarBackgroundView.swift */,
-				8C5F63EDE73852AE19E4D1C6B7491505 /* TabmanBarTransitionStore.swift */,
-				D27859251039EFD20EF35C27E8AAB561 /* TabmanBlockIndicator.swift */,
-				CD8CDF0E4B536CBF9B9E8AA23B07D22C /* TabmanBlockTabBar.swift */,
-				6E76409B736AF65F5C715DE358139742 /* TabmanButtonBar.swift */,
-				A64E6CEE2F381E19480F9817E591CBFD /* TabmanChevronIndicator.swift */,
-				9C5E265A0257750C0354F90C85771F5B /* TabmanChevronView.swift */,
-				9942BBFD788183341A03A55606AC95E5 /* TabmanCircularView.swift */,
-				487F3F3F0D4F8C740D0D3E0EFEE26D94 /* TabmanClearIndicator.swift */,
-				BFADE6393E4A719D95D9EF746424D35C /* TabmanDotIndicator.swift */,
-				F4C411F4ABE89451A1428A9A4B29E509 /* TabmanFixedButtonBar.swift */,
-				DFBAE821A0EE08AB521DAC2A14987EC8 /* TabmanIndicator.swift */,
-				8B4CD544199195DCBC9E9D3F110AF3E5 /* TabmanIndicatorTransition.swift */,
-				E231BAB587A74E9CE71ED8737DDB991B /* TabmanItemColorCrossfadeTransition.swift */,
-				6E168DA375BF844D7989D88093ED9007 /* TabmanItemMaskTransition.swift */,
-				2BC8CD95AC9EEED9374530E97C6E5516 /* TabmanItemTransition.swift */,
-				56063FDC18C279FE61EE8D4BC5078993 /* TabmanLineBar.swift */,
-				48A966CA380462F4D3EB1FAA0779C60F /* TabmanLineIndicator.swift */,
-				89CC4BA56F1EF8BE0937BA548344CEF3 /* TabmanScrollingBarIndicatorTransition.swift */,
-				C14DD7BD3E73EDAE706B44B266214A99 /* TabmanScrollingButtonBar.swift */,
-				1AD053105EE31DF13FAB7E41DA53F737 /* TabmanSeparator.swift */,
-				3807042781A880BE023FB18D5B8624F3 /* TabmanStaticBarIndicatorTransition.swift */,
-				46576CD27B27AF735E10D3159E2C7836 /* TabmanStaticButtonBar.swift */,
-				ABF9C1480FAA09E784F39A2CFF93F0D7 /* TabmanTransition.swift */,
-				A40E465E3EBC695BB890724EFCF4BFAE /* TabmanViewController.swift */,
-				BE2FB3AA78A9BC2C9BBA9892CF08DB33 /* TabmanViewController+Embedding.swift */,
-				627C352E2608E30CAA4388D962DA309C /* TabmanViewController+Insetting.swift */,
-				8E90457790E69F7F21C5C96AE5EE323F /* UIView+AutoLayout.swift */,
-				1E680F3C2DDE2381B3F9DBCCFDADC165 /* UIView+Utils.swift */,
-				79C9088CB231A2A8E00B4080CD96168C /* ViewUtils.swift */,
-				DD5879BF759CAC005D87A0D199CDE942 /* Support Files */,
-			);
-			name = Tabman;
-			path = Tabman;
-			sourceTree = "<group>";
-		};
-		5A84C617D7CE449976C9B0D7FBBB9DA5 /* FirebaseCore */ = {
-			isa = PBXGroup;
-			children = (
-				0D0B321B9DCBE912557DC6656261EB52 /* Frameworks */,
+				60DCBFFF8443D0D61E0BFC481A67106D /* Frameworks */,
 			);
 			name = FirebaseCore;
 			path = FirebaseCore;
-			sourceTree = "<group>";
-		};
-		7489E3B6EB1019E9BFF0491D9BC2B42D /* FirebaseInstanceID */ = {
-			isa = PBXGroup;
-			children = (
-				F46A30057492D695C36BE43C1494F54B /* Frameworks */,
-			);
-			name = FirebaseInstanceID;
-			path = FirebaseInstanceID;
-			sourceTree = "<group>";
-		};
-		79D5E710879225B7A7F3686CCF173956 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				DCF7711AAC4B0085084A34A9AF73CB33 /* Frameworks */,
-			);
-			name = Base;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				9F7E8383231FF2F6521D93F70E00509C /* Frameworks */,
-				3D0199038D8A031C04C5570CD5676E52 /* Pods */,
-				98DE4479D33CE3B9C2E3FA2FF6A618FE /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				45A7B9F92777774DA6793AEED44A882C /* Pods */,
+				CD61620272C5EF460C8399F985309560 /* Products */,
 				97CB363AF5BA553DEF88FBFF961B48BC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8A0B8A0D2569F17C01E1A5ABD63B22C0 /* Skeleton */ = {
+		8E76530492F399D8FD150ECBB6CC235E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				080342F1EE9BAC09E880FD54982E11EA /* CAGradientLayer+Slide.swift */,
-				10617C17EAADB0BB20B64BA6F4740A10 /* Direction.swift */,
-				91BD6DBEB686594D589E4B2C53BCA3CC /* GradientContainerView.swift */,
-				F8B628E921EE81D14152DB919F473CB2 /* GradientPoint.swift */,
-				EE21DE2E109C0D018043E3ED9C11D94E /* GradientsOwner.swift */,
-				593055392C04DF07B984BAA5CACC2C1F /* GradientTransition.swift */,
-				8B20D8E241B028C4FBE12141B95C3D62 /* GradientView.swift */,
-				95311006A1B01FDB0F06A13C5A7EA663 /* Support Files */,
+				CF0B26FB2278578CA17CB953160695EA /* FontAwesome.otf */,
 			);
-			name = Skeleton;
-			path = Skeleton;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		95311006A1B01FDB0F06A13C5A7EA663 /* Support Files */ = {
+		91558B3D2BD72D04CB2BC48EBD0713FD /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				FA355DE2373A9B17AF62BF0C92B3DC86 /* Info.plist */,
-				4634FD156B5CEF39B8F86F1F947536F1 /* Skeleton.modulemap */,
-				6FFA41D22B59751C603B0034637BAD2F /* Skeleton.xcconfig */,
-				9CB11F18DDEC5255659E2A516879CFCC /* Skeleton-dummy.m */,
-				9276C72E323D6758FDED7AC7387A6BE9 /* Skeleton-prefix.pch */,
-				56080C8D0BC7F3129CEF5673230DB843 /* Skeleton-umbrella.h */,
+				C1B06D621D66962C29B563156E1F13D3 /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Skeleton";
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
 		97CB363AF5BA553DEF88FBFF961B48BC /* Targets Support Files */ = {
@@ -688,44 +434,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		98DE4479D33CE3B9C2E3FA2FF6A618FE /* Products */ = {
+		9B6CE4B9FD7DE203CF27FBB18ED70E51 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				0B28891F6F86B00FBF716B4972EFAFDE /* GoogleToolboxForMac.framework */,
-				23F5A27CDA889C5928B643FEC616FF3A /* Pageboy.framework */,
-				A2E92DBED06C7F640C81FF70D7832D97 /* Pods_Eventos.framework */,
-				7B3F8CC209127BE1BBDEA38E3433161E /* Pods_EventosTests.framework */,
-				06DCC702EEDE74E8FC7BB7817838B34A /* PureLayout.framework */,
-				064DEB2FD9D216177DDF6BE3343100DA /* Skeleton.framework */,
-				6793939A8DD53BFE4F0F9DD65AD606C5 /* Tabman.framework */,
+				3D4F6B63E01137D8B3206D1556116496 /* Frameworks */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9C3BF548AF40B55213E43CB929B72DC6 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				64F2154AC1562D183B1C79ECA7997C23 /* GoogleMaps.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		9F7E8383231FF2F6521D93F70E00509C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1BE4E9F361449D0A3021467837FDFC30 /* Pageboy.framework */,
-				BC280215FEBAA1A313FFDFCC2B86285A /* PureLayout.framework */,
-				A9F31CAC790362EB4BD1C2357344FC1E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A26F0478379EC92F8B2CE0A0EF3405CA /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				BB965D675115B3AB648DAB05E9D1DD0F /* Firebase.h */,
-			);
-			name = Core;
+			name = Base;
 			sourceTree = "<group>";
 		};
 		A83C39E35BA9E0430FC94B342C9B0991 /* Pods-EventosTests */ = {
@@ -746,180 +460,114 @@
 			path = "Target Support Files/Pods-EventosTests";
 			sourceTree = "<group>";
 		};
-		A9F31CAC790362EB4BD1C2357344FC1E /* iOS */ = {
+		A916407EE901F059E8CA2C86D223A5E3 /* FontAwesome.swift */ = {
 			isa = PBXGroup;
 			children = (
-				C182BF427B2E4E650E9AABA3954CF2B8 /* Foundation.framework */,
+				A0E78C4FB8301D77FD2179DB3DA84BD5 /* Enum.swift */,
+				C5034652C32C9C9BA4A1962372625F4B /* FontAwesome.swift */,
+				52F6A8E016A97CF4B567C819C027362A /* FontAwesomeBarButtonItem.swift */,
+				47A45C9E3BCA1B73CC8BEA5A37F2F22B /* FontAwesomeImageRepresentable.swift */,
+				D6781F0E72B7877F2FBC2A07EA8090C5 /* FontAwesomeImageView.swift */,
+				54AE94630CBEB7CCFB55D4BC3DD8DD50 /* FontAwesomeSegmentedControl.swift */,
+				40704BF4F72000F48DAEC79FFF0A0FCE /* FontAwesomeStateRequirement.swift */,
+				8D1F0F60740F55A40BD766C90B16C6AE /* FontAwesomeTabBarItem.swift */,
+				2CE07E8E488BD6C3F1A25C2F091D8A55 /* FontAwesomeTextRepresentable.swift */,
+				8031F5DA7B8A793647F788463D93ED72 /* FontAwesomeView.swift */,
+				8E76530492F399D8FD150ECBB6CC235E /* Resources */,
+				5226883766041AC66E5A2962EA6C9E34 /* Support Files */,
 			);
-			name = iOS;
+			name = FontAwesome.swift;
+			path = FontAwesome.swift;
 			sourceTree = "<group>";
 		};
-		AE663C6DDDD98C2BF4F31F5B70D1601B /* Support Files */ = {
+		AC439975FDD9565680668C5C2CB589BC /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				BB57074F30969B765AE3631C3DDDF9B5 /* Info.plist */,
-				C7A865ABF7A6E66C048FF2F16779E72B /* Pageboy.modulemap */,
-				4325129251F5AAE68F20C9E57045B117 /* Pageboy.xcconfig */,
-				3947538DA7B757F09C8C730CF72655DF /* Pageboy-dummy.m */,
-				B47D85CBFD8127B9DB9BECF75FC34309 /* Pageboy-prefix.pch */,
-				8F3D443A837DF384FF0732CD2FB07D80 /* Pageboy-umbrella.h */,
+				2A8229578FD875B31120D769019E18AA /* Frameworks */,
+				D48AA48984DA991A83708E2C0731B053 /* Resources */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Pageboy";
+			name = Maps;
 			sourceTree = "<group>";
 		};
-		C71FA3C4DD3804AB6179E4B506590369 /* Support Files */ = {
+		C1B06D621D66962C29B563156E1F13D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D5DB404409B73BE817D043802240BBBF /* GoogleToolboxForMac.modulemap */,
-				C121A380AC3874D4F539244E99592436 /* GoogleToolboxForMac.xcconfig */,
-				5A1F05C19D5ACFA4BA4E894504BF0834 /* GoogleToolboxForMac-dummy.m */,
-				9D8361A5A978192723AB4104D14CB32A /* GoogleToolboxForMac-prefix.pch */,
-				5BE728574B12B164C80D0EF0243DB57C /* GoogleToolboxForMac-umbrella.h */,
-				AC70673C42FCFB758C0DCC0C85647468 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GoogleToolboxForMac";
-			sourceTree = "<group>";
-		};
-		D588AAF4ACDF737F550F31FD8269B048 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6932AE607B0DA6B33BDDE4BE90ADC9F2 /* GoogleMaps.framework */,
-				09D7820E3689B86DE719699EC822846B /* GoogleMapsCore.framework */,
+				6DD65D9A3FE072DBB9DD974A9A550E76 /* FirebaseInstanceID.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D68917674860BF1E1EDA5EC301642B2E /* Frameworks */ = {
+		CD61620272C5EF460C8399F985309560 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9235750E68797DF6486F8808873DF6DF /* GooglePlaces.framework */,
+				0541F9A6DEA6D8FB3866E5E2F3C9DC48 /* FontAwesome.swift.bundle */,
+				5B53C1F8DC7B0DC071DB4CF61BA5DEDE /* FontAwesome_swift.framework */,
+				B300C833BECD721AB8430E2135458B87 /* GoogleToolboxForMac.framework */,
+				268E7E236744E0CD4337C239CF40FF85 /* Pods_Eventos.framework */,
+				3724ED08C3BA6E41D09E310B10BDD79C /* Pods_EventosTests.framework */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		DCF7711AAC4B0085084A34A9AF73CB33 /* Frameworks */ = {
+		D48AA48984DA991A83708E2C0731B053 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6BADC4A19F4208E44CB2F75BA2CF0FE8 /* GoogleMapsBase.framework */,
+				34B15A3888809542EA2DE554495730AE /* GoogleMaps.bundle */,
 			);
-			name = Frameworks;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		DD5879BF759CAC005D87A0D199CDE942 /* Support Files */ = {
+		FDF6860C9A8EAE127C6E41C763B6D6B8 /* GooglePlacePicker */ = {
 			isa = PBXGroup;
 			children = (
-				6563A5C7736F43518401A5F02DBD99D5 /* Info.plist */,
-				133C4AEA00268F9DC8AA0975B0106C74 /* Tabman.modulemap */,
-				9D4F976DD10F0316BD4B004BE80066F8 /* Tabman.xcconfig */,
-				C6E8F2A39D773859CC0D6BDE0E35F88C /* Tabman-dummy.m */,
-				883E86BDD21160DD4B3C5BA0F9D0CC85 /* Tabman-prefix.pch */,
-				BB04811C2297735566816093E3F06B3B /* Tabman-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Tabman";
-			sourceTree = "<group>";
-		};
-		E31501125503E339D68C860ACC538777 /* GooglePlacePicker */ = {
-			isa = PBXGroup;
-			children = (
-				0438F211E3E5968B083FD6A1DABF79F7 /* Frameworks */,
-				333F486E482D306910193EBBAA4D7029 /* Resources */,
+				3BD78C4F5F6F3097B2E12AC07ADD5D2B /* Frameworks */,
+				45C1FD312392F8A6F2D2954C39A36F4C /* Resources */,
 			);
 			name = GooglePlacePicker;
 			path = GooglePlacePicker;
 			sourceTree = "<group>";
 		};
-		E7932DC93369624CA23D404B45C8C296 /* Firebase */ = {
+		FED63938A8F16CDD76C4EB2CAF6F3193 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A26F0478379EC92F8B2CE0A0EF3405CA /* Core */,
+				DE922BDB70F5EC5A6560B9B4D4E279BC /* GoogleToolboxForMac.modulemap */,
+				68E2FFD64E5A8A6123CEE30A7A1AC235 /* GoogleToolboxForMac.xcconfig */,
+				6FB11489C5EF3333CBC55CA88A9D83D9 /* GoogleToolboxForMac-dummy.m */,
+				95A7318A8DCD61B5962862EE64323493 /* GoogleToolboxForMac-prefix.pch */,
+				F0674644AFB49C4CF3C36D907B12B1CD /* GoogleToolboxForMac-umbrella.h */,
+				71B63E358F022EB2105DEF5DE7999699 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		FF1CA95E532A8F990E19506982FA04EE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C55C580E1FC5B6E9F442FE42A9553FEA /* CoreText.framework */,
+				A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */,
+				27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FF620C25C0566A314B0C0A75F4ECD44C /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				351E603E396406A6C8DBB3E3999E683F /* Core */,
 			);
 			name = Firebase;
 			path = Firebase;
 			sourceTree = "<group>";
 		};
-		ECC26F2D486803C8ADA60683D2F1D5F6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A91EC4336324931786FA87B35D4C9854 /* Info.plist */,
-				BEB477911024B5E10F86F921441E0605 /* PureLayout.modulemap */,
-				2C43DBEEA1343FF1F70D94C4E6F3093F /* PureLayout.xcconfig */,
-				F55E631471697E5990371885A8CF0270 /* PureLayout-dummy.m */,
-				ABD31756B119AD9B4DF0CBC34D17ADC1 /* PureLayout-prefix.pch */,
-				E9D7CFE02B6E23924D4F400E7DD46E51 /* PureLayout-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PureLayout";
-			sourceTree = "<group>";
-		};
-		ED73707F24700AAAA25F4137E9E81536 /* FirebaseAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				11EA075E05EA347062A78130A00DAE36 /* Frameworks */,
-			);
-			name = FirebaseAnalytics;
-			path = FirebaseAnalytics;
-			sourceTree = "<group>";
-		};
-		F46A30057492D695C36BE43C1494F54B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1C44AC4EDC5FEA599CAA4B05F9CE76F3 /* FirebaseInstanceID.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F7FD1A7E2A56B8347ED8BA17AC9B95A4 /* FirebaseDatabase */ = {
-			isa = PBXGroup;
-			children = (
-				17B8535D5B3D29F90B5D2A14FE951A63 /* Frameworks */,
-			);
-			name = FirebaseDatabase;
-			path = FirebaseDatabase;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1830A78ED9393CC3EAF6FEF15908E0C6 /* Headers */ = {
+		25E0772F87878D34BE9C9F522910F6B2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E21E564411D01743A29432A1A1833735 /* Pods-Eventos-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3FDD9C6B90160D80C7C0D367CBAFA75F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C4B2A3DF61897F33C9D24132843E040F /* Tabman-umbrella.h in Headers */,
-				ABA28245985650B7293797F7FE97422B /* Tabman.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		44941B482AA39C76681921257C88DF72 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				306920C2CB1C9B2D2B3535808ECF1E68 /* ALView+PureLayout.h in Headers */,
-				B5E41824EA0F0A6439B0982811D0E120 /* NSArray+PureLayout.h in Headers */,
-				593283227111423757C1A85B2C8F601D /* NSLayoutConstraint+PureLayout.h in Headers */,
-				8226890A15874B3D9BB4D3C094D24193 /* PureLayout+Internal.h in Headers */,
-				B8533DEF30FABD922FD220730CE705AA /* PureLayout-umbrella.h in Headers */,
-				FB023C1AE5067D4DDD81716B2863B0F6 /* PureLayout.h in Headers */,
-				628BA695793D3D2C9DCF4A091F7EA294 /* PureLayoutDefines.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5134B7E85CCEE0579184CBE1AAFBBF71 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6D2773E545EF2ED0FE4F04A3977DD28 /* Pageboy-umbrella.h in Headers */,
-				7FCC8BF1B9CF67210EE14FB4E95E8369 /* Pageboy.h in Headers */,
+				24065029085002EAC70A3422A7D39EC1 /* FontAwesome.swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -931,11 +579,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70A88F69EEE6C09750217AB7C4FE6ABA /* Headers */ = {
+		FAADDAC0B38242B4E6B882D2C31283B3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				118D199223074233D1DF945EA0789091 /* Skeleton-umbrella.h in Headers */,
+				D5783C1C5C643DE33FE936621BAE8277 /* Pods-Eventos-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -966,24 +614,7 @@
 			);
 			name = GoogleToolboxForMac;
 			productName = GoogleToolboxForMac;
-			productReference = 0B28891F6F86B00FBF716B4972EFAFDE /* GoogleToolboxForMac.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		20193CC5EFDCD8272321DCD291EE3122 /* PureLayout */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CC23F091A3E4D66240540F1C8970E81C /* Build configuration list for PBXNativeTarget "PureLayout" */;
-			buildPhases = (
-				A245C6703350A8C160996766C7AE6BB4 /* Sources */,
-				1077FAAD100E74A1FF0AA1752B64D406 /* Frameworks */,
-				44941B482AA39C76681921257C88DF72 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PureLayout;
-			productName = PureLayout;
-			productReference = 06DCC702EEDE74E8FC7BB7817838B34A /* PureLayout.framework */;
+			productReference = B300C833BECD721AB8430E2135458B87 /* GoogleToolboxForMac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3671C5554E887E7DA8D93DFE0F2B22CB /* Pods-EventosTests */ = {
@@ -1000,82 +631,62 @@
 			);
 			name = "Pods-EventosTests";
 			productName = "Pods-EventosTests";
-			productReference = 7B3F8CC209127BE1BBDEA38E3433161E /* Pods_EventosTests.framework */;
+			productReference = 3724ED08C3BA6E41D09E310B10BDD79C /* Pods_EventosTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		383A7A8BBBEB736C5DF0D3DEAF18BF52 /* Tabman */ = {
+		6991F49AED797519343B1F4591001691 /* FontAwesome.swift-FontAwesome.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D1F4C08D6746DCC1FE662F2F4EAEC7D /* Build configuration list for PBXNativeTarget "Tabman" */;
+			buildConfigurationList = A91ACF4D4E342DEB04B7C57FA8EA6CC1 /* Build configuration list for PBXNativeTarget "FontAwesome.swift-FontAwesome.swift" */;
 			buildPhases = (
-				D851BBEB96B602F6EA168A82A357E12E /* Sources */,
-				5CF7A327E3AAAFF2212DCF61D15C3BD6 /* Frameworks */,
-				3FDD9C6B90160D80C7C0D367CBAFA75F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8D4676D9516936DB9B3D8B1B202D2BFA /* PBXTargetDependency */,
-				E1B24A9E17D2A080F81467CE9AE7BCC2 /* PBXTargetDependency */,
-			);
-			name = Tabman;
-			productName = Tabman;
-			productReference = 6793939A8DD53BFE4F0F9DD65AD606C5 /* Tabman.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6DBBD7370475B860D04D40D5B1279657 /* Skeleton */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A47EF589976A7342FFA1B37A02EEDFCD /* Build configuration list for PBXNativeTarget "Skeleton" */;
-			buildPhases = (
-				FA4C0663F42BA58A1FD08C53FCF7CC8F /* Sources */,
-				511431FDD33BB3D4C5E34F8A13E7AEAB /* Frameworks */,
-				70A88F69EEE6C09750217AB7C4FE6ABA /* Headers */,
+				EFDD05B792A1A2DB330508032AD5AC07 /* Sources */,
+				D4E54942A2F6AE6BC8FF8B5031C56AFF /* Frameworks */,
+				F276D87ECE642BAF9150EB9FD4E7269A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Skeleton;
-			productName = Skeleton;
-			productReference = 064DEB2FD9D216177DDF6BE3343100DA /* Skeleton.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "FontAwesome.swift-FontAwesome.swift";
+			productName = "FontAwesome.swift-FontAwesome.swift";
+			productReference = 0541F9A6DEA6D8FB3866E5E2F3C9DC48 /* FontAwesome.swift.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
-		D1A536D32A3AB205243F6F605B3B5BCF /* Pageboy */ = {
+		83BBBC51E737F01D5E35267BB5B79903 /* Pods-Eventos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B5B574082841C303EE11765C5594D8C /* Build configuration list for PBXNativeTarget "Pageboy" */;
+			buildConfigurationList = 4AF74ED75DBC11AD391C93720F31A88D /* Build configuration list for PBXNativeTarget "Pods-Eventos" */;
 			buildPhases = (
-				E0DDB424719475292470621DF5936C9B /* Sources */,
-				6E0199D42601B389DBB12254431272A8 /* Frameworks */,
-				5134B7E85CCEE0579184CBE1AAFBBF71 /* Headers */,
+				BD0FD384D5890863CFD1966F46162F84 /* Sources */,
+				7B37C8C90F2959F3A5251F2F4D9E99FF /* Frameworks */,
+				FAADDAC0B38242B4E6B882D2C31283B3 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = Pageboy;
-			productName = Pageboy;
-			productReference = 23F5A27CDA889C5928B643FEC616FF3A /* Pageboy.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FA2B9B4C261B2270CC5205E1E4026822 /* Pods-Eventos */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 475E4E3113B8386D97D2B56F20826E49 /* Build configuration list for PBXNativeTarget "Pods-Eventos" */;
-			buildPhases = (
-				8ED71526A238BA3A50AD7979FF8CEEA4 /* Sources */,
-				874A25FD955E4F8BF4E97A771EBBD51F /* Frameworks */,
-				1830A78ED9393CC3EAF6FEF15908E0C6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D52960673BF39260CB2CD63128E9A334 /* PBXTargetDependency */,
-				9B9FF30CE89E27150EFE943CAA92477C /* PBXTargetDependency */,
-				FF05C19E7C7C1057CB9455CF46A40D76 /* PBXTargetDependency */,
-				A4D7416934A6239355028227FB15D722 /* PBXTargetDependency */,
-				F997760870257CDA793377B19A9AC788 /* PBXTargetDependency */,
+				620BCD660801D539A4E05B4AFC50E3DE /* PBXTargetDependency */,
+				A55AF7CBF986BB298EF06080B32776BA /* PBXTargetDependency */,
 			);
 			name = "Pods-Eventos";
 			productName = "Pods-Eventos";
-			productReference = A2E92DBED06C7F640C81FF70D7832D97 /* Pods_Eventos.framework */;
+			productReference = 268E7E236744E0CD4337C239CF40FF85 /* Pods_Eventos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD11672B6619C297B6AEE3DFB8213C59 /* FontAwesome.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D647550AC543F36CDA7093F28F22389 /* Build configuration list for PBXNativeTarget "FontAwesome.swift" */;
+			buildPhases = (
+				30237CD8FFC618019ADDBFF6AF503934 /* Sources */,
+				6384E4C1DBDFE6DB82E1EAD08B3F044A /* Frameworks */,
+				1B380E02C8EEA8102FF78E1D9AC756E8 /* Resources */,
+				25E0772F87878D34BE9C9F522910F6B2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ABF2DD2892B1D79E33237954FE96C29 /* PBXTargetDependency */,
+			);
+			name = FontAwesome.swift;
+			productName = FontAwesome.swift;
+			productReference = 5B53C1F8DC7B0DC071DB4CF61BA5DEDE /* FontAwesome_swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1095,20 +706,37 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 98DE4479D33CE3B9C2E3FA2FF6A618FE /* Products */;
+			productRefGroup = CD61620272C5EF460C8399F985309560 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				CD11672B6619C297B6AEE3DFB8213C59 /* FontAwesome.swift */,
+				6991F49AED797519343B1F4591001691 /* FontAwesome.swift-FontAwesome.swift */,
 				00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */,
-				D1A536D32A3AB205243F6F605B3B5BCF /* Pageboy */,
-				FA2B9B4C261B2270CC5205E1E4026822 /* Pods-Eventos */,
+				83BBBC51E737F01D5E35267BB5B79903 /* Pods-Eventos */,
 				3671C5554E887E7DA8D93DFE0F2B22CB /* Pods-EventosTests */,
-				20193CC5EFDCD8272321DCD291EE3122 /* PureLayout */,
-				6DBBD7370475B860D04D40D5B1279657 /* Skeleton */,
-				383A7A8BBBEB736C5DF0D3DEAF18BF52 /* Tabman */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B380E02C8EEA8102FF78E1D9AC756E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EFA908CA9A3E9A800B618AC902F5990 /* FontAwesome.swift.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F276D87ECE642BAF9150EB9FD4E7269A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3079113A27F987B6889C2E9C05A10DD /* FontAwesome.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		007D6DED6EC341ABDE7F354FB70C651D /* Sources */ = {
@@ -1116,6 +744,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1DCA9D8B2624CF7DEAA351425CC5D2A /* Pods-EventosTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30237CD8FFC618019ADDBFF6AF503934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA158509B4673EB6F8D0D12961169AB1 /* Enum.swift in Sources */,
+				589D19F8FC8F1E9D6360D950D26A7138 /* FontAwesome.swift in Sources */,
+				FD8C615CEC6F1EBDB63BF3240583D2F3 /* FontAwesome.swift-dummy.m in Sources */,
+				5AD3E160E28F5EFC4D17A8668CA322BD /* FontAwesomeBarButtonItem.swift in Sources */,
+				C879A43B7C8CC16E986D40441C2F2878 /* FontAwesomeImageRepresentable.swift in Sources */,
+				2AE0F58A0988D92438C1448C861A154C /* FontAwesomeImageView.swift in Sources */,
+				41FAD1CDCD9272883A6CF33FE8FF44E0 /* FontAwesomeSegmentedControl.swift in Sources */,
+				CBD91B03AC387775166237F805EABC3A /* FontAwesomeStateRequirement.swift in Sources */,
+				65D01C54FCF24BF6E6FBCD49F6E7CCB1 /* FontAwesomeTabBarItem.swift in Sources */,
+				FB64A64BD408EE7BBD70A4B048315C7D /* FontAwesomeTextRepresentable.swift in Sources */,
+				522BEF444AEAA78D1747B62ED49C688E /* FontAwesomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1128,161 +774,65 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8ED71526A238BA3A50AD7979FF8CEEA4 /* Sources */ = {
+		BD0FD384D5890863CFD1966F46162F84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				856B453960244C76FFE4DB442C2827F4 /* Pods-Eventos-dummy.m in Sources */,
+				8ECD9D60228CE77E1A5AAD2B0D576A93 /* Pods-Eventos-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A245C6703350A8C160996766C7AE6BB4 /* Sources */ = {
+		EFDD05B792A1A2DB330508032AD5AC07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C94189F7A9D77F402617AB58AFFE12E8 /* ALView+PureLayout.m in Sources */,
-				0970CF579DE15C64F7557ED9F9347DFC /* NSArray+PureLayout.m in Sources */,
-				87219CB6D4426A98B46386D8D9AF1F59 /* NSLayoutConstraint+PureLayout.m in Sources */,
-				321784C731B929922F6E6CB8F405E8A2 /* PureLayout-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D851BBEB96B602F6EA168A82A357E12E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FC6751E6BE8F12E142BB7863E9C0D25F /* ColorUtils.swift in Sources */,
-				7E9965C2633B18B16D991C92EA3AD74D /* ContentViewScrollView.swift in Sources */,
-				F79F5C67FA5F4B2B89C8FDCC39FDD44D /* ImageUtils.swift in Sources */,
-				26766BDDAC1BFB2E0FFFA6A9CBED2296 /* PositionalUtils.swift in Sources */,
-				9EBD00F457CB4BC279DA0AAD14BD66B7 /* Tabman-dummy.m in Sources */,
-				95DB2163CD937E663ADF26D4ADE53F5D /* TabmanBar+Appearance.swift in Sources */,
-				121CA775D97C1AC898C0EFF03A2BBC21 /* TabmanBar+Config.swift in Sources */,
-				CA6B1AF47EA6CF6965D861B6F3CF1A29 /* TabmanBar+Construction.swift in Sources */,
-				7AC21F2D9BF772A57390916774948CB6 /* TabmanBar+Indicator.swift in Sources */,
-				8FEEE89474B5AA08315D331E3931A7E9 /* TabmanBar+Insets.swift in Sources */,
-				43AB3AEF1E6B57FFAA6D39CA8BE2B9FA /* TabmanBar+Item.swift in Sources */,
-				BDEAE408C79E711D368770EEF9E76388 /* TabmanBar+Protocols.swift in Sources */,
-				7EB3D6B05453B4A3F00D37DC3F5FD7D9 /* TabmanBar.swift in Sources */,
-				91189665014AD409CBE109C011107F59 /* TabmanBarBackgroundView.swift in Sources */,
-				3A4EB5E358698AE04D31E733E6BBAB35 /* TabmanBarTransitionStore.swift in Sources */,
-				EFB9B9517E2970DC2FD26B57E2DD33C1 /* TabmanBlockIndicator.swift in Sources */,
-				22642F1ACB01677977EE89468D702F12 /* TabmanBlockTabBar.swift in Sources */,
-				0FF91713A939580DB15BB423A2880424 /* TabmanButtonBar.swift in Sources */,
-				F296B7C7B8AC4EADE3FA44B4216A7B73 /* TabmanChevronIndicator.swift in Sources */,
-				B3113ED743E849E32C3AF78D7C2D9E59 /* TabmanChevronView.swift in Sources */,
-				C1AE10ED6DCE0557F8D168AA3206F9B2 /* TabmanCircularView.swift in Sources */,
-				C8059010F9BC1A33F168353121A1A80F /* TabmanClearIndicator.swift in Sources */,
-				CA7794AC05211ED2E7B9BC23A92F415A /* TabmanDotIndicator.swift in Sources */,
-				55A71E52485FD01DCE59E5E38FA6879F /* TabmanFixedButtonBar.swift in Sources */,
-				4E74DFAA444392E32D603CCB25D259A1 /* TabmanIndicator.swift in Sources */,
-				5401ADC628289156C342A9801964CF81 /* TabmanIndicatorTransition.swift in Sources */,
-				9B4E5688B3C31CB65FEDA8101D2CAE1C /* TabmanItemColorCrossfadeTransition.swift in Sources */,
-				15BD8E244C57E82E92F111633A563976 /* TabmanItemMaskTransition.swift in Sources */,
-				BBB95C4E3E77D3E6E248285D61943230 /* TabmanItemTransition.swift in Sources */,
-				FDDB640AA6E0373F88EFA1D7661ED19E /* TabmanLineBar.swift in Sources */,
-				B410901B4FBA246588F8CC15D8E1E16D /* TabmanLineIndicator.swift in Sources */,
-				AA86F7F4C12077032FEB18A382C65BBA /* TabmanScrollingBarIndicatorTransition.swift in Sources */,
-				58E7FA6E028ADBE79413D15AFC1361A3 /* TabmanScrollingButtonBar.swift in Sources */,
-				02AC366191655F2DAD0B00ABCF311C29 /* TabmanSeparator.swift in Sources */,
-				E1E0F70522BEBD8BED243ECA642D8D69 /* TabmanStaticBarIndicatorTransition.swift in Sources */,
-				B5B9A853FAF3C5E34AB3EC07CCC18FF9 /* TabmanStaticButtonBar.swift in Sources */,
-				8B79FA7549D1FAF11522E8245F0BC276 /* TabmanTransition.swift in Sources */,
-				742F9789EB4CCF4C757BEF4AB091647F /* TabmanViewController+Embedding.swift in Sources */,
-				E868655C53EF705A757ECFE9EC1F6A90 /* TabmanViewController+Insetting.swift in Sources */,
-				BBE48CE663C644637F86CE45E6E740B3 /* TabmanViewController.swift in Sources */,
-				5364C56E4E133BD78455754E58488A34 /* UIView+AutoLayout.swift in Sources */,
-				7024E61A79B0F6E60C5128A64E2728D0 /* UIView+Utils.swift in Sources */,
-				0EE5C7DCBFCB546970FAC42BBE64E7FD /* ViewUtils.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E0DDB424719475292470621DF5936C9B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE98DD55467BC71410A3019537520A22 /* Pageboy-dummy.m in Sources */,
-				3AAE47E38E8882E36C20EE044EC4C76F /* PageboyAutoScroller.swift in Sources */,
-				DCE16B098DD15DD6E076C7C51F308402 /* PageboyViewController+Extras.swift in Sources */,
-				F3F1117A599A2BBCA366FCD6D336C76D /* PageboyViewController+Management.swift in Sources */,
-				66190409FD3947A67C2696C0C644F5F9 /* PageboyViewController+ScrollDetection.swift in Sources */,
-				7F84CD65B6EF39F1A3E0D7FBA5DE449E /* PageboyViewController+Transitioning.swift in Sources */,
-				B068EE9BB9B63FD32A3450FF96177700 /* PageboyViewController.swift in Sources */,
-				6392F6296428F71D54DE5A34FFAF3F8B /* TransitionOperation+Action.swift in Sources */,
-				0BBCF215072076740AC84DA9CE17A4FC /* TransitionOperation.swift in Sources */,
-				E15A1D7DF702DB6CF1F440850F35D26A /* UIPageViewController+ScrollView.swift in Sources */,
-				A1EE0270B86EC45185415E1469C0BA40 /* UIView+AutoLayout.swift in Sources */,
-				57FF626B5104B45F61ACC4955C25997E /* UIView+Localization.swift in Sources */,
-				2D3747C5861B0FC0ECAA806A45A42AD4 /* UIViewController+PageboyExtras.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA4C0663F42BA58A1FD08C53FCF7CC8F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0928AC444F27ECD6C65CE5E0E8B507A /* CAGradientLayer+Slide.swift in Sources */,
-				AEB82D51FEFA45505BF413ACF5819F39 /* Direction.swift in Sources */,
-				5D1C7C2D25FEC5ECED2F7A6DB85E4DB3 /* GradientContainerView.swift in Sources */,
-				CB86507EF3485E471E5EE1B3782468D8 /* GradientPoint.swift in Sources */,
-				4D516FF2A8747D60D63675FCEE46A3E8 /* GradientsOwner.swift in Sources */,
-				228B3CC38B85A64CFF8DBF1D1F37ED72 /* GradientTransition.swift in Sources */,
-				D8A9DC17BF2BD6995CA0C7AC3B894960 /* GradientView.swift in Sources */,
-				563563B4B21788C8EF80CD0D60F9009E /* Skeleton-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8D4676D9516936DB9B3D8B1B202D2BFA /* PBXTargetDependency */ = {
+		0ABF2DD2892B1D79E33237954FE96C29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Pageboy;
-			target = D1A536D32A3AB205243F6F605B3B5BCF /* Pageboy */;
-			targetProxy = 418AC34FD17974B701FD7D51C1AB534E /* PBXContainerItemProxy */;
+			name = "FontAwesome.swift-FontAwesome.swift";
+			target = 6991F49AED797519343B1F4591001691 /* FontAwesome.swift-FontAwesome.swift */;
+			targetProxy = A1E7ADA9414728070F39599079B02152 /* PBXContainerItemProxy */;
 		};
-		9B9FF30CE89E27150EFE943CAA92477C /* PBXTargetDependency */ = {
+		620BCD660801D539A4E05B4AFC50E3DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Pageboy;
-			target = D1A536D32A3AB205243F6F605B3B5BCF /* Pageboy */;
-			targetProxy = 8982DDEA1D2B49D386672D89E483CA9B /* PBXContainerItemProxy */;
+			name = FontAwesome.swift;
+			target = CD11672B6619C297B6AEE3DFB8213C59 /* FontAwesome.swift */;
+			targetProxy = 92ED4A5494AB91E17B5141E0F3DE73BE /* PBXContainerItemProxy */;
 		};
-		A4D7416934A6239355028227FB15D722 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Skeleton;
-			target = 6DBBD7370475B860D04D40D5B1279657 /* Skeleton */;
-			targetProxy = C5B89358B4260DDD42A023E5CCCC4D6E /* PBXContainerItemProxy */;
-		};
-		D52960673BF39260CB2CD63128E9A334 /* PBXTargetDependency */ = {
+		A55AF7CBF986BB298EF06080B32776BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleToolboxForMac;
 			target = 00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */;
-			targetProxy = 26488ABDD28D90815E3063548DB9BE58 /* PBXContainerItemProxy */;
-		};
-		E1B24A9E17D2A080F81467CE9AE7BCC2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PureLayout;
-			target = 20193CC5EFDCD8272321DCD291EE3122 /* PureLayout */;
-			targetProxy = B38AD8CC1ADFA2C11EC250B7760B1391 /* PBXContainerItemProxy */;
-		};
-		F997760870257CDA793377B19A9AC788 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Tabman;
-			target = 383A7A8BBBEB736C5DF0D3DEAF18BF52 /* Tabman */;
-			targetProxy = B6AECDB8A9CF50D35A0221E9D4B8219D /* PBXContainerItemProxy */;
-		};
-		FF05C19E7C7C1057CB9455CF46A40D76 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PureLayout;
-			target = 20193CC5EFDCD8272321DCD291EE3122 /* PureLayout */;
-			targetProxy = 972B77D808351F695FF557128D33F09A /* PBXContainerItemProxy */;
+			targetProxy = 86522B873A9C59F781A132540262E3E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0913CC8ED68225C17E87FC60E2B379B7 /* Release */ = {
+		0FDFD0914F226F60E35F5088944B6E30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D4F976DD10F0316BD4B004BE80066F8 /* Tabman.xcconfig */;
+			baseConfigurationReference = FA32E2FEEAD289F0EDEFEF024DEF1A3C /* FontAwesome.swift.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/ResourceBundle-FontAwesome.swift-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FontAwesome.swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		17D7779197FBE4D079F36D29BF55D5FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4588DFEA964A56C24C68B68A588DD60 /* Pods-Eventos.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1296,14 +846,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Tabman/Tabman-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Tabman/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Eventos/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Tabman/Tabman.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eventos/Pods-Eventos.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Tabman;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Eventos;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1313,89 +867,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		1B70ED9DF65C864123B39B143113948B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FFA41D22B59751C603B0034637BAD2F /* Skeleton.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Skeleton/Skeleton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Skeleton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Skeleton/Skeleton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Skeleton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		1CFFB1C8E7BF04183B931935FD3F0728 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1433,43 +904,9 @@
 			};
 			name = Debug;
 		};
-		2184AFCFF0687E9B5B19CBA177B4594B /* Release */ = {
+		319EFDA581D17E312B29D85515846653 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4325129251F5AAE68F20C9E57045B117 /* Pageboy.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pageboy/Pageboy-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pageboy/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pageboy/Pageboy.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Pageboy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		362EC0D18CD70084E4853CABA689AD6A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D4F976DD10F0316BD4B004BE80066F8 /* Tabman.xcconfig */;
+			baseConfigurationReference = 68E2FFD64E5A8A6123CEE30A7A1AC235 /* GoogleToolboxForMac.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1483,14 +920,52 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Tabman/Tabman-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Tabman/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Tabman/Tabman.modulemap";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Tabman;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3B0FBDEF43FF7FB4B8320187FA76338A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAF103F24E9C5373E045F066B9223038 /* Pods-Eventos.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Eventos/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eventos/Pods-Eventos.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Eventos;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1538,9 +1013,44 @@
 			};
 			name = Release;
 		};
-		4E3BB37312E5D4518EDFAD78B7C89440 /* Release */ = {
+		5D86AB6C172822262B389100E923CCCA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C121A380AC3874D4F539244E99592436 /* GoogleToolboxForMac.xcconfig */;
+			baseConfigurationReference = FA32E2FEEAD289F0EDEFEF024DEF1A3C /* FontAwesome.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome.swift/FontAwesome.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FontAwesome.swift/FontAwesome.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FontAwesome_swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6B1D8016538E37E0292A8FD57ECB2F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68E2FFD64E5A8A6123CEE30A7A1AC235 /* GoogleToolboxForMac.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1564,79 +1074,13 @@
 				PRODUCT_NAME = GoogleToolboxForMac;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		56C5269061205FEF7DE1D0DC02A0C86B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FFA41D22B59751C603B0034637BAD2F /* Skeleton.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Skeleton/Skeleton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Skeleton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Skeleton/Skeleton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Skeleton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5E9C3DDBD5D0BB8030D9535725DA8D13 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C43DBEEA1343FF1F70D94C4E6F3093F /* PureLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PureLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		707B86CFB21B645E37109F39754D4051 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1682,9 +1126,9 @@
 			};
 			name = Release;
 		};
-		80957E4A611176065A4A15417966D0A3 /* Release */ = {
+		BF8B8B9562BB1696903DDFC5B4E72907 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C43DBEEA1343FF1F70D94C4E6F3093F /* PureLayout.xcconfig */;
+			baseConfigurationReference = FA32E2FEEAD289F0EDEFEF024DEF1A3C /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1698,53 +1142,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome.swift/FontAwesome.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MODULEMAP_FILE = "Target Support Files/FontAwesome.swift/FontAwesome.swift.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PureLayout;
+				PRODUCT_NAME = FontAwesome_swift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B2C7CDA8E3B047D3C449DA05E2154685 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4588DFEA964A56C24C68B68A588DD60 /* Pods-Eventos.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Eventos/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Eventos/Pods-Eventos.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Eventos;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1753,148 +1161,89 @@
 			};
 			name = Release;
 		};
-		BE9B55DCDA299EAE202F6DB76CAA485A /* Debug */ = {
+		E0721897CFC7A1D36B4C8FA9C5BBB934 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C121A380AC3874D4F539244E99592436 /* GoogleToolboxForMac.xcconfig */;
+			baseConfigurationReference = FA32E2FEEAD289F0EDEFEF024DEF1A3C /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/ResourceBundle-FontAwesome.swift-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = GoogleToolboxForMac;
+				PRODUCT_NAME = FontAwesome.swift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		DDF053192B336A9F192B30630BF1C7CD /* Debug */ = {
+		EF26A3C5B6EDA309192C6025F703DE0A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAF103F24E9C5373E045F066B9223038 /* Pods-Eventos.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Eventos/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Eventos/Pods-Eventos.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Eventos;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F040D8F9A0FD7AA1C0A1523A76E47BE2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4325129251F5AAE68F20C9E57045B117 /* Pageboy.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pageboy/Pageboy-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pageboy/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pageboy/Pageboy.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Pageboy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B5B574082841C303EE11765C5594D8C /* Build configuration list for PBXNativeTarget "Pageboy" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F040D8F9A0FD7AA1C0A1523A76E47BE2 /* Debug */,
-				2184AFCFF0687E9B5B19CBA177B4594B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
+				EF26A3C5B6EDA309192C6025F703DE0A /* Debug */,
 				707B86CFB21B645E37109F39754D4051 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D1F4C08D6746DCC1FE662F2F4EAEC7D /* Build configuration list for PBXNativeTarget "Tabman" */ = {
+		4AF74ED75DBC11AD391C93720F31A88D /* Build configuration list for PBXNativeTarget "Pods-Eventos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				362EC0D18CD70084E4853CABA689AD6A /* Debug */,
-				0913CC8ED68225C17E87FC60E2B379B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		475E4E3113B8386D97D2B56F20826E49 /* Build configuration list for PBXNativeTarget "Pods-Eventos" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DDF053192B336A9F192B30630BF1C7CD /* Debug */,
-				B2C7CDA8E3B047D3C449DA05E2154685 /* Release */,
+				3B0FBDEF43FF7FB4B8320187FA76338A /* Debug */,
+				17D7779197FBE4D079F36D29BF55D5FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1908,11 +1257,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A47EF589976A7342FFA1B37A02EEDFCD /* Build configuration list for PBXNativeTarget "Skeleton" */ = {
+		8D647550AC543F36CDA7093F28F22389 /* Build configuration list for PBXNativeTarget "FontAwesome.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1B70ED9DF65C864123B39B143113948B /* Debug */,
-				56C5269061205FEF7DE1D0DC02A0C86B /* Release */,
+				5D86AB6C172822262B389100E923CCCA /* Debug */,
+				BF8B8B9562BB1696903DDFC5B4E72907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91ACF4D4E342DEB04B7C57FA8EA6CC1 /* Build configuration list for PBXNativeTarget "FontAwesome.swift-FontAwesome.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0721897CFC7A1D36B4C8FA9C5BBB934 /* Debug */,
+				0FDFD0914F226F60E35F5088944B6E30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1920,17 +1278,8 @@
 		C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE9B55DCDA299EAE202F6DB76CAA485A /* Debug */,
-				4E3BB37312E5D4518EDFAD78B7C89440 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CC23F091A3E4D66240540F1C8970E81C /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E9C3DDBD5D0BB8030D9535725DA8D13 /* Debug */,
-				80957E4A611176065A4A15417966D0A3 /* Release */,
+				319EFDA581D17E312B29D85515846653 /* Debug */,
+				6B1D8016538E37E0292A8FD57ECB2F81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
