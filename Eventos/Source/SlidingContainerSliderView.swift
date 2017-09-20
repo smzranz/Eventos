@@ -27,7 +27,7 @@ public protocol SlidingContainerSliderViewDelegate: class {
 
 public class SlidingContainerSliderView: UIScrollView, UIScrollViewDelegate {
   public var shouldSlide: Bool = true
-  public var sliderHeight: CGFloat = 44
+  public var sliderHeight: CGFloat = 54
   public var titles: [String]!
   public var labels: [UILabel] = []
   public var selector: UIView!
