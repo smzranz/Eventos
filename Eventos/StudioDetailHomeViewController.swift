@@ -11,10 +11,14 @@ import GoogleMaps
 import FontAwesome_swift
 
 class StudioDetailHomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+    
+    
+    @IBOutlet var detailTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+detailTableView.rowHeight = UITableViewAutomaticDimension
+        detailTableView.estimatedRowHeight = 80
         // Do any additional setup after loading the view.
     }
 
@@ -23,7 +27,7 @@ class StudioDetailHomeViewController: UIViewController,UITableViewDelegate,UITab
         // Dispose of any resources that can be recreated.
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -53,6 +57,9 @@ class StudioDetailHomeViewController: UIViewController,UITableViewDelegate,UITab
             
             return cell
         case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "aboutUs", for: indexPath) as! AbousUsTableViewCell
+            return cell
+        case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "reviewCell", for: indexPath) as! ReviewsTableViewCell
             return cell
         default:
@@ -65,9 +72,11 @@ class StudioDetailHomeViewController: UIViewController,UITableViewDelegate,UITab
         case 0:
             return 40
         case 1:
-            return 120
+            return 160
         case 2:
-            return 100
+            return UITableViewAutomaticDimension
+        case 3:
+            return UITableViewAutomaticDimension
         default:
             return 40
         }
@@ -95,8 +104,10 @@ class StudioDetailHomeViewController: UIViewController,UITableViewDelegate,UITab
         //return sectionHeaderView
         case 1:
             headerCell.headerLabel.text = "About";
-        //return sectionHeaderView
         case 2:
+            headerCell.headerLabel.text = "About"
+        //return sectionHeaderView
+        case 3:
             headerCell.headerLabel.text = "Reviews";
         //return sectionHeaderView
         default: break

@@ -33,19 +33,40 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
         imageCollectionView.delegate = self
         imageCollectionView.dataSource = self
         print(selectedImageIndex)
-        
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
+        swipeDown.direction = .down
+        self.view.addGestureRecognizer(swipeDown)
 // self.imageCollectionView.scrollToItem(at: selectedImageIndex, at: .centeredHorizontally, animated: false)
         // Do any additional setup after loading the view.
     }
     
-    
+    func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
+        if gesture.direction == UISwipeGestureRecognizerDirection.right {
+            print("Swipe Right")
+        }
+        else if gesture.direction == UISwipeGestureRecognizerDirection.left {
+            print("Swipe Left")
+        }
+        else if gesture.direction == UISwipeGestureRecognizerDirection.up {
+            print("Swipe Up")
+        }
+        else if gesture.direction == UISwipeGestureRecognizerDirection.down {
+            closeBtnAction(closeBtnOutlet)
+        }
+    }
 //    override func viewWillAppear(_ animated: Bool) {
 //        super.viewWillAppear(true)
 //        UIApplication.shared.statusBarStyle = .lightContent
 //    }
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(true)
+      //  super.viewWillDisappear(true)
         navigationController?.navigationBar.isHidden = false
+//        UIView.animate(withDuration: 2.0, animations: { () -> Void in
+//            UIView.setAnimationCurve(UIViewAnimationCurve.easeOut)
+//            UIView.setAnimationTransition(UIViewAnimationTransition.curlDown, for: self.navigationController!.view, cache: false)
+//        })
+        
+        super.viewWillDisappear(animated)
         
     }
     override func viewDidLayoutSubviews() {
@@ -117,6 +138,14 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
     
     
     @IBAction func closeBtnAction(_ sender: Any) {
+        
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFuncti)
+        
+        transition.type = kCATransitionFade
+        self.navigationController?.view.layer.add(transition, forKey: nil)
+        _ = self.navigationController?.popToRootViewController(animated: false)
         
         navigationController?.navigationBar.isHidden = false
         

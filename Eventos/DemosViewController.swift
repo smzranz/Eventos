@@ -39,7 +39,7 @@ class DemosViewController: UIViewController,UICollectionViewDelegate,UICollectio
         return 2
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 14
+        return 9
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! DemoImageCollectionViewCell
@@ -47,7 +47,7 @@ class DemosViewController: UIViewController,UICollectionViewDelegate,UICollectio
         if indexPath.section == 1{
             cell.videoCamera.image = UIImage.fontAwesomeIcon(name:.videoCamera , textColor: UIColor.white, size: cell.videoCamera.frame.size)
             //UIImage.fontAwesomeIcon(code: .vimeoSquare, textColor: UIColor.white, size: cell.videoCamera.frame.size)
-        
+        cell.videoCamera.isHidden = false
         }else{
         cell.videoCamera.isHidden = true
         
@@ -69,6 +69,46 @@ class DemosViewController: UIViewController,UICollectionViewDelegate,UICollectio
         
         return 1
     }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        //   if indexPath.section == 1{
+        if indexPath.section == 0{
+            
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "SectionHeader", for: indexPath) as! SectionHeaderCollectionReusableView
+            
+            header.label.text = "Photos"
+           // header.label.layer.cornerRadius = 3
+            header.label.textColor = UIColor.black
+         //   header.label.layer.borderWidth = 1
+            header.label.layer.masksToBounds = true
+            return header
+        }
+        else if indexPath.section == 1{
+            
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "SectionHeader", for: indexPath) as! SectionHeaderCollectionReusableView
+            
+            header.label.text = "Videos"
+         //   header.label.layer.cornerRadius = 3
+            header.label.textColor = UIColor.black
+        //    header.label.layer.borderWidth = 1
+            header.label.layer.masksToBounds = true
+            return header
+            
+        }
+        
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "SectionHeader", for: indexPath) as! SectionHeaderCollectionReusableView
+        
+        header.label.text = "xx"
+        
+        return header
+        
+        
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+       
+        return CGSize(width: 300, height: 40)
+    }
+
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedImageIndex = indexPath
