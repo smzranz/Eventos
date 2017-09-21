@@ -13,6 +13,7 @@ import FirebaseCore
 
 
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -25,8 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.sharedManager().enable = true
         UIApplication.shared.statusBarStyle = .lightContent
         GMSPlacesClient.provideAPIKey("AIzaSyBO_z53Bb18iuDHVnbKpAlX-D5haUFHQ28")
+    //    AIzaSyDcamMkdNdFbt1oMPKflZVbTWDIwgfBmGg
         FirebaseApp.configure()
-        GMSServices.provideAPIKey("AIzaSyBO_z53Bb18iuDHVnbKpAlX-D5haUFHQ28")
+        GMSServices.provideAPIKey("AIzaSyDcamMkdNdFbt1oMPKflZVbTWDIwgfBmGg")
+      //  GMSServices.provideAPIKey("AIzaSyBO_z53Bb18iuDHVnbKpAlX-D5haUFHQ28")
         // Override point for customization after application launch.
         return true
     }

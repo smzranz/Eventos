@@ -10,6 +10,11 @@ import UIKit
 
 class DemoImageCollectionViewCell: UICollectionViewCell {
     
+    
+    @IBOutlet weak var videoCamera: UIImageView!
+    
+    
+    
     @IBOutlet var demoImageView: UIImageView!
     
     

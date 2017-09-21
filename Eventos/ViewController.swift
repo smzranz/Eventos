@@ -135,3 +135,27 @@ extension UIColor {
         return UIColor(hue: h, saturation: s, brightness: b * factor, alpha: a)
     }
 }
+
+
+extension UIViewController {
+    
+    func setBackButton(){
+        
+        let btn = UIButton(type: .custom)
+        btn.tintColor = UIColor.white
+        btn.setImage(UIImage.fontAwesomeIcon(name:.angleLeft, textColor: UIColor.white, size: CGSize(width: 50, height: 50)), for: .normal)
+        btn.imageEdgeInsets.left = -40
+        btn.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        btn.addTarget(self, action: #selector(backBtnTapped), for: .touchUpInside)
+      //   btn.backgroundColor = UIColor.white
+        let item = UIBarButtonItem(customView: btn)
+        
+        self.navigationItem.setLeftBarButton(item, animated: true)
+        
+    }
+    func backBtnTapped() {
+        self.navigationController?.popViewController(animated: true)
+        
+        
+    }
+}

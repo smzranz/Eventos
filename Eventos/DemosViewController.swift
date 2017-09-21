@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
 class DemosViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
@@ -29,13 +30,13 @@ class DemosViewController: UIViewController,UICollectionViewDelegate,UICollectio
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        imageCollectionView.reloadData()
-        imageCollectionView.showLoader()
-        imageCollectionView.layoutIfNeeded()
+//        imageCollectionView.reloadData()
+//        imageCollectionView.showLoader()
+//        imageCollectionView.layoutIfNeeded()
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return 2
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 14
@@ -43,6 +44,14 @@ class DemosViewController: UIViewController,UICollectionViewDelegate,UICollectio
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! DemoImageCollectionViewCell
         cell.demoImageView.image = UIImage(named: "\(indexPath.row+1)")
+        if indexPath.section == 1{
+            cell.videoCamera.image = UIImage.fontAwesomeIcon(name:.videoCamera , textColor: UIColor.white, size: cell.videoCamera.frame.size)
+            //UIImage.fontAwesomeIcon(code: .vimeoSquare, textColor: UIColor.white, size: cell.videoCamera.frame.size)
+        
+        }else{
+        cell.videoCamera.isHidden = true
+        
+        }
         return cell
     }
     

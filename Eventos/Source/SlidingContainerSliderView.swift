@@ -27,7 +27,7 @@ public protocol SlidingContainerSliderViewDelegate: class {
 
 public class SlidingContainerSliderView: UIScrollView, UIScrollViewDelegate {
   public var shouldSlide: Bool = true
-  public var sliderHeight: CGFloat = 54
+  public var sliderHeight: CGFloat = 44
   public var titles: [String]!
   public var labels: [UILabel] = []
   public var selector: UIView!
@@ -54,11 +54,11 @@ public class SlidingContainerSliderView: UIScrollView, UIScrollViewDelegate {
       backgroundColor: UIColor(white: 0, alpha: 0.3),
       font: UIFont (name: "HelveticaNeue-Light", size: 15)!,
       selectedFont: UIFont.systemFont(ofSize: 15),
-      textColor: ColorFile().getPrimaryColor().withAlphaComponent(0.5),
+      textColor: ColorFile().getMarkerBlueColor().withAlphaComponent(0.5),
       selectedTextColor: UIColor.white,
       outerPadding: 10,
       innerPadding: 10,
-      selectorColor: ColorFile().getPrimaryColor(),
+      selectorColor: ColorFile().getMarkerBlueColor(),
       selectorHeight: 3,
       fixedWidth: false)
 

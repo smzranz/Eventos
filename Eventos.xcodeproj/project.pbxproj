@@ -15,6 +15,11 @@
 		514224F71F6B963F00B9F39C /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 514224F61F6B963F00B9F39C /* images.jpeg */; };
 		514224FB1F6BFAF400B9F39C /* ListViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514224FA1F6BFAF400B9F39C /* ListViewViewController.swift */; };
 		514224FF1F6BFBCC00B9F39C /* ListViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514224FE1F6BFBCC00B9F39C /* ListViewTableViewCell.swift */; };
+		514E02321F7383A1001BFB39 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514E02311F7383A1001BFB39 /* OptionsViewController.swift */; };
+		514E02341F73B27E001BFB39 /* ReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514E02331F73B27E001BFB39 /* ReviewsTableViewCell.swift */; };
+		514E02361F73BBCF001BFB39 /* CustomHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514E02351F73BBCF001BFB39 /* CustomHeaderTableViewCell.swift */; };
+		514E02381F73BBFC001BFB39 /* PlaceDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514E02371F73BBFC001BFB39 /* PlaceDetailsTableViewCell.swift */; };
+		514E023A1F73C6CC001BFB39 /* MapViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514E02391F73C6CC001BFB39 /* MapViewTableViewCell.swift */; };
 		515415011F4EA7B0006528B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515415001F4EA7B0006528B2 /* AppDelegate.swift */; };
 		515415031F4EA7B0006528B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515415021F4EA7B0006528B2 /* ViewController.swift */; };
 		515415061F4EA7B0006528B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515415041F4EA7B0006528B2 /* Main.storyboard */; };
@@ -85,6 +90,11 @@
 		514224F61F6B963F00B9F39C /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 		514224FA1F6BFAF400B9F39C /* ListViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewViewController.swift; sourceTree = "<group>"; };
 		514224FE1F6BFBCC00B9F39C /* ListViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewTableViewCell.swift; sourceTree = "<group>"; };
+		514E02311F7383A1001BFB39 /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		514E02331F73B27E001BFB39 /* ReviewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewCell.swift; sourceTree = "<group>"; };
+		514E02351F73BBCF001BFB39 /* CustomHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		514E02371F73BBFC001BFB39 /* PlaceDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		514E02391F73C6CC001BFB39 /* MapViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewTableViewCell.swift; sourceTree = "<group>"; };
 		515414FD1F4EA7B0006528B2 /* Eventos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eventos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		515415001F4EA7B0006528B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		515415021F4EA7B0006528B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +222,10 @@
 		514224FD1F6BFBB100B9F39C /* TableviewCells */ = {
 			isa = PBXGroup;
 			children = (
+				514E02331F73B27E001BFB39 /* ReviewsTableViewCell.swift */,
+				514E02351F73BBCF001BFB39 /* CustomHeaderTableViewCell.swift */,
+				514E02371F73BBFC001BFB39 /* PlaceDetailsTableViewCell.swift */,
+				514E02391F73C6CC001BFB39 /* MapViewTableViewCell.swift */,
 				514224FE1F6BFBCC00B9F39C /* ListViewTableViewCell.swift */,
 			);
 			name = TableviewCells;
@@ -245,17 +259,18 @@
 				5155DA1D1F723F570014B6A4 /* CommonFile */,
 				515415001F4EA7B0006528B2 /* AppDelegate.swift */,
 				515415021F4EA7B0006528B2 /* ViewController.swift */,
+				514224FA1F6BFAF400B9F39C /* ListViewViewController.swift */,
 				511FE4AD1F714190001F0AB1 /* StudioDetailViewController.swift */,
+				5139447B1F7154920092340A /* StudioDetailHomeViewController.swift */,
+				514E02311F7383A1001BFB39 /* OptionsViewController.swift */,
 				513944631F71478E0092340A /* PackagesViewController.swift */,
 				513944651F7147990092340A /* LoginViewController.swift */,
-				514224FA1F6BFAF400B9F39C /* ListViewViewController.swift */,
 				5139447D1F7154C20092340A /* DemosViewController.swift */,
 				C36906541F71960E003655B8 /* DetailImageViewViewController.swift */,
 				C36906511F719498003655B8 /* CollectionViewcells */,
 				513944761F7152F00092340A /* Source */,
 				514224FD1F6BFBB100B9F39C /* TableviewCells */,
 				515415041F4EA7B0006528B2 /* Main.storyboard */,
-				5139447B1F7154920092340A /* StudioDetailHomeViewController.swift */,
 				515415091F4EA7B1006528B2 /* LaunchScreen.storyboard */,
 				5154150C1F4EA7B1006528B2 /* Info.plist */,
 				5184E4171F57FD6D001FA466 /* GoogleService-Info.plist */,
@@ -486,7 +501,7 @@
 				TargetAttributes = {
 					515414FC1F4EA7B0006528B2 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = VF624LR8S4;
+						DevelopmentTeam = R53759X3UQ;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -642,6 +657,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				513944661F7147990092340A /* LoginViewController.swift in Sources */,
+				514E02321F7383A1001BFB39 /* OptionsViewController.swift in Sources */,
 				5184E4131F57FC95001FA466 /* GFBase32Utils.m in Sources */,
 				5155DA401F7291090014B6A4 /* IQKeyboardManagerConstants.swift in Sources */,
 				51F1BE281F7298D7000C3484 /* CustomTransitionViewController.swift in Sources */,
@@ -651,13 +667,17 @@
 				5155DA461F7291090014B6A4 /* IQPreviousNextView.swift in Sources */,
 				5155DA431F7291090014B6A4 /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				5155DA441F7291090014B6A4 /* IQTextView.swift in Sources */,
+				514E02341F73B27E001BFB39 /* ReviewsTableViewCell.swift in Sources */,
 				5155DA1C1F723E820014B6A4 /* SlidingContainerViewController.swift in Sources */,
+				514E02381F73BBFC001BFB39 /* PlaceDetailsTableViewCell.swift in Sources */,
 				5184E4121F57FC95001FA466 /* GeoFire.m in Sources */,
 				5155DA451F7291090014B6A4 /* IQBarButtonItem.swift in Sources */,
 				5155DA3B1F7291090014B6A4 /* IQUIScrollView+Additions.swift in Sources */,
+				514E023A1F73C6CC001BFB39 /* MapViewTableViewCell.swift in Sources */,
 				5155DA3E1F7291090014B6A4 /* IQUIViewController+Additions.swift in Sources */,
 				514224FF1F6BFBCC00B9F39C /* ListViewTableViewCell.swift in Sources */,
 				5155DA3D1F7291090014B6A4 /* IQUIView+Hierarchy.swift in Sources */,
+				514E02361F73BBCF001BFB39 /* CustomHeaderTableViewCell.swift in Sources */,
 				513944641F71478E0092340A /* PackagesViewController.swift in Sources */,
 				5155DA1F1F723FD50014B6A4 /* ColorFile.swift in Sources */,
 				5155DA4E1F72931C0014B6A4 /* ListLoader.swift in Sources */,
@@ -828,10 +848,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = VF624LR8S4;
+				DEVELOPMENT_TEAM = R53759X3UQ;
 				INFOPLIST_FILE = Eventos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.Eventos1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.Eventos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Eventos/Eventos-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -845,10 +865,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = VF624LR8S4;
+				DEVELOPMENT_TEAM = R53759X3UQ;
 				INFOPLIST_FILE = Eventos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.Eventos1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.Eventos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Eventos/Eventos-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

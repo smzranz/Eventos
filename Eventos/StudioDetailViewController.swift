@@ -22,9 +22,10 @@ class StudioDetailViewController: UIViewController  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setBackButton()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc3: PackagesViewController! = storyboard.instantiateViewController(withIdentifier: "packagesViewController") as! PackagesViewController
-        let vc4: LoginViewController! = storyboard.instantiateViewController(withIdentifier: "loginViewController") as! LoginViewController
+        let vc4: OptionsViewController! = storyboard.instantiateViewController(withIdentifier: "optionsViewController") as! OptionsViewController
         let vc1: StudioDetailHomeViewController! = storyboard.instantiateViewController(withIdentifier: "studioDetailHomeViewController") as! StudioDetailHomeViewController
         let vc2: DemosViewController! = storyboard.instantiateViewController(withIdentifier: "demosViewController") as! DemosViewController
         let slidingContainerViewController = SlidingContainerViewController ( parent: self, contentViewControllers: [vc1, vc2,vc3,vc4],
@@ -36,7 +37,7 @@ class StudioDetailViewController: UIViewController  {
         slidingContainerViewController.sliderView.appearance.fixedWidth = true
         slidingContainerViewController.sliderView.appearance.backgroundColor = UIColor.white
       //  slidingContainerViewController.sliderView.appearance.selectorColor = UIColor.blue
-        slidingContainerViewController.sliderView.appearance.selectedTextColor = ColorFile().getPrimaryColor()
+        slidingContainerViewController.sliderView.appearance.selectedTextColor = ColorFile().getMarkerBlueColor()
         slidingContainerViewController.setCurrentViewControllerAtIndex(0)
         // Do any additional setup after loading the view.
     }

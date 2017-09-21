@@ -20,7 +20,7 @@ var address = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
 //print("Loaded")
-        
+        setBackButton()
         address = ["The Nursery, King's Stanley, Stonehouse GL10, UK","19 Oxford St Market Rasen LN8 3AJ,UK","25-34 Plymouth Rd, Barnt Green, Birmingham B45 8JF, UK",
                    "31 Cottage Ln, Ormskirk L39 3NE, UK",
                    "5 Gannet Cl, Brockworth, Gloucester GL3 4UT, UK",
@@ -53,8 +53,8 @@ var address = [String]()
                       "Sunnamplex",
                       "Lexiqvolax"]
         listTableView.reloadData()
-        listTableView.showLoader()
-        _ = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(stopLoading), userInfo: nil, repeats: false)
+       // listTableView.showLoader()
+      //  _ = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(stopLoading), userInfo: nil, repeats: false)
         // Do any additional setup after loading the view.
     }
     func stopLoading(){
@@ -95,6 +95,51 @@ var address = [String]()
         
         self.navigationController?.pushViewController(viewController, animated: true)
     }
-    
-    
+ /*
+    func placeRating(){
+        
+        switch RatingArray {
+        case 1:
+            star1.image=#imageLiteral(resourceName: "start")
+            star2.image=#imageLiteral(resourceName: "star_inactive")
+            star3.image=#imageLiteral(resourceName: "star_inactive")
+            star4.image=#imageLiteral(resourceName: "star_inactive")
+            star5.image=#imageLiteral(resourceName: "star_inactive")
+        case 2:
+            star1.image=#imageLiteral(resourceName: "start")
+            star2.image=#imageLiteral(resourceName: "start")
+            star3.image=#imageLiteral(resourceName: "star_inactive")
+            star4.image=#imageLiteral(resourceName: "star_inactive")
+            star5.image=#imageLiteral(resourceName: "star_inactive")
+        case 3:
+            star1.image=#imageLiteral(resourceName: "start")
+            star2.image=#imageLiteral(resourceName: "start")
+            star3.image=#imageLiteral(resourceName: "start")
+            star4.image=#imageLiteral(resourceName: "star_inactive")
+            star5.image=#imageLiteral(resourceName: "star_inactive")
+        case 4:
+            star1.image=#imageLiteral(resourceName: "start")
+            star2.image=#imageLiteral(resourceName: "start")
+            star3.image=#imageLiteral(resourceName: "start")
+            star4.image=#imageLiteral(resourceName: "start")
+            star5.image=#imageLiteral(resourceName: "star_inactive")
+        case 5:
+            star1.image=#imageLiteral(resourceName: "start")
+            star2.image=#imageLiteral(resourceName: "start")
+            star3.image=#imageLiteral(resourceName: "start")
+            star4.image=#imageLiteral(resourceName: "start")
+            star5.image=#imageLiteral(resourceName: "start")
+        default:
+            star1.image=nil
+            star2.image=nil
+            star3.image=nil
+            star4.image=nil
+            star5.image=nil
+            
+        }
+        
+        
+        
+    }
+ */
 }
