@@ -26,11 +26,11 @@
                   moduleName = "Eventos"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/shamshir/Documents/Projects/Eventos/Eventos/ViewController.swift"
-                  timestampString = "527172285.671159"
+                  timestampString = "527753391.146508"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
                   offsetFromSymbolStart = "424">
                </Location>
                <Location
@@ -41,11 +41,11 @@
                   moduleName = "Eventos"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/shamshir/Documents/Projects/Eventos/Eventos/ViewController.swift"
-                  timestampString = "527172285.673427"
+                  timestampString = "527753391.14871"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
                   offsetFromSymbolStart = "60">
                </Location>
             </Locations>
@@ -65,6 +65,84 @@
             endingLineNumber = "18"
             landmarkName = "address"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eventos.ListViewViewController.address.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "Eventos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shamshir/Documents/Projects/Eventos/Eventos/ListViewViewController.swift"
+                  timestampString = "527753391.15478"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eventos.ListViewViewController.address.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "Eventos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shamshir/Documents/Projects/Eventos/Eventos/ListViewViewController.swift"
+                  timestampString = "527753391.156896"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eventos.ListViewViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Eventos.ListViewViewController"
+                  moduleName = "Eventos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shamshir/Documents/Projects/Eventos/Eventos/ListViewViewController.swift"
+                  timestampString = "527753391.159282"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eventos.ListViewViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Eventos.ListViewViewController&gt;"
+                  moduleName = "Eventos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shamshir/Documents/Projects/Eventos/Eventos/ListViewViewController.swift"
+                  timestampString = "527753391.161396"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eventos/DetailImageViewViewController.swift"
+            timestampString = "527771174.603745"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "closeBtnAction(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -104,7 +104,7 @@ extension CGRect {
     }
     
 
-    var center: CGPoint {
+    var center1: CGPoint {
         get {
             return CGPoint(x: self.midX, y: self.midY)
         }

@@ -98,6 +98,7 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
             let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! DemoImageCollectionViewCell
             
             cell.demoImageView.image = UIImage(named: "\(indexPath.row+1)")
+             cell.demoImageView.heroID = "ironMan"
             cell.layer.masksToBounds = true
             if indexPath == selectedImageIndex{
                 
@@ -139,16 +140,18 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
     
     @IBAction func closeBtnAction(_ sender: Any) {
         
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFuncti)
-        
-        transition.type = kCATransitionFade
-        self.navigationController?.view.layer.add(transition, forKey: nil)
-        _ = self.navigationController?.popToRootViewController(animated: false)
+//        let transition = CATransition()
+//        transition.duration = 0.5
+//        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFuncti)
+//        
+//        transition.type = kCATransitionFade
+//        self.navigationController?.view.layer.add(transition, forKey: nil)
+//        _ = self.navigationController?.popToRootViewController(animated: false)
         
         navigationController?.navigationBar.isHidden = false
         
         navigationController?.popViewController(animated: true)
+        
+      
     }
 }
