@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4b2-su-S5j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4b2-su-S5j">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="-26.53673163418291"/>
+            <point key="canvasLocation" x="3865" y="918"/>
         </scene>
         <!--List View View Controller-->
         <scene sceneID="YnC-be-ORO">
@@ -122,10 +122,10 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8o7-Fi-sd9">
-                                                            <rect key="frame" x="314" y="20" width="25" height="25"/>
+                                                            <rect key="frame" x="304" y="20" width="35" height="35"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="25" id="3GD-KD-svN"/>
-                                                                <constraint firstAttribute="width" constant="25" id="5F8-fE-c9K"/>
+                                                                <constraint firstAttribute="height" constant="35" id="3GD-KD-svN"/>
+                                                                <constraint firstAttribute="width" constant="35" id="5F8-fE-c9K"/>
                                                             </constraints>
                                                             <state key="normal" image="hearts_outline"/>
                                                         </button>
@@ -282,7 +282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8z-RJ-ouF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1751" y="-27"/>
+            <point key="canvasLocation" x="4714" y="918"/>
         </scene>
         <!--Studio Detail View Controller-->
         <scene sceneID="tzv-FM-1QQ">
@@ -459,24 +459,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AWu-eO-oCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="10183" y="377"/>
-        </scene>
-        <!--Options View Controller-->
-        <scene sceneID="tQw-nY-Nwg">
-            <objects>
-                <viewController storyboardIdentifier="optionsViewController" id="i5o-8y-oMc" customClass="OptionsViewController" customModule="Eventos" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KJw-CM-9hg"/>
-                        <viewControllerLayoutGuide type="bottom" id="GXJ-pg-trL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sq5-Tg-hzz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="isF-On-ZL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7530" y="416"/>
         </scene>
         <!--Studio Detail Home View Controller-->
         <scene sceneID="3N8-v3-6vl">
@@ -857,17 +839,13 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="O9d-Xj-OWq" id="dfB-2a-F2c"/>
                                     <outlet property="delegate" destination="O9d-Xj-OWq" id="cfk-sv-al3"/>
                                 </connections>
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Uod-NE-Et5">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="549"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fUq-mU-67P">
                                     <size key="itemSize" width="373" height="607"/>
@@ -888,95 +866,7 @@
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gF-DD-3gA">
                                                     <rect key="frame" x="0.0" y="0.0" width="373" height="607"/>
-                                                    <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVa-DC-Bi9" customClass="PMSuperButton" customModule="Eventos" customModuleProvider="target">
-                                                            <rect key="frame" x="40" y="250" width="293" height="45"/>
-                                                            <color key="backgroundColor" red="0.84705882349999995" green="0.18039215689999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="45" id="hmZ-Hl-iyZ"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <state key="normal" title="My Album">
-                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            </state>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                    <real key="value" value="22.5"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="NO"/>
-                                                                <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
-                                                                    <color key="value" red="0.53333333329999999" green="0.86666666670000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
-                                                                    <color key="value" red="0.10980392160000001" green="0.4941176471" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="gradientHorizontal" value="YES"/>
-                                                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                                    <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                                    <size key="value" width="0.0" height="1"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                                    <real key="value" value="1"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="checkboxButton" value="YES"/>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="rippleSpeed">
-                                                                    <real key="value" value="2"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="ripple" value="YES"/>
-                                                            </userDefinedRuntimeAttributes>
-                                                            <connections>
-                                                                <action selector="signInBtnAction:" destination="XdN-h3-niQ" eventType="touchUpInside" id="adL-LK-Emg"/>
-                                                                <segue destination="XdN-h3-niQ" kind="show" id="jOW-SI-Mb0"/>
-                                                            </connections>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfC-JG-NbH" customClass="PMSuperButton" customModule="Eventos" customModuleProvider="target">
-                                                            <rect key="frame" x="40" y="330" width="293" height="45"/>
-                                                            <color key="backgroundColor" red="0.84705882349999995" green="0.18039215689999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="45" id="REp-rp-Z2b"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <state key="normal" title="Photo Selection">
-                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            </state>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                    <real key="value" value="22.5"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
-                                                                <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
-                                                                    <color key="value" red="0.89411764709999997" green="0.0" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
-                                                                    <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="gradientHorizontal" value="YES"/>
-                                                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                                    <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                                    <size key="value" width="0.0" height="1"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                                    <real key="value" value="1"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                            <connections>
-                                                                <action selector="signInBtnAction:" destination="XdN-h3-niQ" eventType="touchUpInside" id="S17-f0-gAv"/>
-                                                            </connections>
-                                                        </button>
-                                                    </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstItem="nVa-DC-Bi9" firstAttribute="leading" secondItem="8gF-DD-3gA" secondAttribute="leading" constant="40" id="1Kd-9A-XfO"/>
-                                                        <constraint firstItem="WfC-JG-NbH" firstAttribute="leading" secondItem="8gF-DD-3gA" secondAttribute="leading" constant="40" id="4Z3-6J-lTe"/>
-                                                        <constraint firstItem="nVa-DC-Bi9" firstAttribute="top" secondItem="8gF-DD-3gA" secondAttribute="top" constant="250" id="cNv-Gi-srs"/>
-                                                        <constraint firstAttribute="trailing" secondItem="nVa-DC-Bi9" secondAttribute="trailing" constant="40" id="iMt-KV-5bU"/>
-                                                        <constraint firstItem="WfC-JG-NbH" firstAttribute="top" secondItem="nVa-DC-Bi9" secondAttribute="bottom" constant="35" id="oIf-Zf-xfR"/>
-                                                        <constraint firstAttribute="trailing" secondItem="WfC-JG-NbH" secondAttribute="trailing" constant="40" id="pDQ-sM-c98"/>
-                                                    </constraints>
                                                 </view>
                                             </subviews>
                                         </view>
@@ -992,7 +882,7 @@
                                         </constraints>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="segmentCell3" id="p1G-CD-laL" customClass="PackageCollectionViewCell" customModule="Eventos" customModuleProvider="target">
-                                        <rect key="frame" x="393" y="40" width="341" height="523"/>
+                                        <rect key="frame" x="393" y="13" width="341" height="523"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="523"/>
@@ -1002,7 +892,7 @@
                                         <size key="customSize" width="341" height="523"/>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="segmentCell2" id="UTn-Yf-1UR" customClass="DemoSegmentCollectionViewCell" customModule="Eventos" customModuleProvider="target">
-                                        <rect key="frame" x="744" y="29" width="308" height="545"/>
+                                        <rect key="frame" x="744" y="2" width="308" height="545"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="308" height="545"/>
@@ -1217,7 +1107,7 @@
                                                                             <constraint firstAttribute="width" constant="151" id="X14-aE-Oab"/>
                                                                             <constraint firstAttribute="height" constant="28" id="xpC-5k-QKT"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -1421,32 +1311,42 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="O9d-Xj-OWq" id="wLD-cj-u5n"/>
                                     <outlet property="delegate" destination="O9d-Xj-OWq" id="3D1-b3-gx6"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyx-hh-ZcX">
+                                <rect key="frame" x="0.0" y="613" width="375" height="54"/>
+                                <color key="backgroundColor" red="0.15426322819999999" green="0.33571004869999999" blue="0.71564763779999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="b4Z-Vb-IdN"/>
+                                </constraints>
+                                <state key="normal" title="Enquiry">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="enquiryBtnAction:" destination="O9d-Xj-OWq" eventType="touchUpInside" id="AvI-JZ-ggO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Uod-NE-Et5" firstAttribute="top" secondItem="GZV-2v-f2a" secondAttribute="bottom" id="3UP-US-Rl3"/>
                             <constraint firstItem="Uod-NE-Et5" firstAttribute="leading" secondItem="SoA-wG-K6Y" secondAttribute="leading" id="6x2-PN-Ydr"/>
-                            <constraint firstItem="yfO-Yy-rwk" firstAttribute="top" secondItem="Uod-NE-Et5" secondAttribute="bottom" id="BCt-Km-D1P"/>
+                            <constraint firstItem="yfO-Yy-rwk" firstAttribute="top" secondItem="Uod-NE-Et5" secondAttribute="bottom" constant="54" id="BCt-Km-D1P"/>
                             <constraint firstAttribute="trailing" secondItem="GZV-2v-f2a" secondAttribute="trailing" id="BWW-G7-atZ"/>
+                            <constraint firstItem="Tyx-hh-ZcX" firstAttribute="leading" secondItem="SoA-wG-K6Y" secondAttribute="leading" id="FGZ-Ma-maQ"/>
                             <constraint firstItem="GZV-2v-f2a" firstAttribute="leading" secondItem="SoA-wG-K6Y" secondAttribute="leading" id="GJp-LI-lYr"/>
+                            <constraint firstAttribute="trailing" secondItem="Tyx-hh-ZcX" secondAttribute="trailing" id="q8W-2j-h9B"/>
                             <constraint firstAttribute="trailing" secondItem="Uod-NE-Et5" secondAttribute="trailing" id="yMy-yF-NiC"/>
+                            <constraint firstItem="yfO-Yy-rwk" firstAttribute="top" secondItem="Tyx-hh-ZcX" secondAttribute="bottom" id="ybe-7N-VwM"/>
                             <constraint firstItem="GZV-2v-f2a" firstAttribute="top" secondItem="BrC-3h-dNh" secondAttribute="bottom" id="zxh-VK-OaA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oPq-KT-dMm"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
-                    </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="enquireBtnOutle" destination="Tyx-hh-ZcX" id="yad-Z1-wkl"/>
                         <outlet property="segmentCollectionView" destination="Uod-NE-Et5" id="gcV-ak-36f"/>
                         <outlet property="sliderCollectionView" destination="GZV-2v-f2a" id="Vk6-3f-KPE"/>
                         <segue destination="DQZ-kD-O9O" kind="show" identifier="toDetailImage" id="73S-ze-LaR"/>
@@ -1454,7 +1354,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lo-Fb-H1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5588" y="918"/>
+            <point key="canvasLocation" x="5588" y="917.99100449775119"/>
         </scene>
         <!--Demos View Controller-->
         <scene sceneID="gFq-RU-N0V">
@@ -1563,7 +1463,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CjX-DR-sGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5798" y="-10"/>
+            <point key="canvasLocation" x="5022" y="-639"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="s5h-gt-0eT">
@@ -1573,7 +1473,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="53o-cB-gIz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.15426322817802429" green="0.33571004867553711" blue="0.71564763784408569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.15426322819999999" green="0.33571004869999999" blue="0.71564763779999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <userDefinedRuntimeAttributes>
@@ -1585,7 +1489,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="55W-Us-aOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="72.799999999999997" y="-26.53673163418291"/>
+            <point key="canvasLocation" x="2930" y="918"/>
         </scene>
         <!--Detail Image View View Controller-->
         <scene sceneID="MXT-C3-rSE">
@@ -1738,7 +1642,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6sL-AR-BL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6532" y="-0.44977511244377816"/>
+            <point key="canvasLocation" x="10182" y="1141"/>
         </scene>
     </scenes>
     <resources>

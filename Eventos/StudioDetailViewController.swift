@@ -23,6 +23,7 @@ class StudioDetailViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         setBackButton()
+        setSharebtn()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc3: PackagesViewController! = storyboard.instantiateViewController(withIdentifier: "packagesViewController") as! PackagesViewController
         let vc4: OptionsViewController! = storyboard.instantiateViewController(withIdentifier: "optionsViewController") as! OptionsViewController
@@ -65,5 +66,18 @@ class StudioDetailViewController: UIViewController  {
         
     }
     
-
+    func setSharebtn(){
+    
+    
+        let btn = UIButton(type: .custom)
+        btn.tintColor = UIColor.white
+        btn.setImage((#imageLiteral(resourceName: "share")), for: .normal)
+       // btn.imageEdgeInsets.left = -40
+        btn.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        btn.addTarget(self, action: #selector(backBtnTapped), for: .touchUpInside)
+        //   btn.backgroundColor = UIColor.white
+        let item = UIBarButtonItem(customView: btn)
+        
+        self.navigationItem.setRightBarButton(item, animated: true)
+    }
 }

@@ -12,6 +12,12 @@ import FontAwesome_swift
 
 class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate {
     
+    var studioName = ""
+    var studioAdress = ""
+    
+    @IBOutlet var enquireBtnOutle: UIButton!
+    
+    
     var selectedImageIndex : IndexPath!
     var currentIndex = 0
     
@@ -24,6 +30,13 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setSharebtn()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        self.title = studioName
+        enquireBtnOutle.tintColor = UIColor.white
+        enquireBtnOutle.backgroundColor = ColorFile().getPrimaryColor()
+        enquireBtnOutle.setTitle("enquire", for: .normal)
+        enquireBtnOutle.setImage(UIImage.fontAwesomeIcon(name: .ticket, textColor: .white, size: CGSize(width: 30, height: 30)), for: .normal)
         setBackButton()
       sliderTitle =  ["Detail", "Demos","Packages","Login"]
         // Do any additional setup after loading the view.
@@ -107,6 +120,7 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! DemoImageCollectionViewCell
             cell.demoImageView.image = UIImage(named: "\(indexPath.row+1)")
             cell.demoImageView.heroID = "ironMan"
+            cell.demoImageView.heroModifiers = [.fade, .scale(0.8)]
             if indexPath.section == 1{
                 cell.videoCamera.image = UIImage.fontAwesomeIcon(name:.videoCamera , textColor: UIColor.white, size: cell.videoCamera.frame.size)
                 //UIImage.fontAwesomeIcon(code: .vimeoSquare, textColor: UIColor.white, size: cell.videoCamera.frame.size)
@@ -227,6 +241,7 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
     
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
         if scrollView == segmentCollectionView{
             var visibleRect = CGRect()
           
@@ -237,15 +252,27 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
                 
                 let visibleIndexPath: IndexPath = segmentCollectionView.indexPathForItem(at: visiblePoint)!
                 currentIndex = visibleIndexPath.row
-              UIView.animate(withDuration: 0.25, animations: {
-                                self.sliderCollectionView.reloadData()
-                                // currentIndex = index
-            })
+           // if scrollView == segmentCollectionView{
+                UIView.transition(with: sliderCollectionView,
+                                  duration: 0.0,
+                                  options: .transitionCrossDissolve,
+                                  animations: {
+                                    self.sliderCollectionView.reloadSections([0])
+                                    // currentIndex = index
+                })
+           // }
+//              UIView.animate(withDuration: 0.25, animations: {
+//                                self.sliderCollectionView.reloadSections([0])
+//                                // currentIndex = index
+//            })
         
         
     }
     }
-    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+       
+    }
+
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 4
@@ -259,7 +286,7 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "placeCell", for: indexPath) as! PlaceDetailsTableViewCell
             cell.PlaceDetailImageView.image = UIImage.fontAwesomeIcon(name: .mapMarker, textColor: UIColor.lightGray, size: cell.PlaceDetailImageView.frame.size)
-            cell.detaillabel.text = "Address"
+            cell.detaillabel.text = studioAdress
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "mapView", for: indexPath) as! MapViewTableViewCell
@@ -274,7 +301,7 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
             
             // marker.title = placeName
             marker.map = cell.mapView
-            
+            cell.mapView.layer.cornerRadius = 5
             
             return cell
         case 2:
@@ -338,4 +365,48 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
         return headerCell
     }
     
+    
+    
+    @IBAction func enquiryBtnAction(_ sender: Any) {
+        
+        showEnquiryView()
+        
+    }
+    var enquiryView : SendEnquiryWindow!
+    func showEnquiryView(){
+        let win:UIWindow = UIApplication.shared.delegate!.window!!
+        enquiryView = Bundle.main.loadNibNamed("SendEnquiry", owner: self, options: nil)?.first! as! SendEnquiryWindow
+        enquiryView.frame = win.frame
+        
+        enquiryView.popUpView.layer.cornerRadius = 8
+        enquiryView.sendBtn.layer.cornerRadius = 8
+        enquiryView.topImageView.layer.cornerRadius = enquiryView.topImageView.frame.height/2
+        enquiryView.topImageView.layer.borderColor = UIColor.white.cgColor
+        enquiryView.topImageView.layer.borderWidth = 2
+        enquiryView.sendBtn.addTarget(self, action: #selector(sendFeedbackAction), for: .touchUpInside)
+        view.addSubview(enquiryView)
+        
+      
+    }
+
+    
+    func sendFeedbackAction(){
+    
+    enquiryView.removeFromSuperview()
+    }
+    func setSharebtn(){
+        
+        
+        let btn = UIButton(type: .custom)
+        btn.tintColor = UIColor.white
+        btn.setImage((#imageLiteral(resourceName: "share")), for: .normal)
+        btn.contentEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 5)
+        // btn.imageEdgeInsets.left = -40
+        btn.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        btn.addTarget(self, action: #selector(backBtnTapped), for: .touchUpInside)
+        //   btn.backgroundColor = UIColor.white
+        let item = UIBarButtonItem(customView: btn)
+        
+        self.navigationItem.setRightBarButton(item, animated: true)
+    }
 }

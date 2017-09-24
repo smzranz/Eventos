@@ -14,7 +14,8 @@ class ListViewViewController: UIViewController,UITableViewDataSource,UITableView
     @IBOutlet var listTableView: UITableView!
     
     
-    
+    var showFavourite = [Bool]()
+    var showAssured = [Bool]()
 var address = [String]()
     var studioName = [String]()
     override func viewDidLoad() {
@@ -52,7 +53,11 @@ var address = [String]()
                       "Faxquote",
                       "Sunnamplex",
                       "Lexiqvolax"]
-        listTableView.reloadData()
+        
+        showFavourite = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+        showFavourite = [true,true,false,true,false,false,true,false,true,false,false,true,false,false,false]
+        
+      //  listTableView.reloadData()
        // listTableView.showLoader()
       //  _ = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(stopLoading), userInfo: nil, repeats: false)
         // Do any additional setup after loading the view.
@@ -84,6 +89,14 @@ var address = [String]()
         cell.coverImage.image = UIImage(named: "\(indexPath.row+1)")
         cell.placeLabel.text = address[indexPath.row]
         cell.titleName.text = studioName[indexPath.row]
+        cell.favariteBtn.addTarget(self, action: #selector(favourited), for: .touchUpInside)
+        if showFavourite[indexPath.row] {
+        
+        cell.favariteBtn.setImage(#imageLiteral(resourceName: "hearts_filled"), for: .normal)
+        }
+        else{
+        cell.favariteBtn.setImage(#imageLiteral(resourceName: "hearts_outline"), for: .normal)
+        }
         cell.placeLabel.sizeToFit()
         return cell
     }
@@ -92,8 +105,27 @@ var address = [String]()
         listTableView.reloadData()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier :"sliderSegmentViewController") as! SliderSegmentViewController
-        
+        viewController.studioName = studioName[indexPath.row]
+        viewController.studioAdress = address[indexPath.row]
         self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    var favouritedView : BookMarkedView!
+    func favourited(){
+         let win:UIWindow = UIApplication.shared.delegate!.window!!
+    favouritedView = Bundle.main.loadNibNamed("BookmarkedView", owner: self, options: nil)?.first! as! BookMarkedView
+        favouritedView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+        favouritedView.center = win.center
+        favouritedView.layer.cornerRadius = 8
+        win.addSubview(favouritedView)
+        
+        _ = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(removefavouritedView), userInfo: nil, repeats: false)
+    
+    }
+    
+    func removefavouritedView(){
+    
+    favouritedView.removeFromSuperview()
     }
  /*
     func placeRating(){
