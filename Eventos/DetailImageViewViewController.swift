@@ -99,7 +99,7 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
             
             cell.demoImageView.image = UIImage(named: "\(indexPath.row+1)")
              cell.demoImageView.heroID = "ironMan"
-          cell.demoImageView.heroModifiers =  [.position(CGPoint(x:view.bounds.width/2, y:view.bounds.height+view.bounds.width/2)), .scale(0.6), .fade]
+        //  cell.demoImageView.heroModifiers =  [.position(CGPoint(x:view.bounds.width/2, y:view.bounds.height+view.bounds.width/2)), .scale(0.6), .fade]
           //  cell.topInset = topLayoutGuide.length
             cell.demoImageView.isOpaque = true
             cell.layer.masksToBounds = true
@@ -151,7 +151,7 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
 //        self.navigationController?.view.layer.add(transition, forKey: nil)
 //        _ = self.navigationController?.popToRootViewController(animated: false)
         
-        navigationController?.navigationBar.isHidden = false
+      //  navigationController?.navigationBar.isHidden = false
         
         navigationController?.popViewController(animated: true)
         

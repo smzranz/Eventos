@@ -17,6 +17,7 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
     
     @IBOutlet var enquireBtnOutle: UIButton!
     
+    @IBOutlet var navTitle: UILabel!
     
     var selectedImageIndex : IndexPath!
     var currentIndex = 0
@@ -27,20 +28,20 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
     
     @IBOutlet weak var segmentCollectionView: UICollectionView!
     
-    override func viewWillAppear(_ animated: Bool) {
-        UIApplication.shared.isStatusBarHidden = true
-       //  navigationController?.navigationBar.isHidden = false
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        UIApplication.shared.isStatusBarHidden = true
+//       //  navigationController?.navigationBar.isHidden = false
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        setSharebtn()
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
-        self.title = studioName
+      //  setSharebtn()
+      //  UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        self.navTitle.text = studioName
         enquireBtnOutle.tintColor = UIColor.white
-        enquireBtnOutle.backgroundColor = ColorFile().getPrimaryColor()
-        enquireBtnOutle.setTitle("enquire", for: .normal)
+      //  enquireBtnOutle.backgroundColor = ColorFile().getPrimaryColor()
+     //   enquireBtnOutle.setTitle("enquire", for: .normal)
         enquireBtnOutle.setImage(UIImage.fontAwesomeIcon(name: .ticket, textColor: .white, size: CGSize(width: 30, height: 30)), for: .normal)
-        setBackButton()
+       // setBackButton()
       sliderTitle =  ["Detail", "Demos","Packages","Login"]
         // Do any additional setup after loading the view.
     }
@@ -113,6 +114,16 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "segmentCell4", for: indexPath) as! LoginCollectionViewCell
                 
                 
+                cell.myAlbumBtn.layer.cornerRadius = cell.myAlbumBtn.frame.height/2
+                cell.myAlbumBtn.layer.borderWidth = 1
+                cell.myAlbumBtn.layer.borderColor = UIColor.lightGray.cgColor
+                cell.myAlbumBtn.layer.masksToBounds = true
+                
+                
+                cell.selectionBtn.layer.cornerRadius = cell.selectionBtn.frame.height/2
+                cell.selectionBtn.layer.borderWidth = 1
+                cell.selectionBtn.layer.borderColor = UIColor.lightGray.cgColor
+                cell.selectionBtn.layer.masksToBounds = true
                 
                 return cell
             }
@@ -123,7 +134,7 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! DemoImageCollectionViewCell
             cell.demoImageView.image = UIImage(named: "\(indexPath.row+1)")
             cell.demoImageView.heroID = "ironMan"
-            cell.demoImageView.heroModifiers = [.fade, .scale(0.8)]
+         //   cell.demoImageView.heroModifiers = [.fade, .scale(0.8)]
             if indexPath.section == 1{
                 cell.videoCamera.image = UIImage.fontAwesomeIcon(name:.videoCamera , textColor: UIColor.white, size: cell.videoCamera.frame.size)
                 //UIImage.fontAwesomeIcon(code: .vimeoSquare, textColor: UIColor.white, size: cell.videoCamera.frame.size)
@@ -411,5 +422,10 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
         let item = UIBarButtonItem(customView: btn)
         
         self.navigationItem.setRightBarButton(item, animated: true)
+    }
+    
+    @IBAction func backBtnAction(_ sender: Any) {
+        
+        backBtnTapped()
     }
 }

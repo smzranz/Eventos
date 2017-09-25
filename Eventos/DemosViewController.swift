@@ -125,6 +125,9 @@ class DemosViewController: UIViewController,UICollectionViewDelegate,UICollectio
     }
     
     
-
+    @IBAction func backBtnAction(_ sender: Any) {
+        
+        backBtnTapped()
+    }
 
 }

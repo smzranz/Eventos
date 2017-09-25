@@ -154,7 +154,7 @@ extension UIViewController {
         
     }
     func backBtnTapped() {
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
+     //   self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.popViewController(animated: true)
         
         

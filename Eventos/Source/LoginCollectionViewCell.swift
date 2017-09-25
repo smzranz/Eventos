@@ -10,4 +10,9 @@ import UIKit
 
 class LoginCollectionViewCell: UICollectionViewCell {
     
+    
+    @IBOutlet var myAlbumBtn: UIButton!
+    
+    @IBOutlet var selectionBtn: UIButton!
+    
 }

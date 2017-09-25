@@ -119,6 +119,7 @@
 		C3888A501F7778BB0045F2ED /* SendEnquiry.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3888A4F1F7778BA0045F2ED /* SendEnquiry.xib */; };
 		C3888A551F77811F0045F2ED /* BookMarkedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3888A541F77811F0045F2ED /* BookMarkedView.swift */; };
 		C3888A571F7796280045F2ED /* SendEnquiryWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3888A561F7796280045F2ED /* SendEnquiryWindow.swift */; };
+		C3B8A5841F794E8C0021A230 /* www.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C3B8A5831F794E8C0021A230 /* www.jpeg */; };
 		C3D84F6C1F741CC9006E78CB /* AbousUsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D84F6B1F741CC9006E78CB /* AbousUsTableViewCell.swift */; };
 		C3D84F6E1F742744006E78CB /* SectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D84F6D1F742744006E78CB /* SectionHeaderCollectionReusableView.swift */; };
 		D82FF4F4CFF1795E59A3D3CB /* Pods_EventosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62427791E501E5805BF34705 /* Pods_EventosTests.framework */; };
@@ -270,6 +271,7 @@
 		C3888A4F1F7778BA0045F2ED /* SendEnquiry.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendEnquiry.xib; sourceTree = "<group>"; };
 		C3888A541F77811F0045F2ED /* BookMarkedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookMarkedView.swift; sourceTree = "<group>"; };
 		C3888A561F7796280045F2ED /* SendEnquiryWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendEnquiryWindow.swift; sourceTree = "<group>"; };
+		C3B8A5831F794E8C0021A230 /* www.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = www.jpeg; sourceTree = "<group>"; };
 		C3D84F6B1F741CC9006E78CB /* AbousUsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbousUsTableViewCell.swift; sourceTree = "<group>"; };
 		C3D84F6D1F742744006E78CB /* SectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		E4B12DBD0C2BB3ACF75E896A /* Pods-EventosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventosTests/Pods-EventosTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -324,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				51E0092E1F7918A300083FF1 /* cam_bg.jpeg */,
+				C3B8A5831F794E8C0021A230 /* www.jpeg */,
 				51E0092C1F7916D500083FF1 /* bg.jpeg */,
 				51E009301F791A1500083FF1 /* building.jpg */,
 				51E0092A1F79163300083FF1 /* bgImage.jpeg */,
@@ -740,7 +743,7 @@
 				TargetAttributes = {
 					515414FC1F4EA7B0006528B2 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = R53759X3UQ;
+						DevelopmentTeam = VF624LR8S4;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -776,6 +779,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51E0092D1F7916D500083FF1 /* bg.jpeg in Resources */,
+				C3B8A5841F794E8C0021A230 /* www.jpeg in Resources */,
 				515415251F4EC8BC006528B2 /* c5c5f226210629.563531c68ee72.jpg in Resources */,
 				51F1BE2A1F7298D7000C3484 /* Info.plist in Resources */,
 				51E0092F1F7918A300083FF1 /* cam_bg.jpeg in Resources */,
@@ -1142,10 +1146,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = R53759X3UQ;
+				DEVELOPMENT_TEAM = VF624LR8S4;
 				INFOPLIST_FILE = Eventos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.Eventos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.Eventos1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Eventos/Eventos-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1159,10 +1163,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = R53759X3UQ;
+				DEVELOPMENT_TEAM = VF624LR8S4;
 				INFOPLIST_FILE = Eventos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.Eventos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.Eventos1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Eventos/Eventos-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
