@@ -27,7 +27,10 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
     
     @IBOutlet weak var segmentCollectionView: UICollectionView!
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        UIApplication.shared.isStatusBarHidden = true
+       //  navigationController?.navigationBar.isHidden = false
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setSharebtn()
