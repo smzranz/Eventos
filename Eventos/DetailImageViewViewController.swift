@@ -26,6 +26,15 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
       //let apiServerKey = "AIzaSyCHz7NTh5-69lUZGfvEDFZhgV2KVQUHlNM"
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+       
+    
+        
+        
+        
+
         navigationController?.navigationBar.isHidden = true
          closeBtnOutlet.setImage(UIImage.fontAwesomeIcon(name:.times, textColor: UIColor.white, size: CGSize(width: 20, height: 20)), for: .normal)
         closeBtnOutlet.tintColor = UIColor.white
@@ -95,7 +104,7 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
         selectedImageIndex = indexPath
         return cell
         }else{
-            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! DemoImageCollectionViewCell
+            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! ListImageCollectionViewCell
             
             cell.demoImageView.image = UIImage(named: "\(indexPath.row+1)")
              cell.demoImageView.heroID = "ironMan"
@@ -103,14 +112,14 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
           //  cell.topInset = topLayoutGuide.length
             cell.demoImageView.isOpaque = true
             cell.layer.masksToBounds = true
-            if indexPath == selectedImageIndex{
-                
-                cell.bluxView.isHidden = true
-            }else{
-                
-                cell.bluxView.isHidden = true
-                
-            }
+//            if indexPath == selectedImageIndex{
+//                
+//                cell.bluxView.isHidden = true
+//            }else{
+//                
+//                cell.bluxView.isHidden = true
+//                
+//            }
 
             return cell
             

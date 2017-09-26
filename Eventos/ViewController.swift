@@ -26,7 +26,8 @@ class ViewController: UIViewController {
     // Present the Autocomplete view controller when the button is pressed.
     @IBAction func autocompleteClicked(_ sender: UIButton) {
         let autocompleteController = GMSAutocompleteViewController()
-        autocompleteController.tableCellBackgroundColor = UIColor.red
+        autocompleteController.tableCellBackgroundColor = UIColor.white
+     //   autocompleteController.
         autocompleteController.delegate = self
         present(autocompleteController, animated: true, completion: nil)
     }

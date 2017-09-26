@@ -77,15 +77,18 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
            //     self.view.layoutIfNeeded()
                 
            cell.sliderLabel.text = sliderTitle[indexPath.row]
-            cell.sliderLabel.textColor = ColorFile().getMarkerBlueColor()
+            cell.sliderLabel.textColor = UIColor.white
+                //ColorFile().getMarkerBlueColor()
             if indexPath.row == self.currentIndex{
-            cell.bottomView.backgroundColor = ColorFile().getMarkerBlueColor()
+            cell.bottomView.backgroundColor = UIColor.white
+                //ColorFile().getMarkerBlueColor()
             cell.heightConstrain.constant = 4
             
             }else{
             cell.heightConstrain.constant = 2
-            cell.bottomView.backgroundColor = UIColor.lightGray
-            cell.sliderLabel.textColor = ColorFile().getMarkerBlueColor().withAlphaComponent(0.7)
+            cell.bottomView.backgroundColor = ColorFile().getPrimaryColor()
+            cell.sliderLabel.textColor = UIColor.white
+                //ColorFile().getMarkerBlueColor().withAlphaComponent(0.7)
             }
        
         return cell
@@ -131,7 +134,7 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
         
         if collectionView.tag == 101{
         
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! DemoImageCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! ListImageCollectionViewCell
             cell.demoImageView.image = UIImage(named: "\(indexPath.row+1)")
             cell.demoImageView.heroID = "ironMan"
          //   cell.demoImageView.heroModifiers = [.fade, .scale(0.8)]
