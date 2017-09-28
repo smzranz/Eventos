@@ -165,7 +165,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="292" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yMH-Hw-lRX">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="listViewCell" rowHeight="292" id="O3h-9D-5I9" customClass="ListViewTableViewCell" customModule="Eventos" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="292"/>
@@ -306,7 +306,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.15426322819999999" green="0.33571004869999999" blue="0.71564763779999996" alpha="0.50360669095092025" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="UcH-2b-Lbd" firstAttribute="top" secondItem="4Vg-zN-IJH" secondAttribute="top" constant="8" id="EVR-fZ-SkY"/>
                                                 <constraint firstItem="UcH-2b-Lbd" firstAttribute="leading" secondItem="4Vg-zN-IJH" secondAttribute="leading" constant="8" id="Xnt-Yr-nEQ"/>
@@ -314,7 +314,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="UcH-2b-Lbd" secondAttribute="trailing" constant="8" id="kFY-yX-G5W"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="bgView" destination="UcH-2b-Lbd" id="zXB-ug-GdH"/>
                                             <outlet property="coverImage" destination="BRF-Tx-FL5" id="Tcd-9j-ybI"/>
@@ -362,7 +362,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.83128839730000004" green="0.93392932419999997" blue="0.9933294654" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yMH-Hw-lRX" firstAttribute="leading" secondItem="Id9-3h-jzI" secondAttribute="leading" id="AFC-RX-Q1a"/>
                             <constraint firstItem="WTE-RS-BpD" firstAttribute="centerY" secondItem="MgX-OS-Fvk" secondAttribute="centerY" constant="5" id="Dez-VM-kad"/>
@@ -1111,7 +1111,7 @@
             <objects>
                 <navigationController extendedLayoutIncludesOpaqueBars="YES" id="4b2-su-S5j" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="53o-cB-gIz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="53o-cB-gIz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1424,7 +1424,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="eg5-v7-b29" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="WeJ-Zn-FH2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WeJ-Zn-FH2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
