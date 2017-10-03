@@ -12,6 +12,7 @@ import FontAwesome_swift
 class SelectionViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     
+    @IBOutlet var navBar: UIView!
     
     @IBOutlet var imageCollectionView: UICollectionView!
     var selectedImageIndex : IndexPath!
@@ -84,7 +85,7 @@ imageSelected = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     }
     
     
-    
+    //MARK:- image select
     func imageSelect(sender:UIButton){
     
     let index = sender.tag
@@ -108,5 +109,15 @@ imageSelected = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
             
         }
     }
+    
+    
+    
+    @IBAction func backBtnActn(_ sender: Any) {
+        
+        
+        navigationController?.popViewController(animated: true)
+    }
+    
+    
     
 }
