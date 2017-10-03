@@ -42,7 +42,7 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
      //   enquireBtnOutle.setTitle("enquire", for: .normal)
         enquireBtnOutle.setImage(UIImage.fontAwesomeIcon(name: .ticket, textColor: .white, size: CGSize(width: 30, height: 30)), for: .normal)
        // setBackButton()
-      sliderTitle =  ["Detail", "Demos","Packages","Login"]
+      sliderTitle =  ["Summary", "Demos","Packages","Login"]
         // Do any additional setup after loading the view.
     }
 
@@ -175,7 +175,7 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == sliderCollectionView{
         
-        return CGSize(width: (collectionView.frame.size.width)/4, height: 44)
+        return CGSize(width: (collectionView.frame.size.width)/4, height: 30)
         
         }
         if collectionView.tag == 101{

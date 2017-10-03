@@ -72,7 +72,7 @@ imageSelected = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
       
         
-        return CGSize(width: collectionView.frame.size.width, height: 480)
+        return CGSize(width: collectionView.frame.size.width, height: 478)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
@@ -80,7 +80,7 @@ imageSelected = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
        
-        return 0
+        return 2
     }
     
     
@@ -102,6 +102,7 @@ imageSelected = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetailImage" {
             let destView = segue.destination as! DetailImageViewViewController
+            destView.fromSelection = true
             //  destView.photoArray = photoReference
             destView.selectedImageIndex = selectedImageIndex
             

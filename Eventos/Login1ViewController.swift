@@ -30,7 +30,7 @@ class Login1ViewController: UIViewController {
 //        self.navigationController?.navigationBar.shadowImage = UIImage()
 //        self.navigationController?.navigationBar.isTranslucent = true
         usernameTxt.attributedPlaceholder = NSAttributedString(string: "U S E R N A M E", attributes: [NSForegroundColorAttributeName : UIColor.darkGray.withAlphaComponent(0.7)])
-        passwordTxt.attributedPlaceholder = NSAttributedString(string: "P A S S W O R D", attributes: [NSForegroundColorAttributeName : UIColor.darkGray.withAlphaComponent(0.7)])
+        passwordTxt.attributedPlaceholder = NSAttributedString(string: "P A S S W O R D", attributes: [NSForegroundColorAttributeName : UIColor.darkGray.withAlphaComponent(0.70)])
         
         signInBtnOutlet.layer.cornerRadius = signInBtnOutlet.frame.height/2
         signInBtnOutlet.layer.borderWidth = 1
@@ -38,6 +38,8 @@ class Login1ViewController: UIViewController {
         signInBtnOutlet.layer.masksToBounds = true
         
         setBackButton()
+        
+        
 //        backBtn.tintColor = UIColor.white
 //        backBtn.setImage(UIImage.fontAwesomeIcon(name:.angleLeft, textColor: UIColor.white, size: CGSize(width: 50, height: 50)), for: .normal)
 //      //  backBtn.imageEdgeInsets.left = -40

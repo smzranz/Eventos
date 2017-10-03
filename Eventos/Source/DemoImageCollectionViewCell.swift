@@ -14,6 +14,7 @@ class DemoImageCollectionViewCell: UICollectionViewCell, UIScrollViewDelegate {
     @IBOutlet weak var videoCamera: UIImageView!
     
     
+    @IBOutlet var selectionBtn: UIButton!
     
     @IBOutlet var demoImageView: UIImageView!
     

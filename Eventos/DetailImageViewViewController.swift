@@ -10,7 +10,8 @@ import UIKit
 import FontAwesome_swift
 
 class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,UIScrollViewDelegate {
-    
+    var imageSelected = [Int]()
+    var fromSelection : Bool = false
     
     @IBOutlet weak var closeBtnOutlet: UIButton!
     
@@ -29,7 +30,8 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
         
         
         
-       
+        imageSelected = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
     
         
         
@@ -98,7 +100,25 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == imageCollectionView {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! DemoImageCollectionViewCell
-        
+            if fromSelection{
+                cell.selectionBtn.addTarget(self, action: #selector(imageSelect(sender:)), for: .touchUpInside)
+                cell.selectionBtn.tag = indexPath.row
+                
+            cell.selectionBtn.isHidden = false
+                if imageSelected[indexPath.row] == 1 {
+                    
+                    cell.selectionBtn.setImage(UIImage.fontAwesomeIcon(name: .checkSquare, textColor: .green, size: cell.selectionBtn.frame.size,backgroundColor:UIColor.white), for: .normal)
+                    
+                }else{
+                    
+                    cell.selectionBtn.setImage(UIImage.fontAwesomeIcon(name: .squareO, textColor: .green, size: cell.selectionBtn.frame.size), for: .normal)
+                }
+            
+            }else{
+            
+                cell.selectionBtn.isHidden = true
+
+            }
         cell.demoImageView.image = UIImage(named: "\(indexPath.row+1)")
         cell.layer.masksToBounds = true
         selectedImageIndex = indexPath
@@ -165,5 +185,19 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
         navigationController?.popViewController(animated: true)
         
       
+    }
+    
+    func imageSelect(sender:UIButton){
+        
+        let index = sender.tag
+        if imageSelected[index] == 0{
+            imageSelected[index] = 1
+        }else{
+            imageSelected[index] = 0
+        }
+        let sam : IndexPath = [0,index]
+        self.imageCollectionView.reloadItems(at: [sam])
+        
+        
     }
 }
