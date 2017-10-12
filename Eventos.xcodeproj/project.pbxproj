@@ -45,6 +45,7 @@
 		5155DA4A1F7291090014B6A4 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5155DA391F7291090014B6A4 /* IQKeyboardManager.bundle */; };
 		5155DA4C1F7293100014B6A4 /* PMSuperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5155DA4B1F7293100014B6A4 /* PMSuperButton.swift */; };
 		5155DA4E1F72931C0014B6A4 /* ListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5155DA4D1F72931C0014B6A4 /* ListLoader.swift */; };
+		5162BFCD1F8FA00C00A81D1F /* PackagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5162BFCC1F8FA00C00A81D1F /* PackagesTableViewCell.swift */; };
 		5184E4121F57FC95001FA466 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = 5184E4091F57FC95001FA466 /* GeoFire.m */; };
 		5184E4131F57FC95001FA466 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5184E40B1F57FC95001FA466 /* GFBase32Utils.m */; };
 		5184E4141F57FC95001FA466 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5184E40D1F57FC95001FA466 /* GFGeoHash.m */; };
@@ -185,6 +186,7 @@
 		5155DA391F7291090014B6A4 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		5155DA4B1F7293100014B6A4 /* PMSuperButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSuperButton.swift; sourceTree = "<group>"; };
 		5155DA4D1F72931C0014B6A4 /* ListLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListLoader.swift; sourceTree = "<group>"; };
+		5162BFCC1F8FA00C00A81D1F /* PackagesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackagesTableViewCell.swift; sourceTree = "<group>"; };
 		5184E36D1F57FA9E001FA466 /* Eventos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eventos-Bridging-Header.h"; sourceTree = "<group>"; };
 		5184E4021F57FC95001FA466 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
 		5184E4031F57FC95001FA466 /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 			children = (
 				514E02331F73B27E001BFB39 /* ReviewsTableViewCell.swift */,
 				514E02351F73BBCF001BFB39 /* CustomHeaderTableViewCell.swift */,
+				5162BFCC1F8FA00C00A81D1F /* PackagesTableViewCell.swift */,
 				C3D84F6B1F741CC9006E78CB /* AbousUsTableViewCell.swift */,
 				514E02371F73BBFC001BFB39 /* PlaceDetailsTableViewCell.swift */,
 				514E02391F73C6CC001BFB39 /* MapViewTableViewCell.swift */,
@@ -755,7 +758,7 @@
 				TargetAttributes = {
 					515414FC1F4EA7B0006528B2 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = VF624LR8S4;
+						DevelopmentTeam = R53759X3UQ;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -937,6 +940,7 @@
 				51B0D7361F75231A000114D1 /* HeroStringConvertible.swift in Sources */,
 				5184E4121F57FC95001FA466 /* GeoFire.m in Sources */,
 				51B0D6E61F74DC85000114D1 /* DemoSegmentCollectionViewCell.swift in Sources */,
+				5162BFCD1F8FA00C00A81D1F /* PackagesTableViewCell.swift in Sources */,
 				51B0D6EA1F74E42E000114D1 /* LoginCollectionViewCell.swift in Sources */,
 				C3888A551F77811F0045F2ED /* BookMarkedView.swift in Sources */,
 				5155DA451F7291090014B6A4 /* IQBarButtonItem.swift in Sources */,
@@ -1162,10 +1166,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = VF624LR8S4;
+				DEVELOPMENT_TEAM = R53759X3UQ;
 				INFOPLIST_FILE = Eventos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.Eventos1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.Eventos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Eventos/Eventos-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1179,10 +1183,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = VF624LR8S4;
+				DEVELOPMENT_TEAM = R53759X3UQ;
 				INFOPLIST_FILE = Eventos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.Eventos1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citrusInformatics.Eventos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Eventos/Eventos-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

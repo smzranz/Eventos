@@ -25,12 +25,12 @@
                   symbolName = "Eventos.ViewController.geoFire () -&gt; ()"
                   moduleName = "Eventos"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shamshir/Documents/Projects/Eventos/Eventos/ViewController.swift"
-                  timestampString = "528097153.076952"
+                  urlString = "file:///Users/shamshir/Desktop/personal/untitled%20folder/latest/Eventos/Eventos/ViewController.swift"
+                  timestampString = "529507520.882794"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
                   offsetFromSymbolStart = "424">
                </Location>
                <Location
@@ -40,91 +40,13 @@
                   symbolName = "Eventos.ViewController.(geoFire () -&gt; ()).(closure #1)"
                   moduleName = "Eventos"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shamshir/Documents/Projects/Eventos/Eventos/ViewController.swift"
-                  timestampString = "528097153.078492"
+                  urlString = "file:///Users/shamshir/Desktop/personal/untitled%20folder/latest/Eventos/Eventos/ViewController.swift"
+                  timestampString = "529507520.884511"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
                   offsetFromSymbolStart = "60">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Eventos/ListViewViewController.swift"
-            timestampString = "527603092.785356"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "address"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Eventos.ListViewViewController.showAssured.getter : Swift.Array&lt;Swift.Bool&gt;"
-                  moduleName = "Eventos"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shamshir/Documents/Projects/Eventos/Eventos/ListViewViewController.swift"
-                  timestampString = "528097153.082043"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Eventos.ListViewViewController.showAssured.setter : Swift.Array&lt;Swift.Bool&gt;"
-                  moduleName = "Eventos"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shamshir/Documents/Projects/Eventos/Eventos/ListViewViewController.swift"
-                  timestampString = "528097153.083524"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "76">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Eventos.ListViewViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Eventos.ListViewViewController"
-                  moduleName = "Eventos"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shamshir/Documents/Projects/Eventos/Eventos/ListViewViewController.swift"
-                  timestampString = "528097153.084944"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "164">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Eventos.ListViewViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Eventos.ListViewViewController&gt;"
-                  moduleName = "Eventos"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shamshir/Documents/Projects/Eventos/Eventos/ListViewViewController.swift"
-                  timestampString = "528097153.086441"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "108">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -142,6 +64,102 @@
             startingLineNumber = "148"
             endingLineNumber = "148"
             landmarkName = "scrollViewDidScroll(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eventos/SliderSegmentViewController.swift"
+            timestampString = "529509247.126462"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "312"
+            endingLineNumber = "312"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eventos/SliderSegmentViewController.swift"
+            timestampString = "529509247.126462"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "304"
+            endingLineNumber = "304"
+            landmarkName = "numberOfSections(in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eventos/SliderSegmentViewController.swift"
+            timestampString = "529509247.126462"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "324"
+            endingLineNumber = "324"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eventos/SliderSegmentViewController.swift"
+            timestampString = "529509247.126462"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eventos/SliderSegmentViewController.swift"
+            timestampString = "529509247.126462"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "311"
+            endingLineNumber = "311"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eventos/SliderSegmentViewController.swift"
+            timestampString = "529509247.126462"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "303"
+            endingLineNumber = "303"
+            landmarkName = "numberOfSections(in:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

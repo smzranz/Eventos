@@ -12,6 +12,9 @@ import FontAwesome_swift
 
 class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate {
     
+    var packages = [String]()
+    var packagesTitle = [String]()
+    
     var studioName = ""
     var studioAdress = ""
     
@@ -34,6 +37,8 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
 //    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        packagesTitle = ["Platinum","Diamond","Gold","Silver"]
+        packages = ["No.of photographer : 1 photographer\n\nNo.of videographer : 1 videographer\n\nNumber of photos : 300\n\nNumber of Camera : 1\n\nCamera : DSLR \n\nCameraAlbum : 40 Sheet (long-lasting and non-tearable synthetic)\n\nVideo:Edited video output deliverey on a Blu-ray\n\nVideo camera : Standard video camera","No.of photographer : 1 photographer\n\nNo.of videographer : 1 videographer\n\nNumber of photos : 350\n\nNumber of Camera : 1\n\nCamera : Canon 5D Mark III or Full Frame HD Camera \n\nCameraAlbum : 50 Sheet (long-lasting and non-tearable synthetic)\n\nVideo:Edited video output deliverey on a Blu-ray\n\nVideo camera : Sony PMW 200 or similar Full HD Camera","No.of photographer : 2 photographer\n\nNo.of videographer : 2 videographer\n\nNumber of photos : 600\n\nNumber of Camera : 1\n\nCamera : Canon 5D Mark III or Full Frame HD Camera \n\nCameraAlbum : 100 Sheet (long-lasting and non-tearable synthetic)\n\nVideo:Edited video output deliverey on a Blu-ray\n\nVideo camera : Sony PMW 200 or similar Full HD Camera\n\nExclusive candid shoot:YES\n\nLarge TV screens:2 large TV screens","No.of photographer : 2 photographer\n\nNo.of videographer : 2 videographer\n\nNumber of photos : 600\n\nNumber of Camera : 1\n\nCamera : Canon 5D Mark III or Full Frame HD Camera \n\nCameraAlbum : 100 Sheet (long-lasting and non-tearable synthetic)\n\nVideo:Edited video output deliverey on a Blu-ray\n\nVideo camera : Sony PMW 200 or similar Full HD Camera\n\nExclusive candid shoot:YES\n\nLarge TV screens:2 large TV screens"]
       //  setSharebtn()
       //  UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         self.navTitle.text = studioName
@@ -110,7 +115,10 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
             }else  if indexPath.row == 2 {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "segmentCell3", for: indexPath) as! PackageCollectionViewCell
                 
-                
+                cell.packagesTableView.tag = 102
+              //  cell.packagesTableView.reloadData()
+                cell.packagesTableView.rowHeight = UITableViewAutomaticDimension
+                cell.packagesTableView.estimatedRowHeight = 80
                 
                 return cell
             }else{
@@ -292,13 +300,36 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
 
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        if tableView.tag == 102{
+        return 1
+        
+        }
         return 4
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       
+        if tableView.tag == 102{
+            return 4
+            
+        }
+        
         return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if tableView.tag == 102{
+        
+        
+            let cell = tableView.dequeueReusableCell(withIdentifier: "packagesCell", for: indexPath) as! PackagesTableViewCell
+           
+            cell.descriptionLabel.text = packages[indexPath.row]
+            cell.titleLabel.text = packagesTitle[indexPath.row]
+            return cell
+        
+        
+        
+        }else{
         switch indexPath.section {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "placeCell", for: indexPath) as! PlaceDetailsTableViewCell
@@ -331,8 +362,15 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
             return UITableViewCell()
             
         }
+        }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if tableView.tag == 102{
+        
+            tableView.estimatedRowHeight = 60
+            return UITableViewAutomaticDimension
+        
+        }else{
         switch indexPath.section {
         case 0:
             return 40
@@ -345,20 +383,34 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
         default:
             return 40
         }
+        }
+       // return 40
     }
     
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if tableView.tag == 102{
+            
+            tableView.estimatedRowHeight = 60
+            return UITableViewAutomaticDimension
+            
+        }else{
         if section == 1 {
             
             return 0
         }
         return 30
-        
+        }
     }
     
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if tableView.tag == 102{
+            
+            
+            return nil
+            
+        }else{
         let  headerCell = tableView.dequeueReusableCell(withIdentifier: "HeaderCell") as! CustomHeaderTableViewCell
         
         
@@ -380,6 +432,7 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
         }
         
         return headerCell
+        }
     }
     
     

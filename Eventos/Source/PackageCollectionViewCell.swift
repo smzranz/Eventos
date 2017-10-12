@@ -10,4 +10,11 @@ import UIKit
 
 class PackageCollectionViewCell: UICollectionViewCell {
     
+    
+    
+    
+    @IBOutlet weak var packagesTableView: UITableView!
+    
+    
+    
 }
