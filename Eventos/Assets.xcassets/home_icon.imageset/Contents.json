@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "hexagon-photography-icon-logo-2.png",
+      "filename" : "logo.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "hexagon-photography-icon-logo-3.png",
+      "filename" : "logo-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "hexagon-photography-icon-logo-4.png",
+      "filename" : "logo-2.png",
       "scale" : "3x"
     }
   ],

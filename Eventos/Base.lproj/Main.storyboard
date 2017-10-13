@@ -46,7 +46,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7c-7g-uDO">
                                         <rect key="frame" x="269.5" y="283" width="90.5" height="40"/>
-                                        <color key="backgroundColor" red="0.84856659173965454" green="0.18257841467857361" blue="0.19928321242332458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.84705882352941175" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="15"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="SEARCH">
@@ -288,7 +288,7 @@
                                         </connections>
                                     </searchBar>
                                 </subviews>
-                                <color key="backgroundColor" red="0.15426322819999999" green="0.33571004869999999" blue="0.71564763779999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.33725490196078434" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="7WE-hD-zBL"/>
                                 </constraints>
