@@ -18,6 +18,9 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
     var studioName = ""
     var studioAdress = ""
     
+    var colorObject = ColorFile()
+    
+    @IBOutlet weak var navBar: UIView!
     @IBOutlet var enquireBtnOutle: UIButton!
     
     @IBOutlet var navTitle: UILabel!
@@ -37,6 +40,8 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
 //    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        navBar.backgroundColor = colorObject.getPrimaryColor()
+        
         packagesTitle = ["Platinum","Diamond","Gold","Silver"]
         packages = ["No.of photographer : 1 photographer\n\nNo.of videographer : 1 videographer\n\nNumber of photos : 300\n\nNumber of Camera : 1\n\nCamera : DSLR \n\nCameraAlbum : 40 Sheet (long-lasting and non-tearable synthetic)\n\nVideo:Edited video output deliverey on a Blu-ray\n\nVideo camera : Standard video camera","No.of photographer : 1 photographer\n\nNo.of videographer : 1 videographer\n\nNumber of photos : 350\n\nNumber of Camera : 1\n\nCamera : Canon 5D Mark III or Full Frame HD Camera \n\nCameraAlbum : 50 Sheet (long-lasting and non-tearable synthetic)\n\nVideo:Edited video output deliverey on a Blu-ray\n\nVideo camera : Sony PMW 200 or similar Full HD Camera","No.of photographer : 2 photographer\n\nNo.of videographer : 2 videographer\n\nNumber of photos : 600\n\nNumber of Camera : 1\n\nCamera : Canon 5D Mark III or Full Frame HD Camera \n\nCameraAlbum : 100 Sheet (long-lasting and non-tearable synthetic)\n\nVideo:Edited video output deliverey on a Blu-ray\n\nVideo camera : Sony PMW 200 or similar Full HD Camera\n\nExclusive candid shoot:YES\n\nLarge TV screens:2 large TV screens","No.of photographer : 2 photographer\n\nNo.of videographer : 2 videographer\n\nNumber of photos : 600\n\nNumber of Camera : 1\n\nCamera : Canon 5D Mark III or Full Frame HD Camera \n\nCameraAlbum : 100 Sheet (long-lasting and non-tearable synthetic)\n\nVideo:Edited video output deliverey on a Blu-ray\n\nVideo camera : Sony PMW 200 or similar Full HD Camera\n\nExclusive candid shoot:YES\n\nLarge TV screens:2 large TV screens"]
       //  setSharebtn()
@@ -144,7 +149,8 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
         
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! ListImageCollectionViewCell
             cell.demoImageView.image = UIImage(named: "\(indexPath.row+1)")
-            cell.demoImageView.heroID = "ironMan"
+            cell.demoImageView.heroID = "image_\(indexPath)"
+            cell.demoImageView.heroModifiers = [.zPosition(2)]
          //   cell.demoImageView.heroModifiers = [.fade, .scale(0.8)]
             if indexPath.section == 1{
                 cell.videoCamera.image = UIImage.fontAwesomeIcon(name:.videoCamera , textColor: UIColor.white, size: cell.videoCamera.frame.size)
@@ -443,12 +449,15 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
         
     }
     var enquiryView : SendEnquiryWindow!
+    let datePicker = UIDatePicker()
     func showEnquiryView(){
         let win:UIWindow = UIApplication.shared.delegate!.window!!
         enquiryView = Bundle.main.loadNibNamed("SendEnquiry", owner: self, options: nil)?.first! as! SendEnquiryWindow
         enquiryView.frame = win.frame
         
-        enquiryView.popUpView.layer.cornerRadius = 8
+        datePicker.datePickerMode = UIDatePickerMode.date
+        enquiryView.dateTxt.inputView = datePicker
+        datePicker.addTarget(self, action: #selector(datePickerValueChanged), for: UIControlEvents.valueChanged)
         enquiryView.sendBtn.layer.cornerRadius = 8
         enquiryView.topImageView.layer.cornerRadius = enquiryView.topImageView.frame.height/2
         enquiryView.topImageView.layer.borderColor = UIColor.white.cgColor
@@ -459,7 +468,17 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
       
     }
 
-    
+    func datePickerValueChanged(sender:UIDatePicker) {
+        
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.dateStyle = DateFormatter.Style.medium
+        
+        dateFormatter.timeStyle = DateFormatter.Style.none
+        
+        enquiryView.dateTxt.text = dateFormatter.string(from: sender.date)
+        
+    }
     func sendFeedbackAction(){
     
     enquiryView.removeFromSuperview()

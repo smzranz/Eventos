@@ -10,7 +10,7 @@ target 'Eventos' do
   pod 'GooglePlacePicker'
   pod 'GoogleMaps'
   # pod 'Skeleton'
-
+  pod 'GSKStretchyHeaderView'
   pod 'FirebaseCore'
   pod 'Firebase'
   pod 'Firebase/Database'

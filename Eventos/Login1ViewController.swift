@@ -91,7 +91,7 @@ class Login1ViewController: UIViewController {
     }
    
     @IBAction func backBtnAction(_ sender: Any) {
-        
-        backBtnTapped()
+        dismiss(animated: true, completion: nil)
+      //  backBtnTapped()
     }
 }

@@ -10,6 +10,8 @@ import UIKit
 import FontAwesome_swift
 
 class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,UIScrollViewDelegate {
+    
+    var panGR: UIPanGestureRecognizer!
     var imageSelected = [Int]()
     var fromSelection : Bool = false
     
@@ -27,7 +29,8 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
       //let apiServerKey = "AIzaSyCHz7NTh5-69lUZGfvEDFZhgV2KVQUHlNM"
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        panGR = UIPanGestureRecognizer(target: self, action: #selector(handlePan(gestureRecognizer:)))
+        view.addGestureRecognizer(panGR)
         
         
         imageSelected = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
@@ -44,12 +47,39 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
         imageCollectionView.delegate = self
         imageCollectionView.dataSource = self
         print(selectedImageIndex)
-        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
-        swipeDown.direction = .down
-        self.view.addGestureRecognizer(swipeDown)
+      //  let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
+      //  swipeDown.direction = .down
+      //  self.view.addGestureRecognizer(swipeDown)
 // self.imageCollectionView.scrollToItem(at: selectedImageIndex, at: .centeredHorizontally, animated: false)
         // Do any additional setup after loading the view.
     }
+    
+    
+    func handlePan(gestureRecognizer:UIPanGestureRecognizer) {
+        // calculate the progress based on how far the user moved
+        let translation = panGR.translation(in: nil)
+        let progress = translation.y / 2 / view.bounds.height
+        
+        switch panGR.state {
+        case .began:
+            // begin the transition as normal
+            dismiss(animated: true, completion: nil)
+        case .changed:
+            Hero.shared.update(progress)
+            let cell = imageCollectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: selectedImageIndex) as! DemoImageCollectionViewCell
+            // update views' position (limited to only vertical scroll)
+            Hero.shared.apply(modifiers: [.position(CGPoint(x:cell.demoImageView.center.x, y:translation.y + cell.demoImageView.center.y))], to: cell.demoImageView)
+           
+        default:
+            // end or cancel the transition based on the progress and user's touch velocity
+            if progress + panGR.velocity(in: nil).y / view.bounds.height > 0.3 {
+                Hero.shared.finish()
+            } else {
+                Hero.shared.cancel()
+            }
+        }
+    }
+    
     
     func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
         if gesture.direction == UISwipeGestureRecognizerDirection.right {
@@ -127,10 +157,11 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
             let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! ListImageCollectionViewCell
             
             cell.demoImageView.image = UIImage(named: "\(indexPath.row+1)")
-             cell.demoImageView.heroID = "ironMan"
-        //  cell.demoImageView.heroModifiers =  [.position(CGPoint(x:view.bounds.width/2, y:view.bounds.height+view.bounds.width/2)), .scale(0.6), .fade]
-          //  cell.topInset = topLayoutGuide.length
-            cell.demoImageView.isOpaque = true
+            cell.demoImageView.image = UIImage(named: "\(indexPath.row+1)")
+          
+            isHeroEnabled = true
+             cell.demoImageView.heroID = "image_\(indexPath)"
+            cell.demoImageView.heroModifiers = [.zPosition(2)]
             cell.layer.masksToBounds = true
 //            if indexPath == selectedImageIndex{
 //                

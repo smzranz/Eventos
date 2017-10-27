@@ -25,6 +25,8 @@ class DemoImageCollectionViewCell: UICollectionViewCell, UIScrollViewDelegate {
     @IBOutlet var bluxView: UIVisualEffectView!
     
     override func awakeFromNib() {
+        
+        
         self.scrollView.minimumZoomScale = 1
         self.scrollView.maximumZoomScale = 3.5
         self.scrollView.delegate = self

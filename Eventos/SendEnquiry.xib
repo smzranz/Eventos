@@ -23,7 +23,7 @@
                             <rect key="frame" x="30" y="423.5" width="315" height="30"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="12"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="N A M E" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Umy-aI-lHB">
                             <rect key="frame" x="30" y="353.5" width="315" height="30"/>
@@ -77,8 +77,8 @@
                                 <constraint firstAttribute="height" constant="0.5" id="z6D-0F-bmt"/>
                             </constraints>
                         </view>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pexels-photo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ilP-9d-MiO">
-                            <rect key="frame" x="0.0" y="-43" width="375" height="333.5"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-photo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ilP-9d-MiO">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,6 +120,13 @@
                 <constraint firstAttribute="trailing" secondItem="IUa-fs-eXt" secondAttribute="trailing" id="TxF-Hd-bXb"/>
                 <constraint firstAttribute="bottom" secondItem="IUa-fs-eXt" secondAttribute="bottom" id="Umf-rx-5vq"/>
             </constraints>
+            <connections>
+                <outlet property="dateTxt" destination="7iM-w1-q1I" id="cmh-pU-Z6E"/>
+                <outlet property="mobileTxt" destination="fLd-mY-vAk" id="sCT-Ii-M6s"/>
+                <outlet property="nameTxt" destination="Umy-aI-lHB" id="xbS-F7-zWc"/>
+                <outlet property="sendBtn" destination="YWh-WN-6yj" id="5ZE-KK-7dU"/>
+                <outlet property="topImageView" destination="ilP-9d-MiO" id="63O-gP-nml"/>
+            </connections>
             <point key="canvasLocation" x="33.5" y="114.5"/>
         </view>
     </objects>

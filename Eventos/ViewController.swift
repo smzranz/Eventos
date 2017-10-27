@@ -13,10 +13,11 @@ import FirebaseDatabase
 
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
-   
-    
+   @IBOutlet var listTableView: UITableView!
+    var address = [String]()
+    var studioName = [String]()
     
     @IBOutlet weak var searchBtnOutlet: UIButton!
     
@@ -35,11 +36,96 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
-        
+        address = ["The Nursery, King's Stanley, Stonehouse GL10, UK","19 Oxford St Market Rasen LN8 3AJ,UK","25-34 Plymouth Rd, Barnt Green, Birmingham B45 8JF, UK",
+                   "31 Cottage Ln, Ormskirk L39 3NE, UK",
+                   "5 Gannet Cl, Brockworth, Gloucester GL3 4UT, UK",
+                   "85 Willoughby St, Muthill, Crieff PH5 2AE, UK",
+                   "290 Poulton Rd, Wallasey CH44 4DB, UK",
+                   "48 Lancaster Rd, Great Yarmouth NR30 2NQ, UK",
+                   "3 Byron Ct, Balderton, Newark NG24 3PY, UK",
+                   "Moat Ln, Prestwood, Great Missenden HP16 9BY, UK",
+                   "A95, Ballindalloch AB37 9AA, UK",
+                   "1 Munro Ct, Clydebank G81 6ES, UK",
+                   "1 Westmill Cottages, Watchfield, Swindon SN6 8TH, UK",
+                   "2 Victoria Gardens, Cradley Heath B64 5LX, UK",
+                   "8 Martins Cl, Ferndown BH22 9SH, UK","1 Munro Ct, Clydebank G81 6ES, UK","1 Munro Ct, Clydebank G81 6ES, UK"]
+        studioName = ["Openlane",
+                      "Yearin",
+                      "Goodsilron",
+                      "Condax",
+                      "Opentech",
+                      "Golddex",
+                      "year-job",
+                      "Isdom",
+                      "Gogozoom",
+                      "Y-corporation",
+                      "Nam-zim",
+                      "Donquadtech",
+                      "Warephase",
+                      "Donware",
+                      "Faxquote",
+                      "Sunnamplex",
+                      "Lexiqvolax"]
         
   //  geoFire()
     }
    
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return address.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "listViewCell", for: indexPath) as! ListViewTableViewCell
+        print("Loaded")
+        cell.coverImage.heroID = "coverImage"
+        cell.bgView.layer.cornerRadius = 5
+        cell.bgView.layer.masksToBounds = true
+        cell.coverImage.layer.cornerRadius = 5
+        cell.coverImage.layer.masksToBounds = true
+        cell.coverImage.image = UIImage(named: "\(indexPath.row+1)")
+        cell.placeLabel.text = address[indexPath.row]
+        cell.titleName.text = studioName[indexPath.row]
+       
+        cell.placeLabel.sizeToFit()
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        listTableView.reloadData()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier :"sliderSegmentViewController") as! SliderSegmentViewController
+        viewController.studioName = studioName[indexPath.row]
+        viewController.studioAdress = address[indexPath.row]
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 75
+    }
+    
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+       
+            let  headerCell = tableView.dequeueReusableCell(withIdentifier: "searchCell") as! SearchHeaderTableViewCell
+            
+            
+            
+        
+                
+            
+            
+            return headerCell
+        
+    }
+    
+
     
     
     func hexStringToUIColor (hex:String) -> UIColor {
