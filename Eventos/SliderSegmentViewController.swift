@@ -9,6 +9,7 @@
 import UIKit
 import GoogleMaps
 import FontAwesome_swift
+import Hero
 
 class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate {
     

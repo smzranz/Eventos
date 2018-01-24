@@ -8,6 +8,7 @@
 
 import UIKit
 import FontAwesome_swift
+import Hero
 
 class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,UIScrollViewDelegate {
     

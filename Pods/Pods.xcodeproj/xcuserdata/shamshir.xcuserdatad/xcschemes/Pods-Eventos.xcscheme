@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D40612CE95CD867208016C88B67800BE"
+               BlueprintIdentifier = "586D0FBDA2C6F21D502918A2C1AF2556"
                BuildableName = "Pods_Eventos.framework"
                BlueprintName = "Pods-Eventos"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D40612CE95CD867208016C88B67800BE"
+            BlueprintIdentifier = "586D0FBDA2C6F21D502918A2C1AF2556"
             BuildableName = "Pods_Eventos.framework"
             BlueprintName = "Pods-Eventos"
             ReferencedContainer = "container:Pods.xcodeproj">

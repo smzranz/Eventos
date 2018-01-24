@@ -9,7 +9,7 @@
 import UIKit
 import GooglePlaces
 import GooglePlacePicker
-import FirebaseCore
+
 
 
 
@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.statusBarStyle = .lightContent
         GMSPlacesClient.provideAPIKey("AIzaSyBO_z53Bb18iuDHVnbKpAlX-D5haUFHQ28")
     //    AIzaSyDcamMkdNdFbt1oMPKflZVbTWDIwgfBmGg
-        FirebaseApp.configure()
+      //  FirebaseApp.configure()
         GMSServices.provideAPIKey("AIzaSyDcamMkdNdFbt1oMPKflZVbTWDIwgfBmGg")
       //  GMSServices.provideAPIKey("AIzaSyBO_z53Bb18iuDHVnbKpAlX-D5haUFHQ28")
         // Override point for customization after application launch.

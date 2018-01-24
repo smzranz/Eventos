@@ -7,8 +7,7 @@
 import Foundation
 import UIKit
 import GooglePlaces
-import FirebaseCore
-import FirebaseDatabase
+import Hero
 
 
 
@@ -150,23 +149,23 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         )
     }
     
-    func geoFire(){
-        let geofireRef = Database.database().reference(fromURL: "https://eventosapplive.firebaseio.com/studios/-KjvM56sgdsgdsrwrewr")
-        let geoFire = GeoFire(firebaseRef: geofireRef)
-       
-      //  geofireRef.setLocation(location, forKey: "studio_nc")
-      //  geoFire?.setLocation(CLLocation(latitude: 37.7832889, longitude: -122.4056973), forKey: "firebase-hq")
-        
-        
-        
-        let center = CLLocation(latitude: 37.7832889, longitude: -122.4056973)
-        // Query locations at [37.7832889, -122.4056973] with a radius of 600 meters
-        let circleQuery = geoFire?.query(at: center, withRadius: 0.6)
-        
-        _ = circleQuery?.observe(.keyEntered, with: { (key: String!, location: CLLocation!) in
-            print("Key '\(key)' entered the search area and is at location '\(location)'")
-        })
-    }
+//    func geoFire(){
+//        let geofireRef = Database.database().reference(fromURL: "https://eventosapplive.firebaseio.com/studios/-KjvM56sgdsgdsrwrewr")
+//        let geoFire = GeoFire(firebaseRef: geofireRef)
+//       
+//      //  geofireRef.setLocation(location, forKey: "studio_nc")
+//      //  geoFire?.setLocation(CLLocation(latitude: 37.7832889, longitude: -122.4056973), forKey: "firebase-hq")
+//        
+//        
+//        
+//        let center = CLLocation(latitude: 37.7832889, longitude: -122.4056973)
+//        // Query locations at [37.7832889, -122.4056973] with a radius of 600 meters
+//        let circleQuery = geoFire?.query(at: center, withRadius: 0.6)
+//        
+//        _ = circleQuery?.observe(.keyEntered, with: { (key: String!, location: CLLocation!) in
+//            print("Key '\(key)' entered the search area and is at location '\(location)'")
+//        })
+//    }
     
     
     

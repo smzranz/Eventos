@@ -9,11 +9,12 @@ target 'Eventos' do
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'GoogleMaps'
+  pod 'Hero', '~> 1.0'
   # pod 'Skeleton'
-  pod 'GSKStretchyHeaderView'
-  pod 'FirebaseCore'
-  pod 'Firebase'
-  pod 'Firebase/Database'
+#  pod 'GSKStretchyHeaderView'
+#  pod 'FirebaseCore'
+#  pod 'Firebase'
+#  pod 'Firebase/Database'
   pod 'FontAwesome.swift'
  
   target 'EventosTests' do
