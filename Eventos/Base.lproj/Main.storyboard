@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eg5-v7-b29">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eg5-v7-b29">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AlNile.ttc">
+            <string>AlNile</string>
+            <string>AlNile-Bold</string>
+        </array>
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Bold</string>
+            <string>AppleSDGothicNeo-Regular</string>
+            <string>AppleSDGothicNeo-SemiBold</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="4T6-jj-AfJ">
@@ -69,6 +83,10 @@
                                     <constraint firstAttribute="bottom" secondItem="Zxa-r4-7iU" secondAttribute="bottom" constant="10" id="uFr-8X-TU4"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U69-tR-dMn" customClass="APKenBurnsView" customModule="Eventos" customModuleProvider="target">
+                                <rect key="frame" x="-0.5" y="0.0" width="375" height="367"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="136" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Nt-3F-6du">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -85,10 +103,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaS-kE-Bnp">
-                                                    <rect key="frame" x="3" y="3" width="369" height="130"/>
+                                                    <rect key="frame" x="10" y="6" width="355" height="124"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="bio-Zi-cXH">
-                                                            <rect key="frame" x="5" y="5" width="120.5" height="120.5"/>
+                                                            <rect key="frame" x="5" y="5" width="114.5" height="114.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="bio-Zi-cXH" secondAttribute="height" multiplier="123:123" id="7to-LA-jKA"/>
                                                             </constraints>
@@ -98,25 +116,25 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eventos live" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3t-gK-kL4">
-                                                            <rect key="frame" x="130.5" y="8" width="230.5" height="20.5"/>
+                                                            <rect key="frame" x="124.5" y="8" width="222.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZX-6m-eX8">
-                                                            <rect key="frame" x="130.5" y="37" width="230.5" height="16"/>
+                                                            <rect key="frame" x="124.5" y="37" width="222.5" height="16"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="140 reviews" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSN-W5-auh">
-                                                            <rect key="frame" x="310.5" y="110" width="50.5" height="12"/>
+                                                            <rect key="frame" x="296.5" y="104" width="50.5" height="12"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="10"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzZ-Eu-a6f">
-                                                            <rect key="frame" x="311" y="92" width="50" height="10"/>
+                                                            <rect key="frame" x="297" y="86" width="50" height="10"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="3KI-3y-erf">
                                                                     <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -205,7 +223,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dga-x2-zzg">
-                                                    <rect key="frame" x="272" y="28" width="85" height="40"/>
+                                                    <rect key="frame" x="279" y="28" width="71" height="40"/>
                                                     <color key="backgroundColor" red="0.84705882349999995" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="15"/>
                                                     <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
@@ -217,7 +235,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpL-GE-Rao">
-                                                    <rect key="frame" x="18" y="27.5" width="244" height="40"/>
+                                                    <rect key="frame" x="25" y="27.5" width="244" height="40"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="y7G-Wq-bDU"/>
@@ -260,8 +278,12 @@
                         <constraints>
                             <constraint firstItem="cko-0L-idd" firstAttribute="leading" secondItem="Pug-Yc-SBj" secondAttribute="leading" id="1Ev-wu-ksY"/>
                             <constraint firstItem="KRn-55-0ym" firstAttribute="width" secondItem="cko-0L-idd" secondAttribute="width" id="2zH-vU-nrw"/>
+                            <constraint firstItem="U69-tR-dMn" firstAttribute="centerX" secondItem="cko-0L-idd" secondAttribute="centerX" id="5BB-fy-Prn"/>
+                            <constraint firstItem="U69-tR-dMn" firstAttribute="height" secondItem="cko-0L-idd" secondAttribute="height" id="AfM-CL-nPx"/>
+                            <constraint firstItem="U69-tR-dMn" firstAttribute="centerY" secondItem="cko-0L-idd" secondAttribute="centerY" id="IBd-2u-ypc"/>
                             <constraint firstItem="KRn-55-0ym" firstAttribute="centerX" secondItem="cko-0L-idd" secondAttribute="centerX" id="Lmm-XR-I2Z"/>
                             <constraint firstItem="KRn-55-0ym" firstAttribute="height" secondItem="cko-0L-idd" secondAttribute="height" id="WNZ-hc-r0x"/>
+                            <constraint firstItem="U69-tR-dMn" firstAttribute="width" secondItem="cko-0L-idd" secondAttribute="width" id="YD0-iy-AtO"/>
                             <constraint firstAttribute="trailing" secondItem="cko-0L-idd" secondAttribute="trailing" id="evl-3F-CWd"/>
                             <constraint firstAttribute="trailing" secondItem="4Nt-3F-6du" secondAttribute="trailing" id="i8H-AX-Wvh"/>
                             <constraint firstItem="4Nt-3F-6du" firstAttribute="top" secondItem="Pug-Yc-SBj" secondAttribute="top" id="m9P-Zq-21g"/>
@@ -277,6 +299,7 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="animationBgView" destination="U69-tR-dMn" id="KVC-Oo-u4j"/>
                         <outlet property="listTableView" destination="4Nt-3F-6du" id="aZx-xE-z8A"/>
                         <outlet property="placeNameBtnOutlet" destination="Zxa-r4-7iU" id="5lq-rF-c7v"/>
                         <outlet property="searchBtnOutlet" destination="s7c-7g-uDO" id="Ixj-3i-YWc"/>
@@ -528,7 +551,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8z-RJ-ouF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5551" y="1642"/>
+            <point key="canvasLocation" x="9215" y="1865"/>
         </scene>
         <!--Slider Segment View Controller-->
         <scene sceneID="XOg-Lb-buv">
@@ -891,7 +914,7 @@ Video camera : Standard video camera</string>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-ka-W8s">
-                                                                        <rect key="frame" x="18" y="14" width="151" height="28.5"/>
+                                                                        <rect key="frame" x="26" y="14" width="151" height="28.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="151" id="X14-aE-Oab"/>
                                                                             <constraint firstAttribute="height" constant="28" id="xpC-5k-QKT"/>
@@ -924,7 +947,7 @@ Video camera : Standard video camera</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zI9-Si-EwT">
-                                                                        <rect key="frame" x="48" y="17" width="307" height="17"/>
+                                                                        <rect key="frame" x="48" y="17" width="299" height="17"/>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                                                         <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -954,7 +977,7 @@ Video camera : Standard video camera</string>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shamshir Anees" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXf-bq-bEa">
-                                                                        <rect key="frame" x="28" y="8" width="220" height="20"/>
+                                                                        <rect key="frame" x="36" y="11" width="212" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="mwo-ki-Fky"/>
                                                                         </constraints>
@@ -966,7 +989,7 @@ Video camera : Standard video camera</string>
                                                                         </variation>
                                                                     </label>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TgX-Fq-nUh">
-                                                                        <rect key="frame" x="30" y="31" width="75" height="15"/>
+                                                                        <rect key="frame" x="30" y="34" width="75" height="15"/>
                                                                         <subviews>
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="hwl-cW-ja1">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
@@ -990,14 +1013,14 @@ Video camera : Standard video camera</string>
                                                                         </constraints>
                                                                     </stackView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKV-yT-uZI">
-                                                                        <rect key="frame" x="28" y="51" width="327" height="10"/>
+                                                                        <rect key="frame" x="36" y="54" width="311" height="5"/>
                                                                         <string key="text">"Good" is not always positive. Remember, a "good" review is the type of review that's useful to the people who come along behind </string>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 Months ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VN6-6L-tMi">
-                                                                        <rect key="frame" x="263" y="8" width="100" height="20"/>
+                                                                        <rect key="frame" x="263" y="11" width="100" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="KKa-Iy-GKp"/>
                                                                             <constraint firstAttribute="width" constant="100" id="uIp-ow-h7H"/>
@@ -1063,7 +1086,7 @@ Video camera : Standard video camera</string>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFc-Ds-oSv">
-                                                                        <rect key="frame" x="28" y="18" width="317" height="17.5"/>
+                                                                        <rect key="frame" x="36" y="21" width="301" height="12"/>
                                                                         <string key="text">"Good" is not always positive. Remember, a "good" review is the type of review that's useful to the people who come along behind </string>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                                                         <nil key="textColor"/>
@@ -1163,13 +1186,13 @@ Video camera : Standard video camera</string>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="By9-Ns-3Mh">
-                                                                <rect key="frame" x="10" y="5" width="200" height="40"/>
+                                                                <rect key="frame" x="10" y="5" width="192" height="40"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6F-VB-bT6">
-                                                                <rect key="frame" x="220" y="11" width="80" height="28"/>
+                                                                <rect key="frame" x="212" y="11" width="80" height="28"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="80" id="9Em-kp-oT8"/>
                                                                 </constraints>
@@ -1577,7 +1600,7 @@ Video camera : Standard video camera</string>
                                     <segue destination="NeL-U0-vCr" kind="show" id="94m-KA-g0e"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCA-bl-UjF">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCA-bl-UjF" customClass="APKenBurnsView" customModule="Eventos" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="268"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVENTOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9X7-Ae-CRd">
@@ -1638,6 +1661,7 @@ Video camera : Standard video camera</string>
                     </view>
                     <navigationItem key="navigationItem" id="3La-GI-mkn"/>
                     <connections>
+                        <outlet property="animationBgView" destination="SCA-bl-UjF" id="pZl-Vf-osR"/>
                         <outlet property="passwordTxt" destination="hab-cr-yMu" id="dRe-Hc-kta"/>
                         <outlet property="signInBtnOutlet" destination="HC2-fl-hGv" id="lvz-RF-ZT2"/>
                         <outlet property="usernameTxt" destination="dbk-gp-FTA" id="vMy-Qc-j6Q"/>
@@ -1777,7 +1801,6 @@ Video camera : Standard video camera</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="eg5-v7-b29" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="WeJ-Zn-FH2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

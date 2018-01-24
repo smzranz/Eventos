@@ -12,7 +12,14 @@ import Hero
 
 
 
-class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,APKenBurnsViewDataSource {
+    
+    
+    @IBOutlet weak var animationBgView: APKenBurnsView!
+    
+    private var index: Int = 0
+    var dataSource = [String]()
+    
     
    @IBOutlet var listTableView: UITableView!
     var address = [String]()
@@ -34,6 +41,17 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        
+        dataSource = ["family1", "family2", "nature1", "nature2"]
+        animationBgView.dataSource = self
+        animationBgView.faceRecognitionMode = .Group
+//        animationBgView.scaleFactorDeviation = 0.5
+//        animationBgView.imageAnimationDuration = 5.0
+//        animationBgView.imageAnimationDurationDeviation = 1.0
+//        animationBgView.transitionAnimationDuration = 2.0
+//        animationBgView.transitionAnimationDurationDeviation = 1.0
+        
         
         address = ["The Nursery, King's Stanley, Stonehouse GL10, UK","19 Oxford St Market Rasen LN8 3AJ,UK","25-34 Plymouth Rd, Barnt Green, Birmingham B45 8JF, UK",
                    "31 Cottage Ln, Ormskirk L39 3NE, UK",
@@ -69,7 +87,11 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
   //  geoFire()
     }
    
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.animationBgView.startAnimations()
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -178,7 +200,11 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
-    
+    func nextImageForKenBurnsView(kenBurnsView: APKenBurnsView) -> UIImage? {
+        let image = UIImage(named: dataSource[index])
+        index = index == dataSource.count - 1 ? 0 : index + 1
+        return image
+    }
 }
 
 extension ViewController: GMSAutocompleteViewControllerDelegate {

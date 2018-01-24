@@ -8,8 +8,9 @@
 
 import UIKit
 
-class Login1ViewController: UIViewController {
+class Login1ViewController: UIViewController,APKenBurnsViewDataSource {
     
+    @IBOutlet weak var animationBgView: APKenBurnsView!
     
     @IBOutlet weak var usernameTxt: UITextField!
     
@@ -18,12 +19,18 @@ class Login1ViewController: UIViewController {
     
     @IBOutlet weak var signInBtnOutlet: TransitionButton!
     
+    
+    private var index: Int = 0
+    var dataSource = [String]()
    // @IBOutlet weak var backBtn: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
      //   navigationController?.navigationBar.isHidden = true
-        
+        dataSource = ["family1", "family2", "nature1", "nature2"]
+        animationBgView.dataSource = self
+        animationBgView.faceRecognitionMode = .Group
+        self.animationBgView.layer.masksToBounds = true
         navigationController?.hideTransparentNavigationBar()
      //   self.navigationController?.presentTransparentNavigationBar()
 //        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -48,7 +55,11 @@ class Login1ViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.animationBgView.startAnimations()
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
        // self.navigationController?.setNavigationBarHidden(true, animated: false)
@@ -93,5 +104,11 @@ class Login1ViewController: UIViewController {
     @IBAction func backBtnAction(_ sender: Any) {
         dismiss(animated: true, completion: nil)
       //  backBtnTapped()
+    }
+    
+    func nextImageForKenBurnsView(kenBurnsView: APKenBurnsView) -> UIImage? {
+        let image = UIImage(named: dataSource[index])
+        index = index == dataSource.count - 1 ? 0 : index + 1
+        return image
     }
 }

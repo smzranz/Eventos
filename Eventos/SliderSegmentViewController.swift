@@ -13,6 +13,9 @@ import Hero
 
 class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout,UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate {
     
+    
+    
+    
     var packages = [String]()
     var packagesTitle = [String]()
     
@@ -42,13 +45,14 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.backgroundColor = colorObject.getPrimaryColor()
-        
+        sliderCollectionView.backgroundColor = colorObject.getPrimaryColor()
         packagesTitle = ["Platinum","Diamond","Gold","Silver"]
         packages = ["No.of photographer : 1 photographer\n\nNo.of videographer : 1 videographer\n\nNumber of photos : 300\n\nNumber of Camera : 1\n\nCamera : DSLR \n\nCameraAlbum : 40 Sheet (long-lasting and non-tearable synthetic)\n\nVideo:Edited video output deliverey on a Blu-ray\n\nVideo camera : Standard video camera","No.of photographer : 1 photographer\n\nNo.of videographer : 1 videographer\n\nNumber of photos : 350\n\nNumber of Camera : 1\n\nCamera : Canon 5D Mark III or Full Frame HD Camera \n\nCameraAlbum : 50 Sheet (long-lasting and non-tearable synthetic)\n\nVideo:Edited video output deliverey on a Blu-ray\n\nVideo camera : Sony PMW 200 or similar Full HD Camera","No.of photographer : 2 photographer\n\nNo.of videographer : 2 videographer\n\nNumber of photos : 600\n\nNumber of Camera : 1\n\nCamera : Canon 5D Mark III or Full Frame HD Camera \n\nCameraAlbum : 100 Sheet (long-lasting and non-tearable synthetic)\n\nVideo:Edited video output deliverey on a Blu-ray\n\nVideo camera : Sony PMW 200 or similar Full HD Camera\n\nExclusive candid shoot:YES\n\nLarge TV screens:2 large TV screens","No.of photographer : 2 photographer\n\nNo.of videographer : 2 videographer\n\nNumber of photos : 600\n\nNumber of Camera : 1\n\nCamera : Canon 5D Mark III or Full Frame HD Camera \n\nCameraAlbum : 100 Sheet (long-lasting and non-tearable synthetic)\n\nVideo:Edited video output deliverey on a Blu-ray\n\nVideo camera : Sony PMW 200 or similar Full HD Camera\n\nExclusive candid shoot:YES\n\nLarge TV screens:2 large TV screens"]
       //  setSharebtn()
       //  UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         self.navTitle.text = studioName
         enquireBtnOutle.tintColor = UIColor.white
+        enquireBtnOutle.backgroundColor = colorObject.getPrimaryColor()
       //  enquireBtnOutle.backgroundColor = ColorFile().getPrimaryColor()
      //   enquireBtnOutle.setTitle("enquire", for: .normal)
         enquireBtnOutle.setImage(UIImage.fontAwesomeIcon(name: .ticket, textColor: .white, size: CGSize(width: 30, height: 30)), for: .normal)
@@ -80,7 +84,7 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == sliderCollectionView{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sliderCell", for: indexPath) as! SliderCollectionViewCell
-            
+            cell.backgroundColor = ColorFile().getPrimaryColor()
            // 3.0 are the seconds
                 
                 // Write your code here for e.g. Increasing any Subviews height.

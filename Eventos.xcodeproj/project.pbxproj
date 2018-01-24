@@ -60,6 +60,25 @@
 		51E0092D1F7916D500083FF1 /* bg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 51E0092C1F7916D500083FF1 /* bg.jpeg */; };
 		51E0092F1F7918A300083FF1 /* cam_bg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 51E0092E1F7918A300083FF1 /* cam_bg.jpeg */; };
 		51E009311F791A1500083FF1 /* building.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51E009301F791A1500083FF1 /* building.jpg */; };
+		51F18F362018ADA10058E43A /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 51F18F1D2018ADA10058E43A /* .gitkeep */; };
+		51F18F372018ADA10058E43A /* APKenBurnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F1E2018ADA10058E43A /* APKenBurnsView.swift */; };
+		51F18F382018ADA10058E43A /* AnimationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F212018ADA10058E43A /* AnimationDataSource.swift */; };
+		51F18F392018ADA10058E43A /* AnimationDataSourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F222018ADA10058E43A /* AnimationDataSourceFactory.swift */; };
+		51F18F3A2018ADA10058E43A /* DefaultAnimationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F232018ADA10058E43A /* DefaultAnimationDataSource.swift */; };
+		51F18F3B2018ADA10058E43A /* FaceAnimationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F242018ADA10058E43A /* FaceAnimationDataSource.swift */; };
+		51F18F3C2018ADA10058E43A /* CALayer+Pause.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F262018ADA10058E43A /* CALayer+Pause.swift */; };
+		51F18F3D2018ADA10058E43A /* UIImageView+ImageAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F272018ADA10058E43A /* UIImageView+ImageAnimation.swift */; };
+		51F18F3E2018ADA10058E43A /* UIView+RestoreAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F282018ADA10058E43A /* UIView+RestoreAnimations.swift */; };
+		51F18F3F2018ADA10058E43A /* FacesDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F2A2018ADA10058E43A /* FacesDrawer.swift */; };
+		51F18F402018ADA10058E43A /* UIImage+FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F2B2018ADA10058E43A /* UIImage+FaceDetection.swift */; };
+		51F18F412018ADA10058E43A /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F2C2018ADA10058E43A /* Helpers.swift */; };
+		51F18F422018ADA10058E43A /* ImageAnimationCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F2D2018ADA10058E43A /* ImageAnimationCalculator.swift */; };
+		51F18F432018ADA10058E43A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F2E2018ADA10058E43A /* Models.swift */; };
+		51F18F442018ADA10058E43A /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F302018ADA10058E43A /* Random.swift */; };
+		51F18F452018ADA10058E43A /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F312018ADA10058E43A /* RandomGenerator.swift */; };
+		51F18F462018ADA10058E43A /* RuntimeProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F322018ADA10058E43A /* RuntimeProperties.swift */; };
+		51F18F472018ADA10058E43A /* BlockTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F342018ADA10058E43A /* BlockTimer.swift */; };
+		51F18F482018ADA10058E43A /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F352018ADA10058E43A /* StopWatch.swift */; };
 		51F1BE271F7298D7000C3484 /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BE211F7298D7000C3484 /* CGRectExtension.swift */; };
 		51F1BE281F7298D7000C3484 /* CustomTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BE221F7298D7000C3484 /* CustomTransitionViewController.swift */; };
 		51F1BE291F7298D7000C3484 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BE231F7298D7000C3484 /* FadeTransition.swift */; };
@@ -153,6 +172,25 @@
 		51E0092C1F7916D500083FF1 /* bg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpeg; sourceTree = "<group>"; };
 		51E0092E1F7918A300083FF1 /* cam_bg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cam_bg.jpeg; sourceTree = "<group>"; };
 		51E009301F791A1500083FF1 /* building.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = building.jpg; sourceTree = "<group>"; };
+		51F18F1D2018ADA10058E43A /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		51F18F1E2018ADA10058E43A /* APKenBurnsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APKenBurnsView.swift; sourceTree = "<group>"; };
+		51F18F212018ADA10058E43A /* AnimationDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationDataSource.swift; sourceTree = "<group>"; };
+		51F18F222018ADA10058E43A /* AnimationDataSourceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationDataSourceFactory.swift; sourceTree = "<group>"; };
+		51F18F232018ADA10058E43A /* DefaultAnimationDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultAnimationDataSource.swift; sourceTree = "<group>"; };
+		51F18F242018ADA10058E43A /* FaceAnimationDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceAnimationDataSource.swift; sourceTree = "<group>"; };
+		51F18F262018ADA10058E43A /* CALayer+Pause.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Pause.swift"; sourceTree = "<group>"; };
+		51F18F272018ADA10058E43A /* UIImageView+ImageAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageAnimation.swift"; sourceTree = "<group>"; };
+		51F18F282018ADA10058E43A /* UIView+RestoreAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RestoreAnimations.swift"; sourceTree = "<group>"; };
+		51F18F2A2018ADA10058E43A /* FacesDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacesDrawer.swift; sourceTree = "<group>"; };
+		51F18F2B2018ADA10058E43A /* UIImage+FaceDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+FaceDetection.swift"; sourceTree = "<group>"; };
+		51F18F2C2018ADA10058E43A /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		51F18F2D2018ADA10058E43A /* ImageAnimationCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAnimationCalculator.swift; sourceTree = "<group>"; };
+		51F18F2E2018ADA10058E43A /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		51F18F302018ADA10058E43A /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		51F18F312018ADA10058E43A /* RandomGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomGenerator.swift; sourceTree = "<group>"; };
+		51F18F322018ADA10058E43A /* RuntimeProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeProperties.swift; sourceTree = "<group>"; };
+		51F18F342018ADA10058E43A /* BlockTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockTimer.swift; sourceTree = "<group>"; };
+		51F18F352018ADA10058E43A /* StopWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 		51F1BE211F7298D7000C3484 /* CGRectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
 		51F1BE221F7298D7000C3484 /* CustomTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitionViewController.swift; sourceTree = "<group>"; };
 		51F1BE231F7298D7000C3484 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
@@ -211,6 +249,7 @@
 		513944761F7152F00092340A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				51F18F1C2018ADA10058E43A /* Classes */,
 				5155DA221F7291090014B6A4 /* IQKeyboardManagerSwift */,
 				51F1BE2D1F729CF5000C3484 /* AutoKeyboard */,
 				51F1BE201F7298C1000C3484 /* transitionButton */,
@@ -374,6 +413,80 @@
 				5155DA391F7291090014B6A4 /* IQKeyboardManager.bundle */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		51F18F1C2018ADA10058E43A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				51F18F1D2018ADA10058E43A /* .gitkeep */,
+				51F18F1E2018ADA10058E43A /* APKenBurnsView.swift */,
+				51F18F1F2018ADA10058E43A /* Private */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		51F18F1F2018ADA10058E43A /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				51F18F202018ADA10058E43A /* AnimationDataSources */,
+				51F18F252018ADA10058E43A /* AnimationHelpers */,
+				51F18F292018ADA10058E43A /* FaceRecognition */,
+				51F18F2C2018ADA10058E43A /* Helpers.swift */,
+				51F18F2D2018ADA10058E43A /* ImageAnimationCalculator.swift */,
+				51F18F2E2018ADA10058E43A /* Models.swift */,
+				51F18F2F2018ADA10058E43A /* Random */,
+				51F18F322018ADA10058E43A /* RuntimeProperties.swift */,
+				51F18F332018ADA10058E43A /* Timing */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		51F18F202018ADA10058E43A /* AnimationDataSources */ = {
+			isa = PBXGroup;
+			children = (
+				51F18F212018ADA10058E43A /* AnimationDataSource.swift */,
+				51F18F222018ADA10058E43A /* AnimationDataSourceFactory.swift */,
+				51F18F232018ADA10058E43A /* DefaultAnimationDataSource.swift */,
+				51F18F242018ADA10058E43A /* FaceAnimationDataSource.swift */,
+			);
+			path = AnimationDataSources;
+			sourceTree = "<group>";
+		};
+		51F18F252018ADA10058E43A /* AnimationHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				51F18F262018ADA10058E43A /* CALayer+Pause.swift */,
+				51F18F272018ADA10058E43A /* UIImageView+ImageAnimation.swift */,
+				51F18F282018ADA10058E43A /* UIView+RestoreAnimations.swift */,
+			);
+			path = AnimationHelpers;
+			sourceTree = "<group>";
+		};
+		51F18F292018ADA10058E43A /* FaceRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				51F18F2A2018ADA10058E43A /* FacesDrawer.swift */,
+				51F18F2B2018ADA10058E43A /* UIImage+FaceDetection.swift */,
+			);
+			path = FaceRecognition;
+			sourceTree = "<group>";
+		};
+		51F18F2F2018ADA10058E43A /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				51F18F302018ADA10058E43A /* Random.swift */,
+				51F18F312018ADA10058E43A /* RandomGenerator.swift */,
+			);
+			path = Random;
+			sourceTree = "<group>";
+		};
+		51F18F332018ADA10058E43A /* Timing */ = {
+			isa = PBXGroup;
+			children = (
+				51F18F342018ADA10058E43A /* BlockTimer.swift */,
+				51F18F352018ADA10058E43A /* StopWatch.swift */,
+			);
+			path = Timing;
 			sourceTree = "<group>";
 		};
 		51F1BE201F7298C1000C3484 /* transitionButton */ = {
@@ -554,6 +667,7 @@
 				515415081F4EA7B0006528B2 /* Assets.xcassets in Resources */,
 				51E0092B1F79163300083FF1 /* bgImage.jpeg in Resources */,
 				515415061F4EA7B0006528B2 /* Main.storyboard in Resources */,
+				51F18F362018ADA10058E43A /* .gitkeep in Resources */,
 				5184E4181F57FD6D001FA466 /* GoogleService-Info.plist in Resources */,
 				5155DA4A1F7291090014B6A4 /* IQKeyboardManager.bundle in Resources */,
 				513CAFC51F7A7DD4005B3E45 /* pexels-photo.jpg in Resources */,
@@ -685,11 +799,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F18F3C2018ADA10058E43A /* CALayer+Pause.swift in Sources */,
+				51F18F3A2018ADA10058E43A /* DefaultAnimationDataSource.swift in Sources */,
 				5155DA401F7291090014B6A4 /* IQKeyboardManagerConstants.swift in Sources */,
 				51F1BE281F7298D7000C3484 /* CustomTransitionViewController.swift in Sources */,
 				5155DA471F7291090014B6A4 /* IQTitleBarButtonItem.swift in Sources */,
 				51F1BE2C1F7298D7000C3484 /* TransitionButton.swift in Sources */,
 				5155DA461F7291090014B6A4 /* IQPreviousNextView.swift in Sources */,
+				51F18F472018ADA10058E43A /* BlockTimer.swift in Sources */,
 				5155DA431F7291090014B6A4 /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				5155DA441F7291090014B6A4 /* IQTextView.swift in Sources */,
 				514E02341F73B27E001BFB39 /* ReviewsTableViewCell.swift in Sources */,
@@ -697,13 +814,19 @@
 				514E02381F73BBFC001BFB39 /* PlaceDetailsTableViewCell.swift in Sources */,
 				51B0D6E61F74DC85000114D1 /* DemoSegmentCollectionViewCell.swift in Sources */,
 				5162BFCD1F8FA00C00A81D1F /* PackagesTableViewCell.swift in Sources */,
+				51F18F482018ADA10058E43A /* StopWatch.swift in Sources */,
+				51F18F3E2018ADA10058E43A /* UIView+RestoreAnimations.swift in Sources */,
 				51B0D6EA1F74E42E000114D1 /* LoginCollectionViewCell.swift in Sources */,
 				C3888A551F77811F0045F2ED /* BookMarkedView.swift in Sources */,
 				5155DA451F7291090014B6A4 /* IQBarButtonItem.swift in Sources */,
+				51F18F382018ADA10058E43A /* AnimationDataSource.swift in Sources */,
 				5155DA3B1F7291090014B6A4 /* IQUIScrollView+Additions.swift in Sources */,
+				51F18F442018ADA10058E43A /* Random.swift in Sources */,
 				514E023A1F73C6CC001BFB39 /* MapViewTableViewCell.swift in Sources */,
 				5155DA3E1F7291090014B6A4 /* IQUIViewController+Additions.swift in Sources */,
+				51F18F422018ADA10058E43A /* ImageAnimationCalculator.swift in Sources */,
 				514224FF1F6BFBCC00B9F39C /* ListViewTableViewCell.swift in Sources */,
+				51F18F412018ADA10058E43A /* Helpers.swift in Sources */,
 				5155DA3D1F7291090014B6A4 /* IQUIView+Hierarchy.swift in Sources */,
 				514E02361F73BBCF001BFB39 /* CustomHeaderTableViewCell.swift in Sources */,
 				C3888A571F7796280045F2ED /* SendEnquiryWindow.swift in Sources */,
@@ -714,6 +837,9 @@
 				C3A1F53F1F7EBB790066B893 /* SelectionViewController.swift in Sources */,
 				514224FB1F6BFAF400B9F39C /* ListViewViewController.swift in Sources */,
 				5155DA3F1F7291090014B6A4 /* IQUIWindow+Hierarchy.swift in Sources */,
+				51F18F3D2018ADA10058E43A /* UIImageView+ImageAnimation.swift in Sources */,
+				51F18F372018ADA10058E43A /* APKenBurnsView.swift in Sources */,
+				51F18F452018ADA10058E43A /* RandomGenerator.swift in Sources */,
 				C36906551F71960E003655B8 /* DetailImageViewViewController.swift in Sources */,
 				51F1BE311F729CF5000C3484 /* AutoKeyboard.swift in Sources */,
 				515415011F4EA7B0006528B2 /* AppDelegate.swift in Sources */,
@@ -725,15 +851,21 @@
 				5155DA1B1F723E820014B6A4 /* SlidingContainerSliderView.swift in Sources */,
 				5155DA421F7291090014B6A4 /* IQKeyboardManager.swift in Sources */,
 				C3D84F6C1F741CC9006E78CB /* AbousUsTableViewCell.swift in Sources */,
+				51F18F392018ADA10058E43A /* AnimationDataSourceFactory.swift in Sources */,
+				51F18F462018ADA10058E43A /* RuntimeProperties.swift in Sources */,
 				5155DA411F7291090014B6A4 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				51F18F402018ADA10058E43A /* UIImage+FaceDetection.swift in Sources */,
 				5155DA481F7291090014B6A4 /* IQToolbar.swift in Sources */,
 				51E009291F7902F800083FF1 /* Login1ViewController.swift in Sources */,
 				51960D8B1F7A22DB004B580B /* ListImageCollectionViewCell.swift in Sources */,
 				5155DA491F7291090014B6A4 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				51B0D6E21F74B7D1000114D1 /* SliderCollectionViewCell.swift in Sources */,
+				51F18F3F2018ADA10058E43A /* FacesDrawer.swift in Sources */,
 				51F1BE2B1F7298D7000C3484 /* SpinerLayer.swift in Sources */,
+				51F18F3B2018ADA10058E43A /* FaceAnimationDataSource.swift in Sources */,
 				C3A976391F7F82D300369D6E /* SelectionImageCollectionViewCell.swift in Sources */,
 				5155DA3C1F7291090014B6A4 /* IQUITextFieldView+Additions.swift in Sources */,
+				51F18F432018ADA10058E43A /* Models.swift in Sources */,
 				5155DA4C1F7293100014B6A4 /* PMSuperButton.swift in Sources */,
 				5163D2D11FA0C022007D9E8C /* SearchHeaderTableViewCell.swift in Sources */,
 				5139447E1F7154C20092340A /* DemosViewController.swift in Sources */,
