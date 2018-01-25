@@ -79,6 +79,8 @@
 		51F18F462018ADA10058E43A /* RuntimeProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F322018ADA10058E43A /* RuntimeProperties.swift */; };
 		51F18F472018ADA10058E43A /* BlockTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F342018ADA10058E43A /* BlockTimer.swift */; };
 		51F18F482018ADA10058E43A /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F352018ADA10058E43A /* StopWatch.swift */; };
+		51F18F4A2018C3B20058E43A /* FolderViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F492018C3B20058E43A /* FolderViewViewController.swift */; };
+		51F18F4C2018C3E60058E43A /* FolderViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F18F4B2018C3E60058E43A /* FolderViewCollectionViewCell.swift */; };
 		51F1BE271F7298D7000C3484 /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BE211F7298D7000C3484 /* CGRectExtension.swift */; };
 		51F1BE281F7298D7000C3484 /* CustomTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BE221F7298D7000C3484 /* CustomTransitionViewController.swift */; };
 		51F1BE291F7298D7000C3484 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BE231F7298D7000C3484 /* FadeTransition.swift */; };
@@ -191,6 +193,8 @@
 		51F18F322018ADA10058E43A /* RuntimeProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeProperties.swift; sourceTree = "<group>"; };
 		51F18F342018ADA10058E43A /* BlockTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockTimer.swift; sourceTree = "<group>"; };
 		51F18F352018ADA10058E43A /* StopWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+		51F18F492018C3B20058E43A /* FolderViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewViewController.swift; sourceTree = "<group>"; };
+		51F18F4B2018C3E60058E43A /* FolderViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewCollectionViewCell.swift; sourceTree = "<group>"; };
 		51F1BE211F7298D7000C3484 /* CGRectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
 		51F1BE221F7298D7000C3484 /* CustomTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitionViewController.swift; sourceTree = "<group>"; };
 		51F1BE231F7298D7000C3484 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
@@ -528,6 +532,7 @@
 			children = (
 				C3D84F6D1F742744006E78CB /* SectionHeaderCollectionReusableView.swift */,
 				51B0D6E11F74B7D1000114D1 /* SliderCollectionViewCell.swift */,
+				51F18F4B2018C3E60058E43A /* FolderViewCollectionViewCell.swift */,
 				C3A976381F7F82D300369D6E /* SelectionImageCollectionViewCell.swift */,
 				C36906521F7194DE003655B8 /* DemoImageCollectionViewCell.swift */,
 				51960D8A1F7A22DB004B580B /* ListImageCollectionViewCell.swift */,
@@ -558,6 +563,7 @@
 				514224FA1F6BFAF400B9F39C /* ListViewViewController.swift */,
 				C3A1F53E1F7EBB790066B893 /* SelectionViewController.swift */,
 				51B0D6DF1F74B714000114D1 /* SliderSegmentViewController.swift */,
+				51F18F492018C3B20058E43A /* FolderViewViewController.swift */,
 				5139447D1F7154C20092340A /* DemosViewController.swift */,
 				C36906541F71960E003655B8 /* DetailImageViewViewController.swift */,
 				C3888A531F7780E50045F2ED /* CustomView */,
@@ -844,6 +850,7 @@
 				51F1BE311F729CF5000C3484 /* AutoKeyboard.swift in Sources */,
 				515415011F4EA7B0006528B2 /* AppDelegate.swift in Sources */,
 				51F1BE291F7298D7000C3484 /* FadeTransition.swift in Sources */,
+				51F18F4A2018C3B20058E43A /* FolderViewViewController.swift in Sources */,
 				51F1BE271F7298D7000C3484 /* CGRectExtension.swift in Sources */,
 				51B0D6E01F74B714000114D1 /* SliderSegmentViewController.swift in Sources */,
 				51B0D6E41F74B89A000114D1 /* SegmentCollectionViewCell.swift in Sources */,
@@ -853,6 +860,7 @@
 				C3D84F6C1F741CC9006E78CB /* AbousUsTableViewCell.swift in Sources */,
 				51F18F392018ADA10058E43A /* AnimationDataSourceFactory.swift in Sources */,
 				51F18F462018ADA10058E43A /* RuntimeProperties.swift in Sources */,
+				51F18F4C2018C3E60058E43A /* FolderViewCollectionViewCell.swift in Sources */,
 				5155DA411F7291090014B6A4 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				51F18F402018ADA10058E43A /* UIImage+FaceDetection.swift in Sources */,
 				5155DA481F7291090014B6A4 /* IQToolbar.swift in Sources */,

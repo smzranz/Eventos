@@ -1597,7 +1597,7 @@ Video camera : Standard video camera</string>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="signInBtnAction:" destination="hKK-m2-u9d" eventType="touchUpInside" id="dh2-c2-u0W"/>
-                                    <segue destination="NeL-U0-vCr" kind="show" id="94m-KA-g0e"/>
+                                    <segue destination="YtA-Sc-Q3D" kind="show" id="Ibo-Vu-z8w"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCA-bl-UjF" customClass="APKenBurnsView" customModule="Eventos" customModuleProvider="target">
@@ -1669,7 +1669,86 @@ Video camera : Standard video camera</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JdT-6k-Uv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6527.1999999999998" y="1633.1334332833585"/>
+            <point key="canvasLocation" x="6156" y="1650"/>
+        </scene>
+        <!--Folder View View Controller-->
+        <scene sceneID="24h-Gb-XGm">
+            <objects>
+                <viewController id="YtA-Sc-Q3D" customClass="FolderViewViewController" customModule="Eventos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HH8-ve-kAV"/>
+                        <viewControllerLayoutGuide type="bottom" id="heS-IA-fRt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zd5-RY-nr1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GOI-iP-5vU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FYH-st-Uhq">
+                                    <size key="itemSize" width="145" height="177"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="folderCell" id="CYH-mK-zse" customClass="FolderViewCollectionViewCell" customModule="Eventos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="177"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="145" height="177"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PjP-Rl-4xg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="145" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="UmM-Aw-Y3t"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k03-sx-a4q">
+                                                    <rect key="frame" x="0.0" y="125" width="145" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="k03-sx-a4q" firstAttribute="leading" secondItem="CYH-mK-zse" secondAttribute="leading" id="30Q-Mp-k3h"/>
+                                            <constraint firstItem="k03-sx-a4q" firstAttribute="top" secondItem="PjP-Rl-4xg" secondAttribute="bottom" constant="5" id="L50-ZT-UdT"/>
+                                            <constraint firstAttribute="trailing" secondItem="PjP-Rl-4xg" secondAttribute="trailing" id="YaV-Ir-BIa"/>
+                                            <constraint firstAttribute="trailing" secondItem="k03-sx-a4q" secondAttribute="trailing" id="fQJ-yM-M9z"/>
+                                            <constraint firstItem="PjP-Rl-4xg" firstAttribute="top" secondItem="CYH-mK-zse" secondAttribute="top" id="fr7-6r-kL5"/>
+                                            <constraint firstItem="PjP-Rl-4xg" firstAttribute="leading" secondItem="CYH-mK-zse" secondAttribute="leading" id="fxy-YI-OSs"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="folderImageView" destination="PjP-Rl-4xg" id="3LX-jR-8zr"/>
+                                            <outlet property="folderLabel" destination="k03-sx-a4q" id="MVn-L3-QJz"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="YtA-Sc-Q3D" id="dWc-eE-eeF"/>
+                                    <outlet property="delegate" destination="YtA-Sc-Q3D" id="wQJ-qw-Rop"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GOI-iP-5vU" firstAttribute="leading" secondItem="Zd5-RY-nr1" secondAttribute="leading" id="O8d-uk-JyK"/>
+                            <constraint firstItem="GOI-iP-5vU" firstAttribute="top" secondItem="Zd5-RY-nr1" secondAttribute="top" id="cLl-RI-giq"/>
+                            <constraint firstAttribute="trailing" secondItem="GOI-iP-5vU" secondAttribute="trailing" id="lRa-0r-wce"/>
+                            <constraint firstItem="heS-IA-fRt" firstAttribute="top" secondItem="GOI-iP-5vU" secondAttribute="bottom" id="t2a-Zf-1r7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="folderCollectionView" destination="GOI-iP-5vU" id="Kfs-sN-tCH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eNH-Oa-ltd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7129" y="1649"/>
         </scene>
         <!--Selection View Controller-->
         <scene sceneID="1T2-9l-Xbx">
@@ -1793,7 +1872,7 @@ Video camera : Standard video camera</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBb-yA-rmL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7503.75" y="1647.5"/>
+            <point key="canvasLocation" x="8071" y="1642"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ggT-eU-6aL">
@@ -1833,6 +1912,6 @@ Video camera : Standard video camera</string>
         <image name="www.jpeg" width="4000" height="2660"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="73S-ze-LaR"/>
+        <segue reference="qLW-jJ-QvJ"/>
     </inferredMetricsTieBreakers>
 </document>

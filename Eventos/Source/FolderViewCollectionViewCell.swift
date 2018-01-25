@@ -10,4 +10,10 @@ import UIKit
 
 class FolderViewCollectionViewCell: UICollectionViewCell {
     
+    
+    @IBOutlet weak var folderImageView: UIImageView!
+    
+    
+    @IBOutlet weak var folderLabel: UILabel!
+    
 }
