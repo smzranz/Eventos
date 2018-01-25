@@ -90,7 +90,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        self.animationBgView.startAnimations()
+       // self.animationBgView.startAnimations()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

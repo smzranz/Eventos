@@ -8,26 +8,36 @@
 
 import UIKit
 import FacebookLogin
+import Google
 
-class SignInViewController: UIViewController,APKenBurnsViewDataSource {
+class SignInViewController: UIViewController,APKenBurnsViewDataSource, GIDSignInUIDelegate {
     
     private var index: Int = 0
     var dataSource = [String]()
     @IBOutlet var animationBgView: APKenBurnsView!
     
-
+@IBOutlet weak var signInButton: GIDSignInButton!
+    
+    @IBOutlet weak var loginBtnFacebook: UIButton!
+    
+   // @IBOutlet weak var signInWIthFacebook: LoginButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        signInButton.colorScheme = .dark
+        signInButton.style = .wide
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().signOut()
         dataSource = ["family1", "family2", "nature1", "nature2"]
         animationBgView.dataSource = self
         animationBgView.faceRecognitionMode = .Group
+        loginBtnFacebook.addTarget(self, action: #selector(loginButtonClicked), for: .touchUpInside)
         
 //        let loginButton = LoginButton(readPermissions: [ .publicProfile ])
-//        loginButton.frame.size = CGSize(width:self.view.frame.width-80,height:44)
+//        loginButton.frame = signInButton.frame
 //        
-//        loginButton.center = view.center
 //        
+//        loginButton.center.y = signInButton.center.y + 90
 //        view.addSubview(loginButton)
         // Do any additional setup after loading the view.
     }
@@ -37,7 +47,19 @@ class SignInViewController: UIViewController,APKenBurnsViewDataSource {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @objc func loginButtonClicked() {
+        let loginManager = LoginManager()
+        loginManager.logIn(readPermissions: [.publicProfile], viewController: self) { (loginResult) in
+            switch loginResult {
+            case .failed(let error):
+                print(error)
+            case .cancelled:
+                print("User cancelled login.")
+            case .success(let grantedPermissions, let declinedPermissions, let accessToken):
+                print("Logged in!")
+            }
+        }
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -48,5 +70,23 @@ class SignInViewController: UIViewController,APKenBurnsViewDataSource {
         let image = UIImage(named: dataSource[index])
         index = index == dataSource.count - 1 ? 0 : index + 1
         return image
+    }
+    
+    
+    @nonobjc func signInWillDispatch(signIn: GIDSignIn!, error: NSError!) {
+        
+       // myActivityIndicator.stopAnimating()
+    }
+    
+    // Present a view that prompts the user to sign in with Google
+    func sign(_ signIn: GIDSignIn!,
+              present viewController: UIViewController!) {
+        self.present(viewController, animated: true, completion: nil)
+    }
+    
+    // Dismiss the "Sign in with Google" view
+    func sign(_ signIn: GIDSignIn!,
+              dismiss viewController: UIViewController!) {
+        self.dismiss(animated: true, completion: nil)
     }
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="g8x-rK-mL6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="g8x-rK-mL6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -20,6 +20,9 @@
             <string>AppleSDGothicNeo-Bold</string>
             <string>AppleSDGothicNeo-Regular</string>
             <string>AppleSDGothicNeo-SemiBold</string>
+        </array>
+        <array key="Coves Bold.otf">
+            <string>Coves-Bold</string>
         </array>
         <array key="HelveticaNeueLights.ttc">
             <string>HelveticaNeue-Light</string>
@@ -103,10 +106,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaS-kE-Bnp">
-                                                    <rect key="frame" x="3" y="3" width="369" height="130"/>
+                                                    <rect key="frame" x="10" y="6" width="355" height="124"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="bio-Zi-cXH">
-                                                            <rect key="frame" x="5" y="5" width="120.5" height="120.5"/>
+                                                            <rect key="frame" x="5" y="5" width="114.5" height="114.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="bio-Zi-cXH" secondAttribute="height" multiplier="123:123" id="7to-LA-jKA"/>
                                                             </constraints>
@@ -116,25 +119,25 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eventos live" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3t-gK-kL4">
-                                                            <rect key="frame" x="130.5" y="8" width="230.5" height="20.5"/>
+                                                            <rect key="frame" x="124.5" y="8" width="222.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZX-6m-eX8">
-                                                            <rect key="frame" x="130.5" y="37" width="230.5" height="16"/>
+                                                            <rect key="frame" x="124.5" y="37" width="222.5" height="16"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="140 reviews" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSN-W5-auh">
-                                                            <rect key="frame" x="310.5" y="110" width="50.5" height="12"/>
+                                                            <rect key="frame" x="296.5" y="104" width="50.5" height="12"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="10"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzZ-Eu-a6f">
-                                                            <rect key="frame" x="311" y="92" width="50" height="10"/>
+                                                            <rect key="frame" x="297" y="86" width="50" height="10"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="3KI-3y-erf">
                                                                     <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -223,7 +226,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dga-x2-zzg">
-                                                    <rect key="frame" x="272" y="28" width="85" height="40"/>
+                                                    <rect key="frame" x="279" y="28" width="71" height="40"/>
                                                     <color key="backgroundColor" red="0.84705882349999995" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="15"/>
                                                     <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
@@ -235,7 +238,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpL-GE-Rao">
-                                                    <rect key="frame" x="18" y="27.5" width="244" height="40"/>
+                                                    <rect key="frame" x="25" y="27.5" width="244" height="40"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="y7G-Wq-bDU"/>
@@ -329,11 +332,11 @@
                                 <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon8" translatesAutoresizingMaskIntoConstraints="NO" id="Ei6-D8-NlD">
-                                <rect key="frame" x="37.5" y="70" width="300" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="123" translatesAutoresizingMaskIntoConstraints="NO" id="Ei6-D8-NlD">
+                                <rect key="frame" x="62.5" y="70" width="250" height="250"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="CxF-Bn-jSO"/>
-                                    <constraint firstAttribute="width" constant="300" id="OB7-nl-2sf"/>
+                                    <constraint firstAttribute="height" constant="250" id="CxF-Bn-jSO"/>
+                                    <constraint firstAttribute="width" constant="250" id="OB7-nl-2sf"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9op-Nx-wlZ">
@@ -341,19 +344,19 @@
                                 <color key="backgroundColor" red="0.22643372416496277" green="0.34689554572105408" blue="0.60685998201370239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <inset key="imageEdgeInsets" minX="-80" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Log In with facebook" image="facebookIcon">
+                                <state key="normal" title="Log in with facebook" image="facebookIcon">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEm-uB-cNv">
                                 <rect key="frame" x="40" y="438.5" width="295" height="50"/>
-                                <color key="backgroundColor" red="0.79200267791748047" green="0.27438852190971375" blue="0.22112077474594116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.25499230623245239" green="0.51444864273071289" blue="0.93932878971099854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="NSw-yf-zci"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <inset key="imageEdgeInsets" minX="-80" minY="5" maxX="5" maxY="5"/>
-                                <state key="normal" title="Log In with google" image="googlePlus">
+                                <state key="normal" title="Log in with google" image="googlePlus">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -361,6 +364,16 @@
                                 <rect key="frame" x="40" y="598" width="295" height="34"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1UR-a6-l3m" customClass="GIDSignInButton">
+                                <rect key="frame" x="40" y="438.5" width="295" height="50"/>
+                                <color key="backgroundColor" red="0.25499230620000002" green="0.51444864270000001" blue="0.9393287897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eventos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXc-QF-UHG">
+                                <rect key="frame" x="92.5" y="257" width="190.5" height="63"/>
+                                <fontDescription key="fontDescription" name="Coves-Bold" family="Coves" pointSize="54"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.80091305599999996" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -379,17 +392,25 @@
                             <constraint firstItem="9op-Nx-wlZ" firstAttribute="top" secondItem="jEm-uB-cNv" secondAttribute="bottom" constant="30" id="RRc-XL-L5j"/>
                             <constraint firstItem="jEm-uB-cNv" firstAttribute="width" secondItem="DWP-zV-ehk" secondAttribute="width" constant="-80" id="S6t-bO-x4f"/>
                             <constraint firstItem="3eZ-KG-ZPx" firstAttribute="height" secondItem="Eib-Ei-zw4" secondAttribute="height" id="TEe-CF-XWh"/>
+                            <constraint firstItem="KXc-QF-UHG" firstAttribute="centerX" secondItem="DWP-zV-ehk" secondAttribute="centerX" id="YyH-YJ-7zW"/>
+                            <constraint firstItem="1UR-a6-l3m" firstAttribute="centerX" secondItem="jEm-uB-cNv" secondAttribute="centerX" id="a0G-tz-iXH"/>
                             <constraint firstItem="Eib-Ei-zw4" firstAttribute="top" secondItem="DWP-zV-ehk" secondAttribute="top" id="aEN-GF-pvY"/>
                             <constraint firstItem="jEm-uB-cNv" firstAttribute="centerY" secondItem="DWP-zV-ehk" secondAttribute="centerY" constant="130" id="avw-Ic-rjq"/>
                             <constraint firstItem="9op-Nx-wlZ" firstAttribute="centerX" secondItem="jEm-uB-cNv" secondAttribute="centerX" id="bag-PH-q5o"/>
                             <constraint firstItem="9op-Nx-wlZ" firstAttribute="height" secondItem="jEm-uB-cNv" secondAttribute="height" id="cgr-A5-GIo"/>
                             <constraint firstItem="Eib-Ei-zw4" firstAttribute="leading" secondItem="DWP-zV-ehk" secondAttribute="leading" id="cuP-g6-awB"/>
+                            <constraint firstItem="1UR-a6-l3m" firstAttribute="height" secondItem="jEm-uB-cNv" secondAttribute="height" id="foF-PP-e5W"/>
                             <constraint firstItem="PZ3-S3-d2C" firstAttribute="top" secondItem="omG-jQ-3lj" secondAttribute="bottom" constant="35" id="kor-qb-OpB"/>
+                            <constraint firstItem="KXc-QF-UHG" firstAttribute="bottom" secondItem="Ei6-D8-NlD" secondAttribute="bottom" id="m1o-LC-VuP"/>
+                            <constraint firstItem="1UR-a6-l3m" firstAttribute="centerY" secondItem="jEm-uB-cNv" secondAttribute="centerY" id="oMj-3q-Wgp"/>
                             <constraint firstItem="3eZ-KG-ZPx" firstAttribute="width" secondItem="Eib-Ei-zw4" secondAttribute="width" id="qIX-0L-M51"/>
+                            <constraint firstItem="1UR-a6-l3m" firstAttribute="width" secondItem="jEm-uB-cNv" secondAttribute="width" id="z3n-3f-mSM"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="animationBgView" destination="Eib-Ei-zw4" id="Lnv-wW-iQj"/>
+                        <outlet property="loginBtnFacebook" destination="9op-Nx-wlZ" id="STk-C4-oWE"/>
+                        <outlet property="signInButton" destination="1UR-a6-l3m" id="kuQ-HR-eeC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98R-Qc-Ahb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1001,7 +1022,7 @@ Video camera : Standard video camera</string>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJU-ka-W8s">
-                                                                        <rect key="frame" x="18" y="14" width="151" height="28.5"/>
+                                                                        <rect key="frame" x="26" y="14" width="151" height="28.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="151" id="X14-aE-Oab"/>
                                                                             <constraint firstAttribute="height" constant="28" id="xpC-5k-QKT"/>
@@ -1034,7 +1055,7 @@ Video camera : Standard video camera</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zI9-Si-EwT">
-                                                                        <rect key="frame" x="48" y="17" width="307" height="17"/>
+                                                                        <rect key="frame" x="48" y="17" width="299" height="17"/>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                                                         <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -1064,7 +1085,7 @@ Video camera : Standard video camera</string>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shamshir Anees" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXf-bq-bEa">
-                                                                        <rect key="frame" x="28" y="8" width="220" height="20"/>
+                                                                        <rect key="frame" x="36" y="11" width="212" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="mwo-ki-Fky"/>
                                                                         </constraints>
@@ -1076,7 +1097,7 @@ Video camera : Standard video camera</string>
                                                                         </variation>
                                                                     </label>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TgX-Fq-nUh">
-                                                                        <rect key="frame" x="30" y="31" width="75" height="15"/>
+                                                                        <rect key="frame" x="30" y="34" width="75" height="15"/>
                                                                         <subviews>
                                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="hwl-cW-ja1">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
@@ -1100,14 +1121,14 @@ Video camera : Standard video camera</string>
                                                                         </constraints>
                                                                     </stackView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKV-yT-uZI">
-                                                                        <rect key="frame" x="28" y="51" width="327" height="10.5"/>
+                                                                        <rect key="frame" x="36" y="54" width="311" height="5"/>
                                                                         <string key="text">"Good" is not always positive. Remember, a "good" review is the type of review that's useful to the people who come along behind </string>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 Months ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VN6-6L-tMi">
-                                                                        <rect key="frame" x="263" y="8" width="100" height="20"/>
+                                                                        <rect key="frame" x="263" y="11" width="100" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="KKa-Iy-GKp"/>
                                                                             <constraint firstAttribute="width" constant="100" id="uIp-ow-h7H"/>
@@ -1173,7 +1194,7 @@ Video camera : Standard video camera</string>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFc-Ds-oSv">
-                                                                        <rect key="frame" x="28" y="18" width="317" height="17.5"/>
+                                                                        <rect key="frame" x="36" y="21" width="301" height="12"/>
                                                                         <string key="text">"Good" is not always positive. Remember, a "good" review is the type of review that's useful to the people who come along behind </string>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                                                         <nil key="textColor"/>
@@ -1273,13 +1294,13 @@ Video camera : Standard video camera</string>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="By9-Ns-3Mh">
-                                                                <rect key="frame" x="10" y="5" width="200" height="40"/>
+                                                                <rect key="frame" x="10" y="5" width="192" height="40"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6F-VB-bT6">
-                                                                <rect key="frame" x="220" y="11" width="80" height="28"/>
+                                                                <rect key="frame" x="212" y="11" width="80" height="28"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="80" id="9Em-kp-oT8"/>
                                                                 </constraints>
@@ -1770,7 +1791,7 @@ Video camera : Standard video camera</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GOI-iP-5vU">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GOI-iP-5vU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FYH-st-Uhq">
@@ -1788,26 +1809,26 @@ Video camera : Standard video camera</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PjP-Rl-4xg">
-                                                    <rect key="frame" x="0.0" y="0.0" width="145" height="120"/>
+                                                    <rect key="frame" x="32.5" y="23" width="80" height="80"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="120" id="UmM-Aw-Y3t"/>
+                                                        <constraint firstAttribute="height" constant="80" id="J85-Bi-QKF"/>
+                                                        <constraint firstAttribute="width" constant="80" id="MRR-5d-i4b"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k03-sx-a4q">
-                                                    <rect key="frame" x="0.0" y="125" width="145" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="0.0" y="118" width="145" height="18"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="k03-sx-a4q" firstAttribute="leading" secondItem="CYH-mK-zse" secondAttribute="leading" id="30Q-Mp-k3h"/>
-                                            <constraint firstItem="k03-sx-a4q" firstAttribute="top" secondItem="PjP-Rl-4xg" secondAttribute="bottom" constant="5" id="L50-ZT-UdT"/>
-                                            <constraint firstAttribute="trailing" secondItem="PjP-Rl-4xg" secondAttribute="trailing" id="YaV-Ir-BIa"/>
+                                            <constraint firstItem="k03-sx-a4q" firstAttribute="top" secondItem="PjP-Rl-4xg" secondAttribute="bottom" constant="15" id="Rv9-X7-bTx"/>
                                             <constraint firstAttribute="trailing" secondItem="k03-sx-a4q" secondAttribute="trailing" id="fQJ-yM-M9z"/>
-                                            <constraint firstItem="PjP-Rl-4xg" firstAttribute="top" secondItem="CYH-mK-zse" secondAttribute="top" id="fr7-6r-kL5"/>
-                                            <constraint firstItem="PjP-Rl-4xg" firstAttribute="leading" secondItem="CYH-mK-zse" secondAttribute="leading" id="fxy-YI-OSs"/>
+                                            <constraint firstItem="PjP-Rl-4xg" firstAttribute="centerX" secondItem="CYH-mK-zse" secondAttribute="centerX" id="hTM-9s-57r"/>
+                                            <constraint firstItem="PjP-Rl-4xg" firstAttribute="top" secondItem="CYH-mK-zse" secondAttribute="topMargin" constant="15" id="kmk-5c-RQj"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="folderImageView" destination="PjP-Rl-4xg" id="3LX-jR-8zr"/>
@@ -1835,7 +1856,7 @@ Video camera : Standard video camera</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNH-Oa-ltd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7129" y="1649"/>
+            <point key="canvasLocation" x="7393" y="1676"/>
         </scene>
         <!--Selection View Controller-->
         <scene sceneID="1T2-9l-Xbx">
@@ -1959,7 +1980,7 @@ Video camera : Standard video camera</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBb-yA-rmL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8071" y="1642"/>
+            <point key="canvasLocation" x="8713" y="1821"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ggT-eU-6aL">
@@ -1984,6 +2005,7 @@ Video camera : Standard video camera</string>
     </scenes>
     <resources>
         <image name="1" width="1200" height="897"/>
+        <image name="123" width="842" height="646"/>
         <image name="Premium" width="32" height="32"/>
         <image name="back" width="26" height="26"/>
         <image name="bookmark_red" width="250" height="250"/>
@@ -1993,7 +2015,6 @@ Video camera : Standard video camera</string>
         <image name="facebookIcon" width="24" height="24"/>
         <image name="googlePlus" width="64" height="64"/>
         <image name="hearts_outline" width="50" height="50"/>
-        <image name="icon8" width="167" height="167"/>
         <image name="images.jpeg" width="275" height="183"/>
         <image name="share" width="256" height="256"/>
         <image name="star" width="25" height="25"/>
@@ -2002,6 +2023,6 @@ Video camera : Standard video camera</string>
         <image name="www.jpeg" width="4000" height="2660"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qLW-jJ-QvJ"/>
+        <segue reference="73S-ze-LaR"/>
     </inferredMetricsTieBreakers>
 </document>

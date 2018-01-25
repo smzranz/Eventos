@@ -31,7 +31,7 @@ class FolderViewViewController: UIViewController,UICollectionViewDelegate,UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "folderCell", for: indexPath) as! FolderViewCollectionViewCell
-        cell.folderImageView.image = #imageLiteral(resourceName: "nature1")
+        cell.folderImageView.image = #imageLiteral(resourceName: "folder")
         cell.folderLabel.text = "folder \(indexPath.row+1)"
      
         return cell
@@ -49,7 +49,7 @@ class FolderViewViewController: UIViewController,UICollectionViewDelegate,UIColl
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         
-        return CGSize(width: collectionView.frame.size.width/2, height: collectionView.frame.size.width/2)
+        return CGSize(width: collectionView.frame.size.width/3, height: 150)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0

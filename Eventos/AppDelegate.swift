@@ -9,20 +9,58 @@
 import UIKit
 import GooglePlaces
 import GooglePlacePicker
+import GoogleSignIn
+import FBSDKCoreKit
 
 
+
+
+
+
+
+
+
+
+func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    let handled: Bool = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: [UIApplicationOpenURLOptionsKey.annotation:UIApplicationOpenURLOptionsKey.sourceApplication])
+    //sharedInstance().application(application, open: url, sourceApplication: options[.sourceApplication] as? String, annotation: options[.annotation])
+    // Add any custom logic here.
+    return handled
+}
 
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if (error == nil) {
+            // Perform any operations on signed in user here.
+            let userId = user.userID                  // For client-side use only!
+            let idToken = user.authentication.idToken // Safe to send to the server
+            let fullName = user.profile.name
+            let givenName = user.profile.givenName
+            let familyName = user.profile.familyName
+            let email = user.profile.email
+            print("*********\(email)")
+            // ...
+        } else {
+            print("\(error.localizedDescription)")
+        }
+    }
+    
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        var configureError: NSError?
+        GGLContext.sharedInstance().configureWithError(&configureError)
+        assert(configureError == nil, "Error configuring Google services: \(configureError)")
         
+        GIDSignIn.sharedInstance().delegate = self
         IQKeyboardManager.sharedManager().enable = true
         UIApplication.shared.statusBarStyle = .lightContent
         GMSPlacesClient.provideAPIKey("AIzaSyBO_z53Bb18iuDHVnbKpAlX-D5haUFHQ28")
@@ -55,6 +93,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
 
 }
