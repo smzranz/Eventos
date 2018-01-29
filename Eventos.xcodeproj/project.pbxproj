@@ -58,6 +58,8 @@
 		51B0D6E61F74DC85000114D1 /* DemoSegmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B0D6E51F74DC85000114D1 /* DemoSegmentCollectionViewCell.swift */; };
 		51B0D6E81F74E421000114D1 /* PackageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B0D6E71F74E421000114D1 /* PackageCollectionViewCell.swift */; };
 		51B0D6EA1F74E42E000114D1 /* LoginCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B0D6E91F74E42E000114D1 /* LoginCollectionViewCell.swift */; };
+		51C9EE1F201ED80100383CE9 /* MyAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9EE1E201ED80100383CE9 /* MyAlbumViewController.swift */; };
+		51C9EE25201F33E700383CE9 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9EE24201F33E700383CE9 /* InstructionView.swift */; };
 		51E009291F7902F800083FF1 /* Login1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E009281F7902F800083FF1 /* Login1ViewController.swift */; };
 		51E0092B1F79163300083FF1 /* bgImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 51E0092A1F79163300083FF1 /* bgImage.jpeg */; };
 		51E0092D1F7916D500083FF1 /* bg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 51E0092C1F7916D500083FF1 /* bg.jpeg */; };
@@ -178,6 +180,8 @@
 		51B0D6E51F74DC85000114D1 /* DemoSegmentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoSegmentCollectionViewCell.swift; sourceTree = "<group>"; };
 		51B0D6E71F74E421000114D1 /* PackageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageCollectionViewCell.swift; sourceTree = "<group>"; };
 		51B0D6E91F74E42E000114D1 /* LoginCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCollectionViewCell.swift; sourceTree = "<group>"; };
+		51C9EE1E201ED80100383CE9 /* MyAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlbumViewController.swift; sourceTree = "<group>"; };
+		51C9EE24201F33E700383CE9 /* InstructionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
 		51E009281F7902F800083FF1 /* Login1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login1ViewController.swift; sourceTree = "<group>"; };
 		51E0092A1F79163300083FF1 /* bgImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgImage.jpeg; sourceTree = "<group>"; };
 		51E0092C1F7916D500083FF1 /* bg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpeg; sourceTree = "<group>"; };
@@ -583,6 +587,8 @@
 				C3A1F53E1F7EBB790066B893 /* SelectionViewController.swift */,
 				C3E19A8F2018E8280092563B /* FolderViewViewController.swift */,
 				C3513FD2201C88C300A8E67C /* ProfileViewController.swift */,
+				51C9EE1E201ED80100383CE9 /* MyAlbumViewController.swift */,
+				51C9EE24201F33E700383CE9 /* InstructionView.swift */,
 				51B0D6DF1F74B714000114D1 /* SliderSegmentViewController.swift */,
 				51F18F492018C3B20058E43A /* FolderViewViewController.swift */,
 				5139447D1F7154C20092340A /* DemosViewController.swift */,
@@ -804,7 +810,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B806385015B9925D925F06BC /* [CP] Check Pods Manifest.lock */ = {
@@ -822,7 +828,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB3EF420DEC2176FC8144FA1 /* [CP] Copy Pods Resources */ = {
@@ -875,6 +881,7 @@
 				51F18F422018ADA10058E43A /* ImageAnimationCalculator.swift in Sources */,
 				514224FF1F6BFBCC00B9F39C /* ListViewTableViewCell.swift in Sources */,
 				51F18F412018ADA10058E43A /* Helpers.swift in Sources */,
+				51C9EE25201F33E700383CE9 /* InstructionView.swift in Sources */,
 				5155DA3D1F7291090014B6A4 /* IQUIView+Hierarchy.swift in Sources */,
 				514E02361F73BBCF001BFB39 /* CustomHeaderTableViewCell.swift in Sources */,
 				C3888A571F7796280045F2ED /* SendEnquiryWindow.swift in Sources */,
@@ -883,6 +890,7 @@
 				5155DA4E1F72931C0014B6A4 /* ListLoader.swift in Sources */,
 				515415031F4EA7B0006528B2 /* ViewController.swift in Sources */,
 				C3A1F53F1F7EBB790066B893 /* SelectionViewController.swift in Sources */,
+				51C9EE1F201ED80100383CE9 /* MyAlbumViewController.swift in Sources */,
 				514224FB1F6BFAF400B9F39C /* ListViewViewController.swift in Sources */,
 				5155DA3F1F7291090014B6A4 /* IQUIWindow+Hierarchy.swift in Sources */,
 				51F18F3D2018ADA10058E43A /* UIImageView+ImageAnimation.swift in Sources */,

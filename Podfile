@@ -14,6 +14,7 @@ target 'Eventos' do
   pod 'FacebookLogin','~> 0.3.0'
   pod 'Google/SignIn'
    pod 'StatusAlert', '~> 0.10.0'
+  
   #pod 'FacebookShare'
   # pod 'Skeleton'
 #  pod 'GSKStretchyHeaderView'

@@ -21,18 +21,27 @@ import FBSDKCoreKit
 
 
 
-func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-    let handled: Bool = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: [UIApplicationOpenURLOptionsKey.annotation:UIApplicationOpenURLOptionsKey.sourceApplication])
-    //sharedInstance().application(application, open: url, sourceApplication: options[.sourceApplication] as? String, annotation: options[.annotation])
-    // Add any custom logic here.
-    return handled
-}
-
 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
     
+    
+    
+//    
+//    var orientationLock = UIInterfaceOrientationMask.portrait
+//    var myOrientation: UIInterfaceOrientationMask = .portrait
+//    
+//    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+//        return myOrientation
+//    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        let handled: Bool = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: [UIApplicationOpenURLOptionsKey.annotation:UIApplicationOpenURLOptionsKey.sourceApplication])
+        //sharedInstance().application(application, open: url, sourceApplication: options[.sourceApplication] as? String, annotation: options[.annotation])
+        // Add any custom logic here.
+        return handled
+    }
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if (error == nil) {
             // Perform any operations on signed in user here.

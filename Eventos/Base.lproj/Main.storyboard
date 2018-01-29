@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="g8x-rK-mL6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="agW-YW-axe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -704,7 +704,7 @@
                                 <color key="backgroundColor" red="0.25499230620000002" green="0.51444864270000001" blue="0.9393287897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eventos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXc-QF-UHG">
-                                <rect key="frame" x="104.5" y="263.5" width="167" height="56.5"/>
+                                <rect key="frame" x="92.5" y="257" width="190.5" height="63"/>
                                 <fontDescription key="fontDescription" name="Coves-Bold" family="Coves" pointSize="54"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.80091305599999996" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1107,6 +1107,9 @@
                                                             <state key="normal" title="I M A G E   S E L E C T I O N">
                                                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <connections>
+                                                                <segue destination="agW-YW-axe" kind="show" id="1dS-VQ-15K"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2108,6 +2111,24 @@ Video camera : Standard video camera</string>
             </objects>
             <point key="canvasLocation" x="6190" y="1657"/>
         </scene>
+        <!--My Album View Controller-->
+        <scene sceneID="HET-pN-rAy">
+            <objects>
+                <viewController storyboardIdentifier="myAlbumViewController" id="agW-YW-axe" customClass="MyAlbumViewController" customModule="Eventos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qqz-7O-Ejc"/>
+                        <viewControllerLayoutGuide type="bottom" id="0eq-2Q-2ER"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Epp-yB-h1A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikb-v1-0Iz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8689" y="833"/>
+        </scene>
         <!--Folder View View Controller-->
         <scene sceneID="24h-Gb-XGm">
             <objects>
@@ -2186,7 +2207,7 @@ Video camera : Standard video camera</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNH-Oa-ltd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7836" y="859.52023988005999"/>
+            <point key="canvasLocation" x="7377" y="1716"/>
         </scene>
         <!--Selection View Controller-->
         <scene sceneID="1T2-9l-Xbx">
@@ -2330,7 +2351,7 @@ Video camera : Standard video camera</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tiT-hV-N8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3950" y="1640"/>
+            <point key="canvasLocation" x="3745" y="1564"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="KhD-Db-rt9">
@@ -2373,6 +2394,6 @@ Video camera : Standard video camera</string>
         <image name="www.jpeg" width="4000" height="2660"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qLW-jJ-QvJ"/>
+        <segue reference="73S-ze-LaR"/>
     </inferredMetricsTieBreakers>
 </document>
