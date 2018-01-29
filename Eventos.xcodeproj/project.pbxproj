@@ -10,7 +10,6 @@
 		511D8B4F2019C4A5006A31A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 511D8B4E2019C4A5006A31A0 /* GoogleService-Info.plist */; };
 		5139447E1F7154C20092340A /* DemosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139447D1F7154C20092340A /* DemosViewController.swift */; };
 		513A96032019E0EC00837446 /* Coves Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 513A96022019E0E900837446 /* Coves Bold.otf */; };
-		513A96052019F23700837446 /* MAXWELL BOLD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 513A96042019F23500837446 /* MAXWELL BOLD.ttf */; };
 		513A960C201A182300837446 /* Pods_Eventos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513A960D201A182300837446 /* Pods_Eventos.framework */; };
 		513CAFC51F7A7DD4005B3E45 /* pexels-photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 513CAFC41F7A7DD4005B3E45 /* pexels-photo.jpg */; };
 		514224F71F6B963F00B9F39C /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 514224F61F6B963F00B9F39C /* images.jpeg */; };
@@ -92,6 +91,8 @@
 		51F1BE2C1F7298D7000C3484 /* TransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BE261F7298D7000C3484 /* TransitionButton.swift */; };
 		51F1BE311F729CF5000C3484 /* AutoKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BE2F1F729CF5000C3484 /* AutoKeyboard.swift */; };
 		51F1BE321F729CF5000C3484 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51F1BE301F729CF5000C3484 /* Info.plist */; };
+		C3513FD3201C88C400A8E67C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3513FD2201C88C300A8E67C /* ProfileViewController.swift */; };
+		C3513FD5201C9EB600A8E67C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3513FD4201C9EB600A8E67C /* TableViewCell.swift */; };
 		C36906531F7194DF003655B8 /* DemoImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36906521F7194DE003655B8 /* DemoImageCollectionViewCell.swift */; };
 		C36906551F71960E003655B8 /* DetailImageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36906541F71960E003655B8 /* DetailImageViewViewController.swift */; };
 		C3888A501F7778BB0045F2ED /* SendEnquiry.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3888A4F1F7778BA0045F2ED /* SendEnquiry.xib */; };
@@ -122,7 +123,6 @@
 		511D8B4E2019C4A5006A31A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5139447D1F7154C20092340A /* DemosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemosViewController.swift; sourceTree = "<group>"; };
 		513A96022019E0E900837446 /* Coves Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Coves Bold.otf"; sourceTree = "<group>"; };
-		513A96042019F23500837446 /* MAXWELL BOLD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MAXWELL BOLD.ttf"; sourceTree = "<group>"; };
 		513A9607201A180200837446 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		513A960D201A182300837446 /* Pods_Eventos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Eventos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		513CAFC41F7A7DD4005B3E45 /* pexels-photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pexels-photo.jpg"; sourceTree = "<group>"; };
@@ -216,6 +216,8 @@
 		5A8F04D0881192899B27BEE1 /* Pods_Eventos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eventos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62427791E501E5805BF34705 /* Pods_EventosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		706C6416343FD6252004BB77 /* Pods-Eventos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eventos/Pods-Eventos.release.xcconfig"; sourceTree = "<group>"; };
+		C3513FD2201C88C300A8E67C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C3513FD4201C9EB600A8E67C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		C36906521F7194DE003655B8 /* DemoImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		C36906541F71960E003655B8 /* DetailImageViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailImageViewViewController.swift; sourceTree = "<group>"; };
 		C3888A4F1F7778BA0045F2ED /* SendEnquiry.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendEnquiry.xib; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 			children = (
 				514E02331F73B27E001BFB39 /* ReviewsTableViewCell.swift */,
 				514E02351F73BBCF001BFB39 /* CustomHeaderTableViewCell.swift */,
+				C3513FD4201C9EB600A8E67C /* TableViewCell.swift */,
 				5163D2D01FA0C022007D9E8C /* SearchHeaderTableViewCell.swift */,
 				5162BFCC1F8FA00C00A81D1F /* PackagesTableViewCell.swift */,
 				C3D84F6B1F741CC9006E78CB /* AbousUsTableViewCell.swift */,
@@ -336,7 +339,6 @@
 				5155DA1D1F723F570014B6A4 /* CommonFile */,
 				515415001F4EA7B0006528B2 /* AppDelegate.swift */,
 				C3D84F6A1F741C8A006E78CB /* ViewControllers */,
-				513A96042019F23500837446 /* MAXWELL BOLD.ttf */,
 				513A96022019E0E900837446 /* Coves Bold.otf */,
 				514224FD1F6BFBB100B9F39C /* TableviewCells */,
 				513944761F7152F00092340A /* Source */,
@@ -580,6 +582,7 @@
 				514224FA1F6BFAF400B9F39C /* ListViewViewController.swift */,
 				C3A1F53E1F7EBB790066B893 /* SelectionViewController.swift */,
 				C3E19A8F2018E8280092563B /* FolderViewViewController.swift */,
+				C3513FD2201C88C300A8E67C /* ProfileViewController.swift */,
 				51B0D6DF1F74B714000114D1 /* SliderSegmentViewController.swift */,
 				51F18F492018C3B20058E43A /* FolderViewViewController.swift */,
 				5139447D1F7154C20092340A /* DemosViewController.swift */,
@@ -699,7 +702,6 @@
 				513CAFC51F7A7DD4005B3E45 /* pexels-photo.jpg in Resources */,
 				51F1BE321F729CF5000C3484 /* Info.plist in Resources */,
 				514224F71F6B963F00B9F39C /* images.jpeg in Resources */,
-				513A96052019F23700837446 /* MAXWELL BOLD.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -802,7 +804,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B806385015B9925D925F06BC /* [CP] Check Pods Manifest.lock */ = {
@@ -820,7 +822,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		DB3EF420DEC2176FC8144FA1 /* [CP] Copy Pods Resources */ = {
@@ -906,11 +908,13 @@
 				5155DA481F7291090014B6A4 /* IQToolbar.swift in Sources */,
 				51E009291F7902F800083FF1 /* Login1ViewController.swift in Sources */,
 				51960D8B1F7A22DB004B580B /* ListImageCollectionViewCell.swift in Sources */,
+				C3513FD5201C9EB600A8E67C /* TableViewCell.swift in Sources */,
 				5155DA491F7291090014B6A4 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				51B0D6E21F74B7D1000114D1 /* SliderCollectionViewCell.swift in Sources */,
 				51F18F3F2018ADA10058E43A /* FacesDrawer.swift in Sources */,
 				51F1BE2B1F7298D7000C3484 /* SpinerLayer.swift in Sources */,
 				51F18F3B2018ADA10058E43A /* FaceAnimationDataSource.swift in Sources */,
+				C3513FD3201C88C400A8E67C /* ProfileViewController.swift in Sources */,
 				C3A976391F7F82D300369D6E /* SelectionImageCollectionViewCell.swift in Sources */,
 				C3E19A922018F31A0092563B /* SignInViewController.swift in Sources */,
 				5155DA3C1F7291090014B6A4 /* IQUITextFieldView+Additions.swift in Sources */,
@@ -1067,7 +1071,7 @@
 				DEVELOPMENT_TEAM = VF624LR8S4;
 				INFOPLIST_FILE = Eventos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shamshir.Eventos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rinu.Eventos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Eventos/Eventos-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1084,7 +1088,7 @@
 				DEVELOPMENT_TEAM = VF624LR8S4;
 				INFOPLIST_FILE = Eventos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shamshir.Eventos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rinu.Eventos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Eventos/Eventos-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

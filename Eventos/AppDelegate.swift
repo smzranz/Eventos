@@ -43,6 +43,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
             let familyName = user.profile.familyName
             let email = user.profile.email
             print("*********\(email)")
+            DispatchQueue.main.async {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = storyboard.instantiateViewController(withIdentifier :"viewController") as! ViewController
+                let navController = UINavigationController.init(rootViewController: viewController)
+                
+                if let window = self.window, let rootViewController = window.rootViewController {
+                    var currentController = rootViewController
+                    while let presentedController = currentController.presentedViewController {
+                        currentController = presentedController
+                    }
+                    currentController.present(navController, animated: true, completion: nil)
+                }
+            }
             // ...
         } else {
             print("\(error.localizedDescription)")

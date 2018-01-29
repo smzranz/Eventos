@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import StatusAlert
 
 class ListViewViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,UISearchDisplayDelegate,UISearchControllerDelegate,UISearchBarDelegate {
     
@@ -139,14 +139,18 @@ var address = [String]()
     
     var favouritedView : BookMarkedView!
     func favourited(){
-         let win:UIWindow = UIApplication.shared.delegate!.window!!
-    favouritedView = Bundle.main.loadNibNamed("BookmarkedView", owner: self, options: nil)?.first! as! BookMarkedView
-        favouritedView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
-        favouritedView.center = win.center
-        favouritedView.layer.cornerRadius = 8
-        win.addSubview(favouritedView)
         
-        _ = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(removefavouritedView), userInfo: nil, repeats: false)
+        
+        let statusAlert = StatusAlert.instantiate(withImage: #imageLiteral(resourceName: "hearts_filled"),title: "Favouried",message: "Added to favourited list.",canBePickedOrDismissed: true)
+        statusAlert.showInKeyWindow()
+//         let win:UIWindow = UIApplication.shared.delegate!.window!!
+//    favouritedView = Bundle.main.loadNibNamed("BookmarkedView", owner: self, options: nil)?.first! as! BookMarkedView
+//        favouritedView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+//        favouritedView.center = win.center
+//        favouritedView.layer.cornerRadius = 8
+//        win.addSubview(favouritedView)
+//
+//        _ = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(removefavouritedView), userInfo: nil, repeats: false)
     
     }
     

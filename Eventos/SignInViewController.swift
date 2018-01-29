@@ -11,7 +11,7 @@ import FacebookLogin
 import Google
 
 class SignInViewController: UIViewController,APKenBurnsViewDataSource, GIDSignInUIDelegate {
-    
+  var window: UIWindow?
     private var index: Int = 0
     var dataSource = [String]()
     @IBOutlet var animationBgView: APKenBurnsView!
@@ -27,7 +27,7 @@ class SignInViewController: UIViewController,APKenBurnsViewDataSource, GIDSignIn
         signInButton.colorScheme = .dark
         signInButton.style = .wide
         GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().signOut()
+       // GIDSignIn.sharedInstance().signOut()
         dataSource = ["family1", "family2", "nature1", "nature2"]
         animationBgView.dataSource = self
         animationBgView.faceRecognitionMode = .Group
@@ -56,6 +56,20 @@ class SignInViewController: UIViewController,APKenBurnsViewDataSource, GIDSignIn
             case .cancelled:
                 print("User cancelled login.")
             case .success(let grantedPermissions, let declinedPermissions, let accessToken):
+                DispatchQueue.main.async {
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let viewController = storyboard.instantiateViewController(withIdentifier :"viewController") as! ViewController
+                    let navController = UINavigationController.init(rootViewController: viewController)
+                    
+                    if let window = self.window, let rootViewController = window.rootViewController {
+                        var currentController = rootViewController
+                        while let presentedController = currentController.presentedViewController {
+                            currentController = presentedController
+                        }
+                        currentController.present(navController, animated: true, completion: nil)
+                    }
+                }
+
                 print("Logged in!")
             }
         }

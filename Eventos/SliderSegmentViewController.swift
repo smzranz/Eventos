@@ -139,7 +139,7 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
                 cell.myAlbumBtn.layer.borderWidth = 1
                 cell.myAlbumBtn.layer.borderColor = UIColor.lightGray.cgColor
                 cell.myAlbumBtn.layer.masksToBounds = true
-                
+                cell.myAlbumBtn.addTarget(self, action: #selector(albumSelectedAction), for: .touchUpInside)
                 
                 cell.selectionBtn.layer.cornerRadius = cell.selectionBtn.frame.height/2
                 cell.selectionBtn.layer.borderWidth = 1
@@ -446,8 +446,36 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
         }
     }
     
-    
-    
+    func albumSelectedAction(){
+        let alert = UIAlertController(title: "Album key", message: "Please enter the private ablum key", preferredStyle:
+            UIAlertControllerStyle.alert)
+        
+        alert.addTextField(configurationHandler: textFieldHandler)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler:{ (UIAlertAction)in
+            DispatchQueue.main.async {
+                let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc : FolderViewViewController = storyboard.instantiateViewController(withIdentifier: "folderViewViewController") as! FolderViewViewController
+                
+                
+                let navigationController = UINavigationController(rootViewController: vc)
+               // navigationController.navigationBar.isTranslucent = false
+                self.navigationController?.pushViewController(vc, animated: true)
+//                self.present(navigationController, animated: true, completion: nil)
+            }
+            
+        }))
+        
+        self.present(alert, animated: true, completion:nil)
+    }
+    func textFieldHandler(textField: UITextField!)
+    {
+        print(textField.text)
+        if (textField) != nil {
+            textField.placeholder = "Foo!"
+            textField.text = ""
+        }
+    }
     @IBAction func enquiryBtnAction(_ sender: Any) {
         
         showEnquiryView()

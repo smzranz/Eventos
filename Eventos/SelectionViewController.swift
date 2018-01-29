@@ -20,6 +20,7 @@ class SelectionViewController: UIViewController,UICollectionViewDelegate,UIColle
 var imageSelected = [Int]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = true
 imageSelected = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
         // Do any additional setup after loading the view.
     }

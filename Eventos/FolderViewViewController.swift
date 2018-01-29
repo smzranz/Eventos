@@ -16,8 +16,8 @@ class FolderViewViewController: UIViewController,UICollectionViewDelegate,UIColl
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        self.navigationController?.navigationBar.isHidden = true
+      //  UINavigationBar.appearance().barTintColor = ColorFile().getMarkerBlueColor()
     }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -39,7 +39,10 @@ class FolderViewViewController: UIViewController,UICollectionViewDelegate,UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier :"SelectionViewController") as! SelectionViewController
+     
+        self.navigationController?.pushViewController(viewController, animated: true)
         //  if collectionView == sel{
         
        

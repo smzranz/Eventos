@@ -8,22 +8,18 @@ import Foundation
 import UIKit
 import GooglePlaces
 import Hero
+import FontAwesome_swift
 
 
 
 
-class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,APKenBurnsViewDataSource {
-    
-    
-    @IBOutlet weak var animationBgView: APKenBurnsView!
-    
-    private var index: Int = 0
-    var dataSource = [String]()
-    
-    
+class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+
    @IBOutlet var listTableView: UITableView!
     var address = [String]()
     var studioName = [String]()
+    
+    @IBOutlet var profileBtnOutlet: UIButton!
     
     @IBOutlet weak var searchBtnOutlet: UIButton!
     
@@ -42,17 +38,9 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         
         super.viewDidLoad()
         
-        
-        dataSource = ["family1", "family2", "nature1", "nature2"]
-        animationBgView.dataSource = self
-        animationBgView.faceRecognitionMode = .Group
-//        animationBgView.scaleFactorDeviation = 0.5
-//        animationBgView.imageAnimationDuration = 5.0
-//        animationBgView.imageAnimationDurationDeviation = 1.0
-//        animationBgView.transitionAnimationDuration = 2.0
-//        animationBgView.transitionAnimationDurationDeviation = 1.0
-        
-        
+self.navigationController?.navigationBar.isHidden = true
+        self.profileBtnOutlet.tintColor = UIColor.white
+        self.profileBtnOutlet.setImage(UIImage.fontAwesomeIcon(name: .userCircleO, textColor: UIColor.white, size: CGSize(width: 40, height: 40)), for: .normal)
         address = ["The Nursery, King's Stanley, Stonehouse GL10, UK","19 Oxford St Market Rasen LN8 3AJ,UK","25-34 Plymouth Rd, Barnt Green, Birmingham B45 8JF, UK",
                    "31 Cottage Ln, Ormskirk L39 3NE, UK",
                    "5 Gannet Cl, Brockworth, Gloucester GL3 4UT, UK",
@@ -84,13 +72,12 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
                       "Sunnamplex",
                       "Lexiqvolax"]
         
-  //  geoFire()
+ 
     }
    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-       // self.animationBgView.startAnimations()
+       
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -128,7 +115,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 75
+        return 66
     }
     
     
@@ -200,10 +187,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
-    func nextImageForKenBurnsView(kenBurnsView: APKenBurnsView) -> UIImage? {
-        let image = UIImage(named: dataSource[index])
-        index = index == dataSource.count - 1 ? 0 : index + 1
-        return image
+   
+    @IBAction func profileBtnPressed(_ sender: Any) {
     }
 }
 
