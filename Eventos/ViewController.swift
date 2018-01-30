@@ -115,7 +115,7 @@ self.navigationController?.navigationBar.isHidden = true
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 66
+        return 60
     }
     
     

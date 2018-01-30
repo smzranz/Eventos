@@ -64,8 +64,8 @@ self.profileImageView.layer.masksToBounds = true
     
     
     @IBAction func backBtnPressed(_ sender: Any) {
-        
-        navigationController?.popViewController(animated: true)
+        print(self.parent)
+        self.dismiss(animated: true, completion: nil)
     }
     
 

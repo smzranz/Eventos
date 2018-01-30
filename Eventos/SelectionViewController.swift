@@ -11,15 +11,20 @@ import FontAwesome_swift
 
 class SelectionViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var uploadBtn: UIButton!
     
+    @IBOutlet weak var countLabel: UILabel!
     @IBOutlet var navBar: UIView!
     
     @IBOutlet var imageCollectionView: UICollectionView!
     var selectedImageIndex : IndexPath!
-    
+    var count = 0
 var imageSelected = [Int]()
     override func viewDidLoad() {
         super.viewDidLoad()
+      uploadBtn.setImage(UIImage.fontAwesomeIcon(name: .cloudUpload, textColor: UIColor.white, size: uploadBtn.frame.size), for: .normal)
+        uploadBtn.tintColor = UIColor.white
+        self.countLabel.text = "\(count)"
         self.navigationController?.navigationBar.isHidden = true
 imageSelected = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
         // Do any additional setup after loading the view.
@@ -92,9 +97,12 @@ imageSelected = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     let index = sender.tag
         if imageSelected[index] == 0{
         imageSelected[index] = 1
+            count += 1
         }else{
         imageSelected[index] = 0
+            count -= 1
         }
+        self.countLabel.text = "\(count)"
         let sam : IndexPath = [0,index]
         self.imageCollectionView.reloadItems(at: [sam])
         
@@ -117,6 +125,26 @@ imageSelected = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
         
         
         navigationController?.popViewController(animated: true)
+    }
+    
+    
+    
+    @IBAction func uploadBtnPressed(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Attention!", message: "Do you realy want submit the selected Images", preferredStyle: UIAlertControllerStyle.alert)
+        
+        // add the actions (buttons)
+        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.destructive, handler: { action in
+            
+            self.navigationController?.popViewController(animated: true)
+            
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+        
+        
     }
     
     

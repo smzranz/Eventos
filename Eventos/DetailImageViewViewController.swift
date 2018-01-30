@@ -131,25 +131,25 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == imageCollectionView {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! DemoImageCollectionViewCell
-            if fromSelection{
-                cell.selectionBtn.addTarget(self, action: #selector(imageSelect(sender:)), for: .touchUpInside)
-                cell.selectionBtn.tag = indexPath.row
-                
-            cell.selectionBtn.isHidden = false
-                if imageSelected[indexPath.row] == 1 {
-                    
-                    cell.selectionBtn.setImage(UIImage.fontAwesomeIcon(name: .checkSquare, textColor: .green, size: cell.selectionBtn.frame.size,backgroundColor:UIColor.white), for: .normal)
-                    
-                }else{
-                    
-                    cell.selectionBtn.setImage(UIImage.fontAwesomeIcon(name: .squareO, textColor: .green, size: cell.selectionBtn.frame.size), for: .normal)
-                }
-            
-            }else{
+//            if fromSelection{
+//                cell.selectionBtn.addTarget(self, action: #selector(imageSelect(sender:)), for: .touchUpInside)
+//                cell.selectionBtn.tag = indexPath.row
+//
+//            cell.selectionBtn.isHidden = false
+//                if imageSelected[indexPath.row] == 1 {
+//
+//                    cell.selectionBtn.setImage(UIImage.fontAwesomeIcon(name: .checkSquare, textColor: .green, size: cell.selectionBtn.frame.size,backgroundColor:UIColor.white), for: .normal)
+//
+//                }else{
+//
+//                    cell.selectionBtn.setImage(UIImage.fontAwesomeIcon(name: .squareO, textColor: .green, size: cell.selectionBtn.frame.size), for: .normal)
+//                }
+//
+//            }else{
             
                 cell.selectionBtn.isHidden = true
 
-            }
+          //  }
         cell.demoImageView.image = UIImage(named: "\(indexPath.row+1)")
         cell.layer.masksToBounds = true
         selectedImageIndex = indexPath

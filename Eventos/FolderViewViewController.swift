@@ -63,6 +63,14 @@ class FolderViewViewController: UIViewController,UICollectionViewDelegate,UIColl
         return 2
     }
     
+    
+    
+    @IBAction func backBtnpressed(_ sender: Any) {
+        
+        
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 
   
 
