@@ -8,6 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Coves Bold.otf">
+            <string>Coves-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -21,19 +26,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="123" translatesAutoresizingMaskIntoConstraints="NO" id="zSD-Ba-KMk">
-                                <rect key="frame" x="112.5" y="258.5" width="150" height="150"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="family2" translatesAutoresizingMaskIntoConstraints="NO" id="4Mq-H3-qdU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eventos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIP-eL-ucb">
+                                <rect key="frame" x="104" y="274" width="167" height="56.5"/>
+                                <fontDescription key="fontDescription" name="Coves-Bold" family="Coves" pointSize="54"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.80091305599999996" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ir-UT-lX2">
+                                <rect key="frame" x="10" y="10" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="123" translatesAutoresizingMaskIntoConstraints="NO" id="cZE-kT-U7a">
+                                <rect key="frame" x="62.5" y="80" width="250" height="250"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="8td-uq-50P"/>
-                                    <constraint firstAttribute="width" constant="150" id="ztp-7M-VRN"/>
+                                    <constraint firstAttribute="width" constant="250" id="3zS-KG-8Lu"/>
+                                    <constraint firstAttribute="height" constant="250" id="ClL-tv-I4L"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zSD-Ba-KMk" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Pld-19-XNA"/>
-                            <constraint firstItem="zSD-Ba-KMk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rG4-sU-zwT"/>
+                            <constraint firstItem="cZE-kT-U7a" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="50S-3k-qqX"/>
+                            <constraint firstItem="cZE-kT-U7a" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="60" id="8g4-jF-Enj"/>
+                            <constraint firstAttribute="trailing" secondItem="4Mq-H3-qdU" secondAttribute="trailing" id="DBj-dI-EnW"/>
+                            <constraint firstItem="0Ir-UT-lX2" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="NUQ-i1-Rvn"/>
+                            <constraint firstItem="0Ir-UT-lX2" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="U04-MY-uOa"/>
+                            <constraint firstItem="0Ir-UT-lX2" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="Xdr-qX-Ge9"/>
+                            <constraint firstItem="0Ir-UT-lX2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZyR-WS-ClR"/>
+                            <constraint firstItem="4Mq-H3-qdU" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="aN5-sO-rKA"/>
+                            <constraint firstItem="4Mq-H3-qdU" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ebq-cN-kHq"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="4Mq-H3-qdU" secondAttribute="bottom" id="emg-Xv-EHi"/>
+                            <constraint firstItem="pIP-eL-ucb" firstAttribute="centerX" secondItem="cZE-kT-U7a" secondAttribute="centerX" id="sve-KO-Zje"/>
+                            <constraint firstItem="pIP-eL-ucb" firstAttribute="bottom" secondItem="cZE-kT-U7a" secondAttribute="bottom" id="v2t-Rd-RsR"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -44,5 +71,6 @@
     </scenes>
     <resources>
         <image name="123" width="842" height="646"/>
+        <image name="family2" width="1125" height="750"/>
     </resources>
 </document>

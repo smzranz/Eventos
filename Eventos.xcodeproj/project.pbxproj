@@ -93,6 +93,7 @@
 		51F1BE2C1F7298D7000C3484 /* TransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BE261F7298D7000C3484 /* TransitionButton.swift */; };
 		51F1BE311F729CF5000C3484 /* AutoKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BE2F1F729CF5000C3484 /* AutoKeyboard.swift */; };
 		51F1BE321F729CF5000C3484 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51F1BE301F729CF5000C3484 /* Info.plist */; };
+		C30F322F2020E67C00210D3C /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30F322E2020E67C00210D3C /* AppUtility.swift */; };
 		C3513FD3201C88C400A8E67C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3513FD2201C88C300A8E67C /* ProfileViewController.swift */; };
 		C3513FD5201C9EB600A8E67C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3513FD4201C9EB600A8E67C /* TableViewCell.swift */; };
 		C36906531F7194DF003655B8 /* DemoImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36906521F7194DE003655B8 /* DemoImageCollectionViewCell.swift */; };
@@ -220,6 +221,7 @@
 		5A8F04D0881192899B27BEE1 /* Pods_Eventos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eventos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62427791E501E5805BF34705 /* Pods_EventosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		706C6416343FD6252004BB77 /* Pods-Eventos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eventos/Pods-Eventos.release.xcconfig"; sourceTree = "<group>"; };
+		C30F322E2020E67C00210D3C /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		C3513FD2201C88C300A8E67C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C3513FD4201C9EB600A8E67C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		C36906521F7194DE003655B8 /* DemoImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoImageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -584,6 +586,7 @@
 				51E009281F7902F800083FF1 /* Login1ViewController.swift */,
 				C3E19A912018F31A0092563B /* SignInViewController.swift */,
 				514224FA1F6BFAF400B9F39C /* ListViewViewController.swift */,
+				C30F322E2020E67C00210D3C /* AppUtility.swift */,
 				C3A1F53E1F7EBB790066B893 /* SelectionViewController.swift */,
 				C3E19A8F2018E8280092563B /* FolderViewViewController.swift */,
 				C3513FD2201C88C300A8E67C /* ProfileViewController.swift */,
@@ -885,6 +888,7 @@
 				5155DA3D1F7291090014B6A4 /* IQUIView+Hierarchy.swift in Sources */,
 				514E02361F73BBCF001BFB39 /* CustomHeaderTableViewCell.swift in Sources */,
 				C3888A571F7796280045F2ED /* SendEnquiryWindow.swift in Sources */,
+				C30F322F2020E67C00210D3C /* AppUtility.swift in Sources */,
 				C3D84F6E1F742744006E78CB /* SectionHeaderCollectionReusableView.swift in Sources */,
 				5155DA1F1F723FD50014B6A4 /* ColorFile.swift in Sources */,
 				5155DA4E1F72931C0014B6A4 /* ListLoader.swift in Sources */,

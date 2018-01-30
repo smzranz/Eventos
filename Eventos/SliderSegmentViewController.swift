@@ -60,6 +60,14 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
       sliderTitle =  ["Summary", "Demos","Packages","Login"]
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        
+        
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

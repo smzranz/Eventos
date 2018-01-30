@@ -37,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
 //    }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        
         let handled: Bool = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: [UIApplicationOpenURLOptionsKey.annotation:UIApplicationOpenURLOptionsKey.sourceApplication])
         //sharedInstance().application(application, open: url, sourceApplication: options[.sourceApplication] as? String, annotation: options[.annotation])
         // Add any custom logic here.
@@ -52,6 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
             let familyName = user.profile.familyName
             let email = user.profile.email
             print("*********\(email)")
+            UserDefaults.standard.set(email, forKey: "userEmail")
             DispatchQueue.main.async {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let viewController = storyboard.instantiateViewController(withIdentifier :"viewController") as! ViewController
@@ -77,10 +79,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        if UserDefaults.standard.value(forKey: "userEmail") != nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier :"viewController") as! ViewController
+            let navController = UINavigationController.init(rootViewController: viewController)
+            
+            if let window = self.window, let rootViewController = window.rootViewController {
+                var currentController = rootViewController
+                while let presentedController = currentController.presentedViewController {
+                    currentController = presentedController
+                }
+                currentController.present(navController, animated: true, completion: nil)
+            }
+
+            
+        }else{
+            
+        }
+
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         var configureError: NSError?
         GGLContext.sharedInstance().configureWithError(&configureError)
-        assert(configureError == nil, "Error configuring Google services: \(configureError)")
+        assert(configureError == nil, "Error configuring Google services: \(String(describing: configureError))")
         
         GIDSignIn.sharedInstance().delegate = self
         IQKeyboardManager.sharedManager().enable = true
@@ -116,5 +136,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-
+    var orientationLock = UIInterfaceOrientationMask.portrait
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return self.orientationLock
+    }
 }
