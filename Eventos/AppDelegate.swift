@@ -28,13 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
     
     
     
-//    
-//    var orientationLock = UIInterfaceOrientationMask.portrait
-//    var myOrientation: UIInterfaceOrientationMask = .portrait
-//    
-//    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-//        return myOrientation
-//    }
+
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         
@@ -46,26 +40,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if (error == nil) {
             // Perform any operations on signed in user here.
-            let userId = user.userID                  // For client-side use only!
-            let idToken = user.authentication.idToken // Safe to send to the server
-            let fullName = user.profile.name
-            let givenName = user.profile.givenName
-            let familyName = user.profile.familyName
+           let name = user.profile.name
             let email = user.profile.email
-            print("*********\(email)")
+            print("*********\(user.profile.name)")
             UserDefaults.standard.set(email, forKey: "userEmail")
+            UserDefaults.standard.set(name, forKey: "name")
             DispatchQueue.main.async {
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let viewController = storyboard.instantiateViewController(withIdentifier :"viewController") as! ViewController
-                let navController = UINavigationController.init(rootViewController: viewController)
+                let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc : ViewController = storyboard.instantiateViewController(withIdentifier: "viewController") as! ViewController
+                let navigationController = UINavigationController(rootViewController: vc)
                 
-                if let window = self.window, let rootViewController = window.rootViewController {
-                    var currentController = rootViewController
-                    while let presentedController = currentController.presentedViewController {
-                        currentController = presentedController
-                    }
-                    currentController.present(navController, animated: true, completion: nil)
-                }
+                
+                self.window = UIWindow(frame: UIScreen.main.bounds)
+                self.window?.rootViewController = navigationController
+                self.window?.makeKeyAndVisible()
             }
             // ...
         } else {
@@ -79,18 +67,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        if UserDefaults.standard.value(forKey: "userEmail") != nil {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier :"viewController") as! ViewController
-            let navController = UINavigationController.init(rootViewController: viewController)
+        if UserDefaults.standard.value(forKey: "userEmail") != nil || (UserDefaults.standard.value(forKey: "name") != nil) {
             
-            if let window = self.window, let rootViewController = window.rootViewController {
-                var currentController = rootViewController
-                while let presentedController = currentController.presentedViewController {
-                    currentController = presentedController
-                }
-                currentController.present(navController, animated: true, completion: nil)
-            }
+            
+            let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc : ViewController = storyboard.instantiateViewController(withIdentifier: "viewController") as! ViewController
+            let navigationController = UINavigationController(rootViewController: vc)
+            
+            
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = navigationController
+            self.window?.makeKeyAndVisible()
 
             
         }else{

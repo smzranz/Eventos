@@ -9,6 +9,7 @@
 import UIKit
 import FacebookLogin
 import Google
+import FBSDKCoreKit
 
 class SignInViewController: UIViewController,APKenBurnsViewDataSource, GIDSignInUIDelegate {
   var window: UIWindow?
@@ -46,8 +47,27 @@ class SignInViewController: UIViewController,APKenBurnsViewDataSource, GIDSignIn
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func getFBUserData(){
+        if((FBSDKAccessToken.current()) != nil){
+            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
+                if (error == nil){
+                    print(result)
+                    let dic = result as! NSDictionary
+                    UserDefaults.standard.set(dic["name"] as! String, forKey: "name")
+                    if let pictureData = (dic["picture"] as! NSDictionary)["data"] as? NSDictionary{
+                    
+                    UserDefaults.standard.set(pictureData["url"] as! String, forKey: "imageUrl")
+                        
+                    }
+                }
+            })
+        }
+    }
     @objc func loginButtonClicked() {
+        
+        
+        
+        
         let loginManager = LoginManager()
         loginManager.logIn(readPermissions: [.publicProfile], viewController: self) { (loginResult) in
             switch loginResult {
@@ -57,20 +77,21 @@ class SignInViewController: UIViewController,APKenBurnsViewDataSource, GIDSignIn
                 print("User cancelled login.")
             case .success(let grantedPermissions, let declinedPermissions, let accessToken):
                 DispatchQueue.main.async {
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let viewController = storyboard.instantiateViewController(withIdentifier :"viewController") as! ViewController
-                    let navController = UINavigationController.init(rootViewController: viewController)
-                    
-                    if let window = self.window, let rootViewController = window.rootViewController {
-                        var currentController = rootViewController
-                        while let presentedController = currentController.presentedViewController {
-                            currentController = presentedController
-                        }
-                        currentController.present(navController, animated: true, completion: nil)
-                    }
-                }
+                    let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let vc : ViewController = storyboard.instantiateViewController(withIdentifier: "viewController") as! ViewController
+                    let navigationController = UINavigationController(rootViewController: vc)
 
-                print("Logged in!")
+
+                    self.window = UIWindow(frame: UIScreen.main.bounds)
+                    self.window?.rootViewController = navigationController
+                    self.window?.makeKeyAndVisible()
+                }
+//                FBSDKProfile.loadCurrentProfile(completion: {(_ profile: FBSDKProfile, _ error: Error?) -> Void in
+//                    if profile {
+//                        print("Hello, \(profile.firstName)!")
+//                    }
+//                    } as! (FBSDKProfile?, Error?) -> Void)
+                self.getFBUserData()
             }
         }
     }

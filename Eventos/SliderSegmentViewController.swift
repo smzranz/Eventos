@@ -190,10 +190,15 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
         
         }
         if collectionView.tag == 101{
-        
+            if indexPath.section == 0{
             selectedImageIndex = indexPath
             
             performSegue(withIdentifier: "toDetailImage", sender: self)
+            }else{
+                
+                performSegue(withIdentifier: "toPlayVideo", sender: self)
+                
+            }
         }
     }
     
@@ -238,8 +243,10 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
             header.label.text = "Photos"
             // header.label.layer.cornerRadius = 3
             header.label.textColor = UIColor.black
+            header.viewAll.addTarget(self, action: #selector(viewAllPressed), for: .touchUpInside)
             //   header.label.layer.borderWidth = 1
             header.label.layer.masksToBounds = true
+            
             return header
         }
         else if indexPath.section == 1{
@@ -323,7 +330,7 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
         return 1
         
         }
-        return 4
+        return 5
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
@@ -374,8 +381,13 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "aboutUs", for: indexPath) as! AbousUsTableViewCell
             return cell
-        case 3:
+            
+        case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: "reviewCell", for: indexPath) as! ReviewsTableViewCell
+            return cell
+            
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "socialCell", for: indexPath) as! SocialMediaTableViewCell
             return cell
         default:
             return UITableViewCell()
@@ -398,6 +410,9 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
         case 2:
             return UITableViewAutomaticDimension
         case 3:
+            return (self.view.frame.width-60)/4
+
+        case 4:
             return UITableViewAutomaticDimension
         default:
             return 40
@@ -444,6 +459,8 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
             headerCell.headerLabel.text = "About"
         //return sectionHeaderView
         case 3:
+            headerCell.headerLabel.text = "Social";
+        case 4:
             headerCell.headerLabel.text = "Reviews";
         //return sectionHeaderView
         default: break
@@ -543,5 +560,15 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
     @IBAction func backBtnAction(_ sender: Any) {
         
         backBtnTapped()
+    }
+    
+    
+    func viewAllPressed(){
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier :"viewAllViewController") as! ViewAllViewController
+      
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
     }
 }

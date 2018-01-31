@@ -11,4 +11,8 @@ import UIKit
 class SectionHeaderCollectionReusableView: UICollectionReusableView {
         
     @IBOutlet var label: UILabel!
+    
+    
+    @IBOutlet weak var viewAll: UIButton!
+    
 }

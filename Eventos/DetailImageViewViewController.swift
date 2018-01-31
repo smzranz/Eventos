@@ -48,11 +48,7 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
         imageCollectionView.delegate = self
         imageCollectionView.dataSource = self
         print(selectedImageIndex)
-      //  let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
-      //  swipeDown.direction = .down
-      //  self.view.addGestureRecognizer(swipeDown)
-// self.imageCollectionView.scrollToItem(at: selectedImageIndex, at: .centeredHorizontally, animated: false)
-        // Do any additional setup after loading the view.
+    
     }
     
     
@@ -96,17 +92,11 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
             closeBtnAction(closeBtnOutlet)
         }
     }
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(true)
-//        UIApplication.shared.statusBarStyle = .lightContent
-//    }
+
     override func viewWillDisappear(_ animated: Bool) {
-      //  super.viewWillDisappear(true)
+     
         navigationController?.navigationBar.isHidden = false
-//        UIView.animate(withDuration: 2.0, animations: { () -> Void in
-//            UIView.setAnimationCurve(UIViewAnimationCurve.easeOut)
-//            UIView.setAnimationTransition(UIViewAnimationTransition.curlDown, for: self.navigationController!.view, cache: false)
-//        })
+
         
         super.viewWillDisappear(animated)
         
@@ -131,25 +121,11 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == imageCollectionView {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! DemoImageCollectionViewCell
-//            if fromSelection{
-//                cell.selectionBtn.addTarget(self, action: #selector(imageSelect(sender:)), for: .touchUpInside)
-//                cell.selectionBtn.tag = indexPath.row
-//
-//            cell.selectionBtn.isHidden = false
-//                if imageSelected[indexPath.row] == 1 {
-//
-//                    cell.selectionBtn.setImage(UIImage.fontAwesomeIcon(name: .checkSquare, textColor: .green, size: cell.selectionBtn.frame.size,backgroundColor:UIColor.white), for: .normal)
-//
-//                }else{
-//
-//                    cell.selectionBtn.setImage(UIImage.fontAwesomeIcon(name: .squareO, textColor: .green, size: cell.selectionBtn.frame.size), for: .normal)
-//                }
-//
-//            }else{
+
             
                 cell.selectionBtn.isHidden = true
 
-          //  }
+        
         cell.demoImageView.image = UIImage(named: "\(indexPath.row+1)")
         cell.layer.masksToBounds = true
         selectedImageIndex = indexPath
@@ -164,14 +140,7 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
              cell.demoImageView.heroID = "image_\(indexPath)"
             cell.demoImageView.heroModifiers = [.zPosition(2)]
             cell.layer.masksToBounds = true
-//            if indexPath == selectedImageIndex{
-//                
-//                cell.bluxView.isHidden = true
-//            }else{
-//                
-//                cell.bluxView.isHidden = true
-//                
-//            }
+
 
             return cell
             
@@ -214,7 +183,7 @@ class DetailImageViewViewController: UIViewController,UICollectionViewDelegate,U
         
       //  navigationController?.navigationBar.isHidden = false
         
-        navigationController?.popViewController(animated: true)
+       handlePan(gestureRecognizer: panGR)
         
       
     }

@@ -8,6 +8,8 @@
 
 import UIKit
 import FontAwesome_swift
+import SDWebImage
+import FBSDKLoginKit
 
 class ProfileViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
@@ -21,25 +23,30 @@ class ProfileViewController: UIViewController,UITableViewDataSource,UITableViewD
     
     @IBOutlet var profileTableView: UITableView!
     
-    var titleArray = ["Name","Email","About Us","Share App","Logout"]
+    var titleArray = ["Name","-","About Us","Share App","Logout"]
     var imageArray = [UIImage.fontAwesomeIcon(name: .user, textColor: UIColor.lightGray, size: CGSize(width: 30, height: 30)),UIImage.fontAwesomeIcon(name: .envelope, textColor: UIColor.lightGray, size: CGSize(width: 30, height: 30)),UIImage.fontAwesomeIcon(name: .questionCircle, textColor: UIColor.lightGray, size: CGSize(width: 30, height: 30)),UIImage.fontAwesomeIcon(name: .signOut, textColor: UIColor.lightGray, size: CGSize(width: 30, height: 30)),UIImage.fontAwesomeIcon(name: .shareAlt, textColor: UIColor.lightGray, size: CGSize(width: 30, height: 30))]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.backBtn.setImage(UIImage.fontAwesomeIcon(name: .chevronLeft, textColor: UIColor.white, size: self.backBtn.frame.size), for: .normal)
-        self.backBtn.tintColor = UIColor.white
+        if UserDefaults.standard.value(forKey: "imageUrl") != nil{
+            
+           let imageUrl = UserDefaults.standard.value(forKey: "imageUrl") as! String
+             profileImageView.sd_setImage(with: URL(string: imageUrl), placeholderImage: UIImage(named: "placeholder.png"))
+        }
+        let name = UserDefaults.standard.value(forKey: "name") as! String
+        titleArray[0] = name
+      
 self.profileImageView.layer.masksToBounds = true
         self.profileImageView.layer.borderWidth = 3
         self.profileImageView.layer.borderColor = UIColor.white.cgColor
-      //  self.profileImageView.image = UIImage.fontAwesomeIcon(name: .userCircleO, textColor: UIColor.black, size: CGSize(width: 100, height: 100))
+     
         self.profileImageView.layer.cornerRadius = self.profileImageView.frame.height/2
         profileImageView.backgroundColor = UIColor.white
         
         self.tabBarController?.tabBar.items![0].image = UIImage.fontAwesomeIcon(name: .userCircleO, textColor: UIColor.black, size: CGSize(width: 40, height: 40))
         // items![0] index of your tab bar item.items![0] means tabbar first item
         
-        self.tabBarController?.tabBar.items![0].selectedImage = UIImage.fontAwesomeIcon(name: .user, textColor: UIColor.black, size: CGSize(width: 40, height: 40))
+        self.tabBarController?.tabBar.items![0].selectedImage = UIImage.fontAwesomeIcon(name: .userCircleO, textColor: UIColor.black, size: CGSize(width: 40, height: 40))
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,11 +69,48 @@ self.profileImageView.layer.masksToBounds = true
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 4{
+            
+            logOutPressed()
+        }
+    }
+    
     
     @IBAction func backBtnPressed(_ sender: Any) {
-        print(self.parent)
+        
         self.dismiss(animated: true, completion: nil)
     }
     
-
+    func logOutPressed(){
+        
+        let alert = UIAlertController(title: "Attention!", message: "Do you realy want logOut", preferredStyle: UIAlertControllerStyle.alert)
+        
+        // add the actions (buttons)
+        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.destructive, handler: { action in
+            
+            DispatchQueue.main.async {
+                let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc : SignInViewController = storyboard.instantiateViewController(withIdentifier: "signInViewController") as! SignInViewController
+               
+                let domain = Bundle.main.bundleIdentifier!
+                UserDefaults.standard.removePersistentDomain(forName: domain)
+                UserDefaults.standard.synchronize()
+                
+                let loginManager = FBSDKLoginManager()
+                loginManager.logOut()
+                GIDSignIn.sharedInstance().signOut()
+                self.present(vc, animated: true, completion: nil)
+                
+            }
+            
+        }))
+        alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.cancel, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+        
+        
+        
+    }
 }

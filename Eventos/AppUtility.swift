@@ -6,6 +6,10 @@
 //  Copyright © 2018 citrusinformatics. All rights reserved.
 //
 
+
+import UIKit
+import Foundation
+
 struct AppUtility {
     
     static func lockOrientation(_ orientation: UIInterfaceOrientationMask) {

@@ -19,8 +19,7 @@ class MyAlbumViewController: UIViewController, UIPageViewControllerDataSource
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        let value = UIInterfaceOrientation.landscapeLeft.rawValue
-        UIDevice.current.setValue(value, forKey: "orientation")
+        
         pageViewController = UIPageViewController(transitionStyle: .pageCurl, navigationOrientation: .horizontal, options: nil)
         pageViewController!.dataSource = self
         
@@ -33,17 +32,25 @@ class MyAlbumViewController: UIViewController, UIPageViewControllerDataSource
         view.addSubview(pageViewController!.view)
         pageViewController!.didMove(toParentViewController: self)
     }
-    private func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.landscapeLeft
-    }
-    private func shouldAutorotate() -> Bool {
-        return true
-    }
+  
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+          AppUtility.lockOrientation(.all)
+        
+       // AppUtility.lockOrientation(.all, andRotateTo: .all)
+        
+    }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)
+        
+    }
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
     {
         var index = (viewController as! InstructionView).pageIndex
