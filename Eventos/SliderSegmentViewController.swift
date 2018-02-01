@@ -410,7 +410,7 @@ class SliderSegmentViewController: UIViewController,UICollectionViewDelegate,UIC
         case 2:
             return UITableViewAutomaticDimension
         case 3:
-            return (self.view.frame.width-60)/4
+            return (self.view.frame.width-125)/4
 
         case 4:
             return UITableViewAutomaticDimension

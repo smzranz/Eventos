@@ -734,7 +734,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eventos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXc-QF-UHG">
-                                <rect key="frame" x="92.5" y="257" width="190.5" height="63"/>
+                                <rect key="frame" x="93" y="257" width="190.5" height="63"/>
                                 <fontDescription key="fontDescription" name="Coves-Bold" family="Coves" pointSize="54"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.80091305599999996" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1432,33 +1432,33 @@ Video camera : Standard video camera</string>
                                                                 <rect key="frame" x="0.0" y="0.0" width="373" height="75.5"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
-                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wTr-O3-3k5">
-                                                                        <rect key="frame" x="25" y="5" width="323" height="65.5"/>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="wTr-O3-3k5">
+                                                                        <rect key="frame" x="35" y="15" width="303" height="45.5"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDS-eR-wsF">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="73.5" height="65.5"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="49.5" height="45.5"/>
                                                                                 <state key="normal" image="faceBookLogo"/>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0V-Uu-NKx">
-                                                                                <rect key="frame" x="83.5" y="0.0" width="73" height="65.5"/>
+                                                                                <rect key="frame" x="84.5" y="0.0" width="49.5" height="45.5"/>
                                                                                 <state key="normal" image="youTubeLogo"/>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="182-mA-5Wd">
-                                                                                <rect key="frame" x="166.5" y="0.0" width="73.5" height="65.5"/>
+                                                                                <rect key="frame" x="169" y="0.0" width="49.5" height="45.5"/>
                                                                                 <state key="normal" image="instagramLogo"/>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzH-Kl-Zuc">
-                                                                                <rect key="frame" x="250" y="0.0" width="73" height="65.5"/>
+                                                                                <rect key="frame" x="253.5" y="0.0" width="49.5" height="45.5"/>
                                                                                 <state key="normal" image="websiteLogo"/>
                                                                             </button>
                                                                         </subviews>
                                                                     </stackView>
                                                                 </subviews>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="trailing" secondItem="wTr-O3-3k5" secondAttribute="trailing" constant="25" id="Kxa-eF-KL0"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="wTr-O3-3k5" secondAttribute="bottom" constant="5" id="bx4-Yp-nQP"/>
-                                                                    <constraint firstItem="wTr-O3-3k5" firstAttribute="leading" secondItem="zcF-wr-fYO" secondAttribute="leading" constant="25" id="iN4-4U-115"/>
-                                                                    <constraint firstItem="wTr-O3-3k5" firstAttribute="top" secondItem="zcF-wr-fYO" secondAttribute="top" constant="5" id="oWs-tm-u2k"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="wTr-O3-3k5" secondAttribute="trailing" constant="35" id="Kxa-eF-KL0"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="wTr-O3-3k5" secondAttribute="bottom" constant="15" id="bx4-Yp-nQP"/>
+                                                                    <constraint firstItem="wTr-O3-3k5" firstAttribute="leading" secondItem="zcF-wr-fYO" secondAttribute="leading" constant="35" id="iN4-4U-115"/>
+                                                                    <constraint firstItem="wTr-O3-3k5" firstAttribute="top" secondItem="zcF-wr-fYO" secondAttribute="top" constant="15" id="oWs-tm-u2k"/>
                                                                 </constraints>
                                                             </tableViewCellContentView>
                                                             <connections>
